@@ -1,0 +1,30 @@
+
+body {
+    background: #fbfbf9;
+    color: rgb(12, 12, 12);
+    
+    height: 100%;
+    margin: 0;
+
+    overflow-x: hidden;
+}
+
+
+.headerSection {
+    width: 100%; 
+    text-align: center;
+    margin-top: 50px;
+}
+
+.headerText {
+    margin: 0;
+    font-size: 100px;
+    cursor: default;
+}
+
+.container {
+    width: 100%; 
+    text-align: center;
+    cursor: default;
+    margin-top: 250px;
+}
