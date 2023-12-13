@@ -3,13 +3,15 @@
     src: url('/fonts/Kalnia-VariableFont_wdth\,wght.ttf') format('woff2')
 }
 
+html{
+    overflow-x: hidden;
+}
+
 body { 
     margin: 0;
     height: 100%;
     font-family: "Kalnia", sans-serif;
     color: black;
-    overflow-x: hidden;
-    touch-action: pan-y;
     background-color: #e5e9e8;
 }
 
