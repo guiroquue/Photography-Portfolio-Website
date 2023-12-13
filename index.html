@@ -2,156 +2,130 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/mediaQueries.css">
-    <link rel="shortcut icon" type="image/x-icon" href="./images/icon.ico" />
+    <link rel="stylesheet" href="css/runningElements.css">
 
-    <title>EoqruGallery</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mediaQueriesIndex.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon.ico" />
+
+    <title>Eoqru Photos</title>
 </head>
 <body>
-    <div class="headerSection">
-        <h1 class="headerText">Eoqru Gallery</h1>
-    </div>
 
-
-    <div class="gallerySection">
-        <div class="gridContainer">
-
-            <div class="imageContainer">
-                <img src="./images/img (13).jpg" alt="Image not found" id="img01">
-            </div>
-            <div>
-                <div class="imageContainer">
-                    <img src="./images/img (9).jpg" alt="Image not found" id="img02">
-                </div>
-            </div>
-            <div>
-                <div class="imageContainer">
-                    <img src="./images/img (3).jpg" alt="Image not found" id="img03">
-                </div>
-            </div>  
-            <div>
-                <div class="imageContainer">
-                    <img src="./images/img (20).jpg" alt="Image not found" id="img04">
-                </div>
-            </div>
-
-
-            <div>
-                <div class="imageContainer">
-                    <img src="./images/img (5).jpg" alt="Image not found" id="img05">
-                </div>
-            </div>
-            <div>
-                <div class="imageContainer">
-                    <img src="./images/img (23).jpg" alt="Image not found" id="img06">
-                </div>
-            </div>
-            <div>
-                <div class="imageContainer">
-                    <img src="./images/img (17).jpg" alt="Image not found" id="img07">
-                </div>
-            </div>  
-            <div>
-                <div class="imageContainer">
-                    <img src="./images/img (18).jpg" alt="Image not found" id="img08">
-                </div>
-            </div>
-
-
-            <div>
-                <div class="imageContainer">
-                    <img src="./images/img (12).jpg" alt="Image not found"id="img09">
-                </div>
-            </div>
-            <div>
-                <div class="imageContainer">
-                    <img src="./images/img (6).jpg" alt="Image not found" id="img10">
-                </div>
-            </div>
-            <div>
-                <div class="imageContainer">
-                    <img src="./images/img (2).jpg" alt="Image not found" id="img11">
-                </div>
-            </div>  
-            <div>
-                <div class="imageContainer">
-                    <img src="./images/img (15).jpg" alt="Image not found" id="img12">
-                </div>
-            </div>
-
-
-            <div>
-                <div class="imageContainer">
-                    <img src="./images/img (16).jpg" alt="Image not found" id="img13">
-                </div>
-            </div>
-            <div>
-                <div class="imageContainer">
-                    <img src="./images/img (22).jpg" alt="Image not found" id="img14">
-                </div>
-            </div>
-            <div>
-                <div class="imageContainer">
-                    <img src="./images/img (4).jpg" alt="Image not found" id="img15">
-                </div>
-            </div>  
-            <div>
-                <div class="imageContainer">
-                    <img src="./images/img (24).jpg" alt="Image not found" id="img16">
-                </div>
-            </div>
-
-
-            <div>
-                <div class="imageContainer">
-                    <img src="./images/img (1).jpg" alt="Image not found" id="img17">
-                </div>
-            </div>
-            <div>
-                <div class="imageContainer">
-                    <img src="./images/img (21).jpg" alt="Image not found" id="img18">
-                </div>
-            </div>
-
+    <div class="header">
+        <a href="index.html" class="logo">Eoqru Photos</a>
+        <div class="header-right" id="headerLinks">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="https://instagram.com/qrupics?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">Instagram</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <div class="hamburger-icon" id="hamburgerIcon" onclick="toggleMenu()">&#9776;</div>
         </div>
     </div>
+    <div class="overlay" id="overlay"></div>
+    
+    
 
-    <div class="plansSection">
-        <div class="columns">
-            <ul class="price">
-                <li class="header">Basic shoot</li>
-                <li>9.995kr</li>
-                <li>10 photos</li>
-                <li>1 hour</li>
-            </ul>
+    <div class="image-container">
+        <div class="imageSides">
+            <img src="images/imgMain (6).jpg" class="up" alt="Image 1">
         </div>
+        <div class="imageSides">
+            <img src="images/imgMain (6).jpg" class="up" alt="Image 2">
+        </div>
+        <div class="image" id="thirdImage">
+            <img src="images/imgMain (3).jpg" class="down" alt="Image 3">
+            <p class="down">"NOW WHAT"</p>
+        </div>
+        <div class="image">
+            <img src="images/imgMain (4).jpg" class="up" alt="Image 4">
+            <p class="up">"LOOK"</p>
+        </div>
+        <div class="image">
+            <img src="images/imgMain (1).jpg" class="down" alt="Image 5">
+            <p class="down">"SWEET"</p>
+        </div>
+        <div class="image">
+            <img src="images/img (25).jpg" class="up" alt="Image 6">
+            <p class="up">"ALONE"</p>
+        </div>
+        <div class="image" id="seventhImage">
+            <img src="images/imgMain (2).jpg" class="down" alt="Image 7">
+            <p class="down">"WOW"</p>
+        </div>
+        <div class="imageSides">
+            <img src="images/imgMain (5).jpg" class="up" alt="Image 8">
+        </div>
+
         
-        <div class="columns">
-            <ul class="price">
-                <li class="header">Premium shoot</li>
-                <li>19.995kr</li>
-                <li>30 photos</li>
-                <li>3 hours</li>
-                <li>10 edited</li>
-            </ul>
+    </div>
+
+    <a class="projects-button" href="projects.html"><p>View all my projects</p></a>
+
+    <img class="svg" src="/images/line.svg" alt="Your SVG" />
+    
+
+    
+    <div class="main-container">
+        <div class="content">
+
+            <div class="flex-container">
+                <div style="flex-grow: 1"></div>
+                <div style="flex-grow: 2"></div>
+                <div style="flex-grow: 7">"Yeah I really love them thanku so much"<!-- <br> - Sara --></div>
+            </div>
+
+            <div class="flex-container">
+                <div style="flex-grow: 3">"they are so cool"<!-- <br> - Matti --></div>
+                <div style="flex-grow: 1"></div>
+                <div style="flex-grow: 8"></div>
+            </div>
+            
+            <div class="flex-container">
+                <div style="flex-grow: 7"></div>
+                <div style="flex-grow: 3"></div>
+                <div style="flex-grow: 3">"i love them"<!-- <br> - Zuza --></div>
+            </div>
+            
+            <div class="flex-container">
+                <div style="flex-grow: 1"></div>
+                <div style="flex-grow: 2">"it was really fun"<!-- <br> - Lilja --></div>
+                <div style="flex-grow: 3"></div>
+            </div>
+
+
+            <div class="flex-container">
+                <div style="flex-grow: 3"></div>
+                <div style="flex-grow: 2"></div>
+                <div style="flex-grow: 7">"U are an artist bro I keep saying this"<!-- <br> - Úlfur --></div>
+            </div>
+
+            <div class="flex-container">
+                <div style="flex-grow: 1">"woo these look good man"<!-- <br> - orsen --></div>
+                <div style="flex-grow: 1"></div>
+                <div style="flex-grow: 8"></div>
+            </div>
+
+            
+
+            <div class="flex-container">
+                <div style="flex-grow: 3"></div>
+                <div style="flex-grow: 4">"U r amazing"<!-- <br> - Ayşe --></div>
+                <div style="flex-grow: 7"></div>
+            </div>
         </div>
     </div>
-
-
-    <div class="contactSection">
-        <h1>Get In Touch With Me</h1>
-        <p>Instagram: <a href="https://instagram.com/qrupics?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">@Eoqrupics</a></p>
-        <p>Email: g.sroque04@email.com</p>
-    </div>
-
-
+    
+    
     <footer>
         <p>© 2023 Guilherme Roque. All Rights Reserved. <br>
         Disclaimer: The photos and content on this website are the property of Guilherme Roque and may not be used or reproduced without permission.</p>
     </footer>
+
+    <script src="javascript/resize.js"></script>
 </body>
 </html>

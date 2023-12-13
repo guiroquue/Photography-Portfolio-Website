@@ -1,208 +1,103 @@
-@font-face {
-  font-family: 'C800';
-  src: url('font/C800Regular-W16E.ttf') format('woff2')
+
+.image-container {
+    margin: 50px -25% 250px -29%;
+    position: relative;
+    width: 140%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
-
-body {
-  background: #fbfbf9;
-  color: rgb(12, 12, 12);
-
-  height: 100%;
-  margin: 0;
-  font-family: 'C800', sans-serif;
-  overflow-x: hidden;
-}
-
-
-.headerSection {
-  width: 100%; 
-  text-align: center;
-
-  margin-top: 50px;
-}
-
-.headerText {
-  margin: 0;
-  font-size: 120px;
-  cursor: default;
-}
-
-
-
-.gallerySection {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.gridContainer {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 10px;
-  justify-content: center; /* Horizontal alignment */
-}
-
-.gridContainer > div {
-  height: auto;
-  margin-top: 150px;
-  display: flex;
-  justify-content: center; /* Horizontal alignment */
-  align-items: center; /* Vertical alignment */
+.image, .imageSides {
+    flex: 0 0 calc(12.5% - 10px); /* Adjust width for 3 images with some spacing */
+    margin-top: 100px; /* Space between the images and header */
+    text-align: center;
+    transition: transform 0.3s ease;
+    
 }
 
 img {
-  height: auto;
-  filter: drop-shadow(0px 16px 32px #000000);
-  pointer-events: none;
+    border: 1px solid black;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.577);
+}
+
+.svg {
+    border: 0;
+    box-shadow: none;
+    width: 100%;
+    height: 1%;
 }
 
 
-#img01 {
-  width: 270px;
+.image img, .imageSides img {
+    max-width: 100%; /* Ensure images don't exceed their container */
+    height: auto;
 }
 
-#img02 {
-  width: 250px;
-  margin-top: 130px;
+.down{
+    position: relative;
+    top: 80px; /* Adjust the value for the desired vertical position */
 }
 
-#img03 {
-  width: 210px;
-}
-
-#img04 {
-  width: 270px;
-}
-
-
-
-#img05 {
-  width: 240px;
-}
-
-#img06 {
-  width: 220px;
-  margin-top: 120px;
-}
-
-#img07 {
-  width: 280px;
-}
-
-#img08 {
-  width: 220px;
-}
-
-#img09 {
-  width: 225px;
-  margin-top: 80px;
-}
-
-#img10 {
-  width: 240px;
+.up {
+    position: relative;
+    bottom: 30px; /* Adjust the value for the desired vertical position */
 }
 
 
+.projects-button {
+    width: 60%;
+    height: 100px;
+    margin: 100px auto 150px;
 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.509);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    border: 1px solid black;
 
-#img11 {
-  width: 280px;
 }
 
-#img12 {
-  width: 240px;
-}
+.projects-button p {
+    margin: 0 auto;
+    text-align: center;
 
-#img13 {
-  width: 290px;
-  margin-top: 100px;
-}
-
-#img14 {
-  width: 240px;
-}
-
-
-
-#img15 {
-  width: 240px;
-  margin-top: 70px;
-}
-
-#img16 {
-  width: 310px;
-}
-
-#img17 {
-  width: 230px;
-}
-
-#img18 {
-  width: 210px;
-  margin-top: 80px;
-}
-
-.imageContainer {
-  display: inline-block;
-  position: relative;
-}
-
-.plansSection {
-  margin-top: 180px;
-  width: 100%;
-  text-align: center;
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-}
-
-.columns {
-  width: 33.3%;
-  padding: 8px;
-}
-
-.price {
-  list-style-type: none;
-  border: 1px solid #181818;
-  margin: 0;
-  padding: 0;
-  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.086)
+    color: black;
+    font-size: 30px;
+    
 }
 
 
-
-.price .header {
-  background-color: #111;
-  color: white;
-  font-size: 25px;
+.projects-button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
-.price li {
-  border-bottom: 1px solid #101010;
-  padding: 20px;
-  text-align: center;
+.main-container {
+    width: 80%;
+    margin: 150px auto 200px auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-
-
-.contactSection {
-  margin-top: 180px;
-  width: 100%;
-  text-align: center;
-  font-size: 40px;
+.flex-container {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
 }
-.contactSection p {
-  font-size: 25px;
+    
+    .flex-container > div {
+    color: black;
+    
+    margin: 10px;
+    
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
 }
-.contactSection a {
-  color: rgb(12, 12, 12);
-}
-
-footer {
-  margin-top: 180px;
-  width: 100%;
-  text-align: center;
-  font-size: 20px;
-}
-
 

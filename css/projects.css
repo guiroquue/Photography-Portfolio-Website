@@ -1,0 +1,107 @@
+h1, h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 200px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid black;
+}
+
+.indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #333;
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.content {
+    display: flex;
+    margin: 0 auto;
+    align-items: center; /* Vertically center the items */
+    width: 80%;
+}
+
+.text-box {
+    font-size: 10px;
+    flex: 1;
+    padding: 5px;
+}
+
+.image-box {
+    flex: 1;
+}
+
+.image-box img {
+    width: 60%;
+    height: auto;
+}
+
+footer {
+    margin-top: 200px;
+}
