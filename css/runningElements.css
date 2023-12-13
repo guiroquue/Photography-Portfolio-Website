@@ -9,6 +9,7 @@ body {
     font-family: "Kalnia", sans-serif;
     color: black;
     overflow-x: hidden;
+    touch-action: pan-y;
     background-color: #e5e9e8;
 }
 
