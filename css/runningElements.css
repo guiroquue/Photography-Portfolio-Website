@@ -3,10 +3,6 @@
     src: url('/fonts/Kalnia-VariableFont_wdth\,wght.ttf') format('woff2')
 }
 
-html{
-    overflow-x: hidden;
-}
-
 body { 
     margin: 0;
     height: 100%;
