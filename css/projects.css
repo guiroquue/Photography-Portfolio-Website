@@ -29,12 +29,13 @@ p {
     flex: 0 0 100%;
 }
 
+
 .carousel img {
     width: 50%;
     height: auto;
     margin: 0 auto;
     display: block;
-    border: 1px solid black;
+    border: 1px solid #1f1f1f;
 }
 
 .indicators {

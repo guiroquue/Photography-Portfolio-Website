@@ -8,14 +8,14 @@ body {
     margin: 0;
     height: 100%;
     font-family: "Kalnia", sans-serif;
-    color: black;
+    color: #1f1f1f;
     background-color: #e5e9e8;
 }
 
 .header {
     overflow: hidden;
     padding: 20px 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #1f1f1f;
 
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@ body {
 }
 
 .header a {
-    color: black;
+    color: #1f1f1f;
     text-align: center;
     padding: 15px;
     text-decoration: none;
@@ -72,7 +72,7 @@ body {
 
 footer {
     text-align: center;
-    border-top: 1px solid black;
+    border-top: 1px solid #1f1f1f;
     display: flex;
     justify-content: center; 
     align-items: center; 

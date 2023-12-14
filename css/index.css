@@ -22,17 +22,9 @@
 }
 
 img {
-    border: 1px solid black;
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.577);
+    border: 1px solid #1f1f1f;
+    box-shadow: 0 8px 12px 0 rgba(31, 31, 31, 0.577);
 }
-
-.svg {
-    border: 0;
-    box-shadow: none;
-    width: 100%;
-    height: 1%;
-}
-
 
 .secondImage img, .firstImage img {
     max-width: 100%; /* Ensure images don't exceed their container */
@@ -58,26 +50,87 @@ img {
     flex-wrap: wrap;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.509);
-    transition: transform 0.3s ease;
+    box-shadow: 0 8px 12px 0 rgba(31, 31, 31, 0.509);
+    
     text-decoration: none;
-    border: 1px solid black;
+    border: 1px solid #1f1f1f;
 
+    transition: transform 0.3s ease;
+
+    animation: pulse 2s infinite;
 }
 
-.projects-button p {
+.projects-button h1 {
     margin: 0 auto;
     text-align: center;
 
-    color: black;
+    color: #1f1f1f;
     font-size: 30px;
-    
+    font-weight: 500;
 }
 
-.projects-button:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
+
+  /* Apply animation to button on hover */
+.projects-button:hover {
+    cursor: cursor;
+}
+
+
+.aboutMeSection {
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+} 
+
+.imgMe {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-content: center;
+}
+
+.imgMe img {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+
+    box-shadow: 0 8px 12px 0 rgba(31, 31, 31, 0.509);
+    border: 1px solid #1f1f1f;
+}
+.aboutMeDescription {
+    width: 100%;
+
+    display: flex;
+    align-content: center;
+}
+
+.aboutMeSection h2, .aboutMeSection p  {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0px 20px 30px;
+}
+
+
+.svg {
+    border: 0;
+    box-shadow: none;
+    width: 100%;
+    height: 1%;
+}
+
 
 .main-container {
     width: 80%;
@@ -94,7 +147,7 @@ img {
 }
     
     .flex-container > div {
-    color: black;
+    color: #1f1f1f;
     
     margin: 10px;
     

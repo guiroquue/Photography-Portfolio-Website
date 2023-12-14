@@ -1,21 +1,17 @@
-window.addEventListener('resize', function() {
+function handleResize() {
     const windowWidth = window.innerWidth;
-
     const headerLinks = document.getElementById('headerLinks');
-    const disapearingImages = document.getElementById("gone");
+    const hamburgerMenu = document.getElementById('hamburgerMenu');
 
     if (windowWidth <= 1200) {
         headerLinks.style.display = 'none';
         hamburgerMenu.style.display = 'block';
-
     } else {
-        disapearingImages.style.display = "block";
         headerLinks.style.display = 'block';
         headerLinks.style.position = 'static';
         hamburgerMenu.style.display = 'none';
-
     }
-});
+}
 
 // Select all images with a specific class
 const images = document.querySelectorAll('.secondDisplayImages');
@@ -45,10 +41,6 @@ function toggleImages() {
         }
     });
 }
-
-// Call toggleImages() initially and add event listener for window resize
-toggleImages(); // To set visibility initially based on window width
-window.addEventListener('resize', toggleImages); // To handle changes on window resize
 
 
 function toggleMenu() {
@@ -83,5 +75,12 @@ function toggleMenu() {
     }
 }
 
+// Call the function when the window is resized
+window.addEventListener('resize', handleResize);
 
-window.dispatchEvent(new Event('resize'));
+// Call the function once when the page initially loads
+window.addEventListener('load', handleResize);
+
+// Call toggleImages() initially and add event listener for window resize
+toggleImages(); // To set visibility initially based on window width
+window.addEventListener('resize', toggleImages); // To handle changes on window resize
