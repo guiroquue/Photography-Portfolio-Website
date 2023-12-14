@@ -18,7 +18,8 @@ window.addEventListener('resize', function() {
 });
 
 // Select all images with a specific class
-const images = document.querySelectorAll('.responsive-image');
+const images = document.querySelectorAll('.secondDisplayImages');
+const images2 = document.querySelectorAll('.firstDisplayImages');
 
 function toggleImages() {
     // Check window width
@@ -33,6 +34,14 @@ function toggleImages() {
             image.style.display = 'none'; // Hide images
         } else {
             image.style.display = 'block'; // Show images
+        }
+    });
+
+    images2.forEach(image => {
+        if (windowWidth <= thresholdWidth) {
+            image.style.display = 'block'; // Hide images
+        } else {
+            image.style.display = 'none'; // Show images
         }
     });
 }

@@ -1,18 +1,23 @@
-.image-container {
-    margin: 50px -25% 250px -29%;
+.secondImageContainer, .firstImageContainer {
+    margin: 50px 0px 0px 0px;
     position: relative;
-    width: 140%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
 
-.image {
-    flex: 0 0 calc(12.5% - 10px); /* Adjust width for 3 images with some spacing */
-    margin-top: 100px; /* Space between the images and header */
+.secondImage, .firstImage {
+    flex: 0 0 calc(14.2% - 10px); /* Adjust width for 3 images with some spacing */
+    margin-top: 10px; /* Space between the images and header */
     text-align: center;
     transition: transform 0.3s ease;
+    
+}
+
+.firstImage {
+    flex: 0 0 calc(33.3% - 10px); /* Adjust width for 3 images with some spacing */
     
 }
 
@@ -29,7 +34,7 @@ img {
 }
 
 
-.image img {
+.secondImage img, .firstImage img {
     max-width: 100%; /* Ensure images don't exceed their container */
     height: auto;
 }
@@ -47,7 +52,7 @@ img {
 .projects-button {
     width: 70%;
     height: 100px;
-    
+    margin: 150px auto 120px;
 
     display: flex;
     flex-wrap: wrap;

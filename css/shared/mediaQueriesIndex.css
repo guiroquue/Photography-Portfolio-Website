@@ -9,14 +9,11 @@
         float: none;
     }
 
-    .image-container {
-        width: 250%;
+    .firstImageContainer  {
+        width: 100%;
         font-size: 15px;
-
-        margin: 50px -25% 50px -91%;
     }
-    .image {
-        flex: 0 0 calc(12.5% - 10px); 
+    .firstImage {
         margin-top: 20px; 
     }
 
@@ -29,6 +26,7 @@
     }
 
     .projects-button {
+        margin: 50px auto 80px;
         height: 80px;
     }
     
@@ -52,8 +50,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .image-container {
-        margin: 50px -25% 20px -91%;
+    .firstImageContainer {
         font-size: 10px;
     }
 
@@ -66,7 +63,7 @@
     }
 
     .projects-button {
-        margin: 50px auto 80px;
+        margin-top: -20px;
         height: 60px;
     }
     
