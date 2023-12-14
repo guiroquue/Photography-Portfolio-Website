@@ -91,7 +91,7 @@ img {
     width: 100%;
     height: auto;
     margin-top: 150px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 } 
 
 .imgMe {
@@ -103,7 +103,7 @@ img {
 }
 
 .imgMe img {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
     height: auto;
 
@@ -118,7 +118,7 @@ img {
 }
 
 .aboutMeSection h2, .aboutMeSection p  {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
     padding: 30px 0px 20px 30px;
 }
