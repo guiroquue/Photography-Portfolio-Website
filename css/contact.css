@@ -8,11 +8,18 @@
     margin-bottom: 100px;
 }
 
+.pageContent {
+    margin-bottom: 200px;
+}
+
 .description {
     margin: 0 auto;
     width: 50%;
 }
 
+h1{
+    font-size: 25px;
+}
 
 a,p {
     font-size: 20px;

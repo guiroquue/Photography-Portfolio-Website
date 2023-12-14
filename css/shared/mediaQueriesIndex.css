@@ -3,9 +3,6 @@
         padding: 10px 10px;
         
     }
-
-    
-
     
     .header-right a {
         display: block;
@@ -18,16 +15,16 @@
 
         margin: 50px -25% 50px -91%;
     }
-    .image, .imageSides {
+    .image {
         flex: 0 0 calc(12.5% - 10px); 
         margin-top: 20px; 
     }
 
-    .down{
+    #down{
         top: 40px;
     }
     
-    .up {
+    #up {
         bottom: 15px;
     }
 
@@ -36,7 +33,7 @@
     }
     
     .projects-button p {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .main-container {
@@ -55,26 +52,26 @@
 }
 
 @media only screen and (max-width: 768px) {
-
     .image-container {
-        margin: 50px -25% 30px -91%;
+        margin: 50px -25% 20px -91%;
         font-size: 10px;
     }
 
-    .down{
+    #down{
         top: 20px;
     }
     
-    .up {
+    #up {
         bottom: 10px;
     }
 
     .projects-button {
+        margin: 50px auto 80px;
         height: 60px;
     }
     
     .projects-button p {
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .main-container {
@@ -96,7 +93,6 @@
     .description {
         width: 80%;
     }
-    
     
     a,p {
         font-size: 15px;

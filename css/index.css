@@ -8,7 +8,7 @@
     justify-content: space-around;
 }
 
-.image, .imageSides {
+.image {
     flex: 0 0 calc(12.5% - 10px); /* Adjust width for 3 images with some spacing */
     margin-top: 100px; /* Space between the images and header */
     text-align: center;
@@ -29,26 +29,25 @@ img {
 }
 
 
-.image img, .imageSides img {
+.image img {
     max-width: 100%; /* Ensure images don't exceed their container */
     height: auto;
 }
 
-.down{
+#down{
     position: relative;
     top: 80px; /* Adjust the value for the desired vertical position */
 }
 
-.up {
+#up {
     position: relative;
     bottom: 30px; /* Adjust the value for the desired vertical position */
 }
 
-
 .projects-button {
-    width: 60%;
+    width: 70%;
     height: 100px;
-    margin: 100px auto 150px;
+    
 
     display: flex;
     flex-wrap: wrap;
@@ -69,7 +68,6 @@ img {
     font-size: 30px;
     
 }
-
 
 .projects-button:hover {
     transform: scale(1.1);

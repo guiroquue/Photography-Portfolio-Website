@@ -1,4 +1,4 @@
-h1, h2 {
+h1, p {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,6 +6,10 @@ h1, h2 {
     
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+p {
+    font-size: 30px;
 }
 
 .carousel-container {
@@ -25,7 +29,7 @@ h1, h2 {
     flex: 0 0 100%;
 }
 
-img {
+.carousel img {
     width: 50%;
     height: auto;
     margin: 0 auto;
@@ -69,39 +73,4 @@ button.prev {
 
 button.next {
     right: 10px;
-}
-
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 50px;
-}
-
-.content {
-    display: flex;
-    margin: 0 auto;
-    align-items: center; /* Vertically center the items */
-    width: 80%;
-}
-
-.text-box {
-    font-size: 10px;
-    flex: 1;
-    padding: 5px;
-}
-
-.image-box {
-    flex: 1;
-}
-
-.image-box img {
-    width: 60%;
-    height: auto;
-}
-
-footer {
-    margin-top: 200px;
 }
