@@ -84,3 +84,5 @@ window.addEventListener('load', handleResize);
 // Call toggleImages() initially and add event listener for window resize
 toggleImages(); // To set visibility initially based on window width
 window.addEventListener('resize', toggleImages); // To handle changes on window resize
+
+

@@ -75,3 +75,31 @@ button.prev {
 button.next {
     right: 10px;
 }
+
+
+/* Adjust styles as needed */
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 200px;
+}
+
+.column img {
+    border-radius: 3px;
+    display: block;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease-in-out;
+}

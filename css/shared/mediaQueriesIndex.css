@@ -46,6 +46,10 @@
         width: 80%;
     }
 
+    .artist-cards {
+        width: 80%;
+    }
+
     .main-container {
         width: 100%;
         margin: 70px auto 80px 0;
@@ -103,6 +107,22 @@
     
     .description {
         width: 80%;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .artist-cards {
+        width: 100%;
+    } 
+    
+    .artist-details h3 {
+        font-size: 15px;
+    } 
+    
+    .artist-details p {
+        font-size: 13px;
     }
     
     a,p {
