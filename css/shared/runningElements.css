@@ -9,8 +9,15 @@ body {
     height: 100%;
     font-family: "Kalnia", sans-serif;
     color: #1f1f1f;
-    background-color: #e5e9e8;
+
+    background: #e5e9e8;
+
+    background: linear-gradient(225deg, #e5e9e8 12%, #d1d5d4 40%, #dcdede 60%, #ececec 100%);
+background: -moz-linear-gradient(225deg, #e5e9e8 12%, #d1d5d4 40%, #dcdede 60%, #ececec 100%);
+background: -webkit-linear-gradient(225deg, #e5e9e8 12%, #d1d5d4 40%, #dcdede 60%, #ececec 100%);
+
 }
+
 
 .header {
     overflow: hidden;
@@ -66,7 +73,13 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #e5e9e8;
+
+    background: #e5e9e8;
+
+    background: linear-gradient(225deg, #e5e9e8 12%, #d1d5d4 40%, #dcdede 60%, #ececec 100%);
+background: -moz-linear-gradient(225deg, #e5e9e8 12%, #d1d5d4 40%, #dcdede 60%, #ececec 100%);
+background: -webkit-linear-gradient(225deg, #e5e9e8 12%, #d1d5d4 40%, #dcdede 60%, #ececec 100%);
+
     z-index: 3;
 }
 

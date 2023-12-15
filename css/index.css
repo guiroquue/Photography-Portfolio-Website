@@ -1,5 +1,5 @@
 .secondImageContainer, .firstImageContainer {
-    margin: 50px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
     position: relative;
     width: 100%;
     display: flex;
@@ -10,14 +10,14 @@
 
 .secondImage, .firstImage {
     flex: 0 0 calc(14.2% - 10px); /* Adjust width for 3 images with some spacing */
-    margin-top: 10px; /* Space between the images and header */
+    margin-top: 50px; /* Space between the images and header */
     text-align: center;
     transition: transform 0.3s ease;
     
 }
 
 .firstImage {
-    flex: 0 0 calc(33.3% - 10px); /* Adjust width for 3 images with some spacing */
+    flex: 0 0 calc(50% - 10px); /* Adjust width for 3 images with some spacing */
     
 }
 
@@ -49,11 +49,18 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    border-radius: 10px;
-    box-shadow: 0 8px 12px 0 rgba(31, 31, 31, 0.509);
+    border-radius: 3px;
+    box-shadow: 0 0px 12px 2px rgba(107, 107, 107, 0.664);
     
     text-decoration: none;
     border: 1px solid #1f1f1f;
+
+    background: #e5e9e8;
+
+    background: linear-gradient(225deg, #e5e9e8 12%, #d1d5d4 40%, #dcdede 60%, #ececec 100%);
+background: -moz-linear-gradient(225deg, #e5e9e8 12%, #d1d5d4 40%, #dcdede 60%, #ececec 100%);
+background: -webkit-linear-gradient(225deg, #e5e9e8 12%, #d1d5d4 40%, #dcdede 60%, #ececec 100%);
+
 
     transition: transform 0.3s ease;
 
@@ -90,7 +97,7 @@ img {
 .aboutMeSection {
     width: 100%;
     height: auto;
-    margin-top: 150px;
+    margin-top: 50px;
     margin-bottom: 150px;
 } 
 
@@ -132,67 +139,32 @@ img {
 }
 
 
-.artists-section {
-    text-align: center;
-    padding: 40px 0;
+
+.quotesContainer {
+    width: 100%;
+    margin-top: 150px;
+    text-align: center; /* Center the text horizontally */
 }
 
-.section-title {
-    font-size: 28px;
-    margin-bottom: 20px;
+.quotesContainer h2 {
+    display: inline-block; /* Allow the h2 to take the width of its content */
 }
 
-.artist-cards {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    width: 50%;
-    margin-bottom: 80px;
+
+.heart {
+    color: rgba(210, 210, 210, 0.689); 
+    transform: rotate(-20deg);
 }
 
-.artist-card {
-    margin: 0 10px;
-    border: 1px solid rgba(31, 31, 31);
-    box-shadow: 0 8px 12px 0 rgba(31, 31, 31, 0.509);
+.heartOther {
+    color: rgba(210, 210, 210, 0.689);
+    transform: rotate(15deg);
 }
-
-.image-container {
-    width: 80%;
-    height: auto;
-    overflow: hidden;
-    margin: 0 auto;
-    
-}
-
-.image-container img {
-    width: 90%;
-    height: 100%;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
-    box-shadow: 0 8px 12px 0 rgba(31, 31, 31, 0);
-}
-
-.artist-details {
-    text-align: left;
-    margin-top: 15px;
-    margin-left: 10px;
-}
-
-.artist-details h3 {
-    margin-bottom: 5px;
-    font-size: 18px;
-}
-
-/* Adjust styles as needed */
-
-
 
 
 .main-container {
     width: 80%;
-    margin: 150px auto 200px auto;
+    margin: 50px auto 0 auto;
     height: 100%;
     display: flex;
     flex-direction: column;
