@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/shared/runningElements.css">
+
+    <link rel="stylesheet" href="css/viewProjects.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/other/icon.ico" />
+    <title>View Project</title>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="logo">Eoqru Photos</a>
+        <div class="header-right" id="headerLinks">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="collaborations.html">collaborations</a>
+            <a href="https://instagram.com/qrupics?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">Instagram</a>
+            <a href="about.html">About</a>
+        </div>
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <div class="hamburger-icon" id="hamburgerIcon" onclick="toggleMenu()">&#9776;</div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <h1 id="title"></h1>
+
+
+    <div class="row">
+        <div class="grid-container">
+            
+        </div>
+    </div>
+
+
+    <footer>
+        <p>© 2023 Guilherme Roque. All Rights Reserved.
+    </footer>
+
+    <script src="javascript/resize.js"></script>
+
+
+    <script>
+        function updateImages() {
+            const storedProjectID = localStorage.getItem('projectID');
+            const gridContainer = document.querySelector('.grid-container');
+
+            for (let index = 0; index < 50; index++) {
+                const imagePath = `/assets/images/${storedProjectID}/img (${index + 1}).jpg`;
+                
+                const tempImg = new Image();
+                tempImg.onload = function() {
+                    const img = document.createElement('img');
+                    img.src = imagePath;
+                    img.classList.add(`img-${index + 1}`);
+                    gridContainer.appendChild(img);
+                };
+
+                tempImg.src = imagePath;
+            }
+        }
+
+        window.addEventListener('load', updateImages);
+
+
+        window.addEventListener('load', () => document.title = `Project ${localStorage.getItem('projectID').replace(/\D/g, '')}`);
+
+        
+    </script>
+</body>
+</html>

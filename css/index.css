@@ -1,81 +1,102 @@
-.secondImageContainer, .firstImageContainer {
-    margin: 20px 0px 0px 0px;
-    position: relative;
+/* Header */
+h1 {
+    margin: 30px auto 50px; /* Combined margin shorthand */
+    width: 80%;
+    font-size: 25px;
+}
+
+/* Headline section */
+.headline {
     width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.title {
+    width: 80%;
+}
+
+.headline p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* Image containers */
+.firstImageContainer,
+.secondImageContainer {
+    width: 100%;
+    margin: 30px 0; /* Simplified margin shorthand */
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
 
-.secondImage, .firstImage {
-    flex: 0 0 calc(14.2% - 10px); /* Adjust width for 3 images with some spacing */
-    margin-top: 50px; /* Space between the images and header */
-    text-align: center;
+/* Images */
+.secondImage,
+.firstImage {
+    flex: 0 0 calc(14.2% - 10px); /* Width calculation for 3 images with spacing */
+    margin-top: 50px; /* Space between images and header */
     transition: transform 0.3s ease;
-    
 }
 
 .firstImage {
     flex: 0 0 calc(50% - 10px); /* Adjust width for 3 images with some spacing */
-    
+    margin-top: 20px; /* Reduced margin-top for the first image */
 }
 
+/* Styling for all images */
 img {
     border: 1px solid #1f1f1f;
     box-shadow: 0 8px 12px 0 rgba(31, 31, 31, 0.577);
 }
 
-.secondImage img, .firstImage img {
+/* Image specific styles */
+.secondImage img,
+.firstImage img {
     max-width: 100%; /* Ensure images don't exceed their container */
     height: auto;
 }
 
-#down{
+/* Element positioning */
+#down,
+#up {
     position: relative;
-    top: 80px; /* Adjust the value for the desired vertical position */
+}
+
+#down {
+    top: 20px; /* Adjust the value for the desired vertical position */
 }
 
 #up {
-    position: relative;
-    bottom: 30px; /* Adjust the value for the desired vertical position */
+    bottom: 10px; /* Adjust the value for the desired vertical position */
 }
 
+/* Styling for project button */
 .projects-button {
     width: 70%;
-    height: 100px;
-    margin: 150px auto 120px;
-
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    border-radius: 3px;
-    box-shadow: 0 0px 12px 2px rgba(107, 107, 107, 0.664);
-    
-    text-decoration: none;
-    border: 1px solid #1f1f1f;
-
-    background: #e5e9e8;
-
-    background: linear-gradient(225deg, #e5e9e8 12%, #d1d5d4 40%, #dcdede 60%, #ececec 100%);
-background: -moz-linear-gradient(225deg, #e5e9e8 12%, #d1d5d4 40%, #dcdede 60%, #ececec 100%);
-background: -webkit-linear-gradient(225deg, #e5e9e8 12%, #d1d5d4 40%, #dcdede 60%, #ececec 100%);
-
-
+    margin: 0 auto 100px; /* Combined margin shorthand */
+    margin-top: -20px; /* Overriding previous margin-top */
+    height: 60px;
     transition: transform 0.3s ease;
-
-    animation: pulse 2s infinite;
+    animation: pulse 2s infinite; /* Applying animation */
 }
 
+/* Project button text */
 .projects-button h1 {
-    margin: 0 auto;
-    text-align: center;
-
-    color: #1f1f1f;
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 17px;
 }
 
+/* General text styles */
+a, p {
+    font-size: 15px;
+}
+
+/* Animation for project button */
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -88,100 +109,127 @@ background: -webkit-linear-gradient(225deg, #e5e9e8 12%, #d1d5d4 40%, #dcdede 60
     }
 }
 
-  /* Apply animation to button on hover */
+/* Hover effect on project button */
 .projects-button:hover {
-    cursor: cursor;
+    cursor: pointer; /* Fixed typo: Changed 'cursor: cursor;' to 'cursor: pointer;' */
 }
 
+/* Styling for links */
+.link {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    margin: 0 auto;
+}
 
+.link span {
+    position: relative;
+}
+
+/* Overlay image styling */
+.overlay-image {
+    position: absolute;
+    bottom: -10px; /* Distance from the bottom */
+    right: 10px; /* Distance from the right */
+    width: 30px; /* Width of the overlay image */
+    border: none;
+    box-shadow: none;
+}
+
+/* About Me section */
 .aboutMeSection {
-    width: 100%;
-    height: auto;
-    margin-top: 50px;
-    margin-bottom: 150px;
-} 
+    width: 20%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
 
 .imgMe {
     width: 100%;
-    height: auto;
-
-    display: flex;
-    align-content: center;
+    float: right;
 }
 
+/* Image within About Me section */
 .imgMe img {
-    width: 50%;
-    margin: 0 auto;
-    height: auto;
-
+    border-radius: 50%;
+    width: 80%;
     box-shadow: 0 8px 12px 0 rgba(31, 31, 31, 0.509);
     border: 1px solid #1f1f1f;
 }
-.aboutMeDescription {
-    width: 100%;
 
-    display: flex;
-    align-content: center;
-}
-
-.aboutMeSection h2, .aboutMeSection p  {
-    width: 50%;
-    margin: 0 auto;
-    padding: 30px 0px 20px 30px;
-}
-
-
-.svg {
-    border: 0;
-    box-shadow: none;
-    width: 100%;
-    height: 1%;
-}
-
-
-
-.quotesContainer {
-    width: 100%;
-    margin-top: 150px;
-    text-align: center; /* Center the text horizontally */
-}
-
-.quotesContainer h2 {
-    display: inline-block; /* Allow the h2 to take the width of its content */
-}
-
-
-.heart {
-    color: rgba(210, 210, 210, 0.689); 
-    transform: rotate(-20deg);
-}
-
-.heartOther {
-    color: rgba(210, 210, 210, 0.689);
-    transform: rotate(15deg);
-}
-
-
-.main-container {
+/* Styling for text within About Me section */
+.aboutMeSection h2,
+.aboutMeSection p {
     width: 80%;
-    margin: 50px auto 0 auto;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
-.flex-container {
-    width: 100%;
-    display: flex;
-    align-items: stretch;
+/* Quotes section */
+.quotesSection {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 25px;
 }
-    
-    .flex-container > div {
+
+/* Individual quote container */
+.quoteContainer {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 30px;
+    padding: 10px;
+    height: 130px;
+    border: 1px solid rgba(31, 31, 31, 0.509);
+    border-radius: 20px;
+    box-shadow: 0 8px 12px 0 rgba(31, 31, 31, 0.212);
+}
+
+/* Quote sign */
+.quoteSign {
+    margin-top: -50px;
+}
+
+/* Styling for quotes */
+.quote {
+    margin-top: -90px;
+    margin-left: 30px;
+    padding-right: 20px;
+}
+
+/* Styling for end quote */
+.endQuote {
+    font-size: 80px;
+    float: right;
+    margin-top: 30px;
+}
+
+/* Wondering section */
+.wonderingSection {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Headline within Wondering section */
+.wonderingSection h1 {
+    float: left;
+    width: 100%;
+    margin-top: 100px;
+}
+
+/* Styling for links within Wondering section */
+.wonderingSection a {
     color: #1f1f1f;
-    
-    margin: 10px;
-    
+    text-decoration: none;
+}
+
+/* Mini headline section */
+.miniHeadline {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
     text-align: center;
-    line-height: 20px;
-    font-size: 20px;
+}
+
+/* Styling for text within Mini headline section */
+.miniHeadline p {
+    font-size: 25px;
 }

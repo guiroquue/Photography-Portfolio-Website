@@ -5,75 +5,11 @@ h1, p {
 
     
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
 }
 
 p {
     font-size: 30px;
-}
-
-.carousel-container {
-    position: relative;
-    max-width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-    margin-bottom: 200px;
-}
-
-.carousel {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.slide {
-    flex: 0 0 100%;
-}
-
-
-.carousel img {
-    width: 50%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-    border: 1px solid #1f1f1f;
-}
-
-.indicators {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.indicator {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #bbb;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-.indicator.active {
-    background-color: #333;
-}
-
-button.prev,
-button.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-button.prev {
-    left: 10px;
-}
-
-button.next {
-    right: 10px;
 }
 
 
@@ -81,7 +17,8 @@ button.next {
 .row {
     display: flex;
     justify-content: center;
-    margin: 50px;
+    margin: 5px;
+    margin-top: 100px;
 }
 
 .grid-container {
@@ -89,77 +26,39 @@ button.next {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 15px;
 }
 
 .column {
     flex: 25%;
-    max-width: 200px;
+    max-width: 100%;
 }
 
 .column img {
-    border-radius: 3px;
+    border-radius: 2px;
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    width: 100%;
+    border: 1px solid #1f1f1f;
     transition: transform 0.3s ease-in-out;
 }
 
 
-.artists-section {
-    text-align: center;
-    padding: 40px 0;
+/* Media Queries */
+@media screen and (min-width: 720px) {
+    .column {
+        max-width: 60%;
+    }
 }
 
-.section-title {
-    font-size: 28px;
-    margin-bottom: 20px;
+@media screen and (min-width: 1200px) {
+    .column {
+        max-width: 40%;
+    }
 }
 
-.artist-cards {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    width: 50%;
-    margin-bottom: 80px;
-}
-
-.artist-card {
-    margin: 0 10px;
-    border: 1px solid rgba(31, 31, 31);
-    box-shadow: 0 8px 12px 0 rgba(31, 31, 31, 0.509);
-}
-
-.image-container {
-    width: 80%;
-    height: auto;
-    overflow: hidden;
-    margin: 0 auto;
-    
-}
-
-.image-container img {
-    width: 90%;
-    height: 100%;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
-    box-shadow: 0 8px 12px 0 rgba(31, 31, 31, 0);
-}
-
-.artist-details {
-    text-align: left;
-    float: left;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.artist-details h3 {
-    margin-bottom: 0px;
-    font-size: 18px;
-}
-
-.artist-details p {
-    margin-top: 5px;
-    font-size: 18px;
+@media screen and (min-width: 1700px) {
+    .column {
+        max-width: 30%;
+    }
 }

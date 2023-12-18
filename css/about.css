@@ -1,0 +1,68 @@
+/* About Me Section */
+.aboutMeSection {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imgMe {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgMe img {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 8px 12px 0 rgba(31, 31, 31, 0.509);
+    border: 1px solid #1f1f1f;
+}
+
+/* About Me Description */
+.aboutMeDescription {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMeSection h2,
+.aboutMeSection p {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0 20px 30px;
+}
+
+/* Page Content */
+.pageContent, h1 {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: left;
+    font-size: 25px;
+}
+
+.pageContent {
+    margin-bottom: 150px;
+}
+
+/* Description */
+.description {
+    margin: 0 auto;
+    margin-bottom: 200px;
+    width: 80%;
+}
+
+/* Text Styles */
+a, p {
+    font-size: 15px;
+    color: #1f1f1f;
+}

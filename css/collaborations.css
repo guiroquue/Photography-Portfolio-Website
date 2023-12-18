@@ -1,0 +1,87 @@
+.section-title {
+    font-size: 30px;
+    margin: 70px auto 20px;
+    text-align: center;
+}
+
+
+
+/* Overlay image styling */
+.overlay-image {
+    position: absolute;
+    bottom: -145px; /* Distance from the bottom */
+    right: 10px; /* Distance from the right */
+    width: 30px; /* Width of the overlay image */
+    border: none;
+    box-shadow: none;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .first-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: calc(50% - 10px); /* Adjusted width for gap */
+    text-align: left;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #1f1f1f;
+    box-shadow: 0 8px 12px 0 rgba(31, 31, 31, 0.509);
+    margin: 0 5px 20px;
+    font-size: 13px;
+  }
+
+  .card p{
+    float: left;
+    font-size: 15px;
+  }
+  
+  
+  .card img {
+    width: 80%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .second-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #1f1f1f;
+    box-shadow: 0 8px 12px 0 rgba(31, 31, 31, 0.509);
+    margin-bottom: 150px;
+  }
+  
+  .left-image {
+    width: 40%;
+    border-radius: 50%;
+    margin-right: 20px;
+    display: block;
+  }
+  
+  .text-content {
+    float: left;
+    font-size: 20px;
+    width: 50%;
+  }
+
+  .text-content p {
+    float: left;
+  }
+  
+  .spacer {
+    height: 10px;
+  }
+  

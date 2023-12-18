@@ -1,29 +1,24 @@
+/* Font */
 @font-face {
     font-family: 'Kalnia';
-    src: url('/fonts/Kalnia-VariableFont_wdth\,wght.ttf') format('woff2')
+    src: url('/assets/fonts/Kalnia-VariableFont_wdth\,wght.ttf') format('woff2');
 }
 
-
-body { 
-    margin: 0;
+/* Body */
+body {
+    margin: 0 auto;
+    width: 100%;
     height: 100%;
     font-family: "Kalnia", sans-serif;
     color: #1f1f1f;
-
     background: #e5e9e8;
-
-    background: linear-gradient(225deg, #e5e9e8 12%, #d1d5d4 40%, #dcdede 60%, #ececec 100%);
-background: -moz-linear-gradient(225deg, #e5e9e8 12%, #d1d5d4 40%, #dcdede 60%, #ececec 100%);
-background: -webkit-linear-gradient(225deg, #e5e9e8 12%, #d1d5d4 40%, #dcdede 60%, #ececec 100%);
-
 }
 
-
+/* Header */
 .header {
     overflow: hidden;
-    padding: 20px 10px;
+    padding: 10px;
     border-bottom: 1px solid #1f1f1f;
-
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -34,9 +29,11 @@ background: -webkit-linear-gradient(225deg, #e5e9e8 12%, #d1d5d4 40%, #dcdede 60
     text-align: center;
     padding: 15px;
     text-decoration: none;
-    font-size: 25px; 
+    font-size: 25px;
     line-height: 25px;
     font-weight: 500;
+    display: block;
+    float: none;
 }
 
 .header a.logo {
@@ -53,19 +50,22 @@ background: -webkit-linear-gradient(225deg, #e5e9e8 12%, #d1d5d4 40%, #dcdede 60
     transition: transform 0.3s ease;
 }
 
-.header-right a:hover, #hamburgerMenu:hover {
+.header-right a:hover,
+#hamburgerMenu:hover {
     transform: scale(1.2);
 }
 
-#hamburgerMenu{
+#hamburgerMenu {
     position: relative;
     cursor: pointer;
     font-size: 30px;
     float: right;
+    display: none;
     z-index: 4;
     transition: transform 0.3s ease;
 }
 
+/* Overlay */
 .overlay {
     display: none;
     position: fixed;
@@ -73,26 +73,90 @@ background: -webkit-linear-gradient(225deg, #e5e9e8 12%, #d1d5d4 40%, #dcdede 60
     left: 0;
     width: 100%;
     height: 100%;
-
-    background: #e5e9e8;
-
     background: linear-gradient(225deg, #e5e9e8 12%, #d1d5d4 40%, #dcdede 60%, #ececec 100%);
-background: -moz-linear-gradient(225deg, #e5e9e8 12%, #d1d5d4 40%, #dcdede 60%, #ececec 100%);
-background: -webkit-linear-gradient(225deg, #e5e9e8 12%, #d1d5d4 40%, #dcdede 60%, #ececec 100%);
-
     z-index: 3;
 }
 
+/* SVG */
+.svg {
+    border: 0;
+    box-shadow: none;
+    width: 100%;
+    height: 1%;
+    margin-bottom: 2em;
+}
+
+/* Footer */
 footer {
     text-align: center;
     border-top: 1px solid #1f1f1f;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     height: 80px;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
-    margin: 0 10px 10px 10px;
-    font-size: 15px;
+    margin: 0 0px 10px 0px;
+    font-size: 13px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 720px) {
+    .body {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .header-right a {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .overlay-image {
+        bottom: 95px;
+    }
+
+    .svg {
+        margin-left: -13%;
+        width: 125.5%;
+    }
+
+    a,
+    p {
+        font-size: 20px;
+    }
+
+    .projects-button span {
+        font-size: 30px;
+    }
+
+    .miniHeadline p {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .body {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .svg {
+        margin-left: -33.5%;
+        width: 166.8%;
+    }
+
+    .artist-cards {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .body {
+        margin: 0 auto;
+        width: 50%;
+    }
 }

@@ -1,0 +1,41 @@
+.row {
+    display: flex;
+    margin: 5px;
+    margin-top: 100px;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 70%;
+}
+
+
+.grid-container  img {
+    border-radius: 2px;
+    display: block;
+    margin-bottom: 30px;
+    width: 100%;
+    border: 1px solid #1f1f1f;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 720px) {
+    .grid-container {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .grid-container {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .grid-container {
+        width: 40%;
+    }
+}
