@@ -8,6 +8,20 @@
     <meta name="description" content="Hey I'm Gui, and I take portraits. Explore my diverse gallery of images, where I like to capture emotions with my camera. And if you feel like you deserve to be seen more clearly, you can contact me just as easily.">
     <meta name="keywords" content="photos, photgraphy, photoshoots, portraits, emotions, camera">
 
+    
+    <link rel="stylesheet" href="css/loading.css">
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // This code will run when the initial HTML document is loaded
+            
+            setTimeout(function() {
+                document.querySelector('.loading-screen').style.display = 'none';
+            }, 2000);
+        });
+    </script>
+
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/shared/runningElements.css">
 
@@ -17,6 +31,9 @@
     <title>Eoqru Photos</title>
 </head>
 <body>
+    <div class="loading-screen">
+            <div style="font-size: 30px;">Loading...</div>
+    </div>
     
 
         <div class="header">
@@ -38,12 +55,12 @@
     <div class="body">
         <div class="headline">
             <div class="title">
-                <h1>Gui Roque <br> <p>Professinal photographer</p></h1>
+                <h1>Gui Roque <br> <p>Professional photographer</p></h1>
             </div>
             
             <div class="aboutMeSection">
                 <div class="imgMe">
-                    <img src="assets/images/imgMe.JPG" alt="Person Image">
+                    <img src="assets//images/imgMe.JPG" alt="Person Image">
                 </div>
             </div>
         </div>
@@ -51,11 +68,11 @@
         <div class="firstImageContainer" >
             <div class="firstImage"  id="down"> 
                 <img src="assets/images/project (1)/img (1).JPG"  alt="Image 2" onclick="sendValue('project (1)')">
-                <img src="assets/images/other/pointer.svg" alt="Image A" class="overlay-image">
+                <img src="assets//images/other/pointer.svg" alt="Image A" class="overlay-image">
             </div>
             <div class="firstImage"  id="up">
                 <img src="assets/images/project (2)/img (1).JPG"  alt="Image 1" onclick="sendValue('project (2)')">
-                <img src="assets/images/other/pointer.svg" alt="Image A" class="overlay-image">
+                <img src="assets//images/other/pointer.svg" alt="Image A" class="overlay-image">
             </div>
         </div>
         
@@ -68,8 +85,8 @@
         </div> 
 
         <div class="quotesSection">
-            <h2>If you're not certain if you'll be happy...</h2>
-            <p style="margin-bottom: 50px;">Check out what the poeple I have worked with have said about my work.</p>
+            <h2>If you're not certain you'll be happy...</h2>
+            <p style="margin-bottom: 50px;">Check out what the people I have worked with have said about my work.</p>
             
             <div class="quoteContainer" >
                 <div class="quoteSign">
@@ -130,11 +147,11 @@
         <div class="firstImageContainer" >
             <div class="firstImage"  id="up">
                 <img src="assets/images/project (3)/img (1).JPG"  alt="Image 1" onclick="sendValue('project (3)')">
-                <img src="assets/images/other/pointer.svg" alt="Image A" class="overlay-image">
+                <img src="assets//images/other/pointer.svg" alt="Image A" class="overlay-image">
             </div>
             <div class="firstImage"  id="down"> 
                 <img src="assets/images/project (4)/img (1).JPG"  alt="Image 2" onclick="sendValue('project (4)')">
-                <img src="assets/images/other/pointer.svg" alt="Image A" class="overlay-image">
+                <img src="assets//images/other/pointer.svg" alt="Image A" class="overlay-image">
             </div>
         </div>
         
@@ -162,12 +179,12 @@
         <div class="firstImageContainer" >
             <div class="firstImage"  id="down"> 
                 <img src="assets/images/project (5)/img (1).JPG"  alt="Image 2" onclick="sendValue('project (5)')">
-                <img src="assets/images/other/pointer.svg" alt="Image A" class="overlay-image">
+                <img src="assets//images/other/pointer.svg" alt="Image A" class="overlay-image">
                 
             </div>
             <div class="firstImage"  id="up">
                 <img src="assets/images/project (6)/img (1).JPG"  alt="Image 1" onclick="sendValue('project (6)')">
-                <img src="assets/images/other/pointer.svg" alt="Image A" class="overlay-image">
+                <img src="assets//images/other/pointer.svg" alt="Image A" class="overlay-image">
                 
             </div>
         </div>
