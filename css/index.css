@@ -186,6 +186,7 @@ a, p {
 .quoteSign {
     margin-top: -45px;
     margin-left: 10px;
+    width: 300px;
 }
 
 /* Styling for quotes */
