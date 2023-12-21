@@ -7,26 +7,36 @@ h1 {
 
 /* Headline section */
 .headline {
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    
+    margin: 0 auto;
+    margin-top: 70px;
+    height: 100px;
 }
 
 .title {
-    width: 80%;
+    width: 90%;
 }
 
+.headline h1 {
+    margin-left: 0px;
+    font-weight: 400;
+    font-size: 40px;
+}
 .headline p {
     font-weight: 400;
-    font-size: 18px;
+    margin-top: 5px;
+    margin-left: 50px;
+    font-size: 13px;
 }
 
 /* Image containers */
 .firstImageContainer,
 .secondImageContainer {
     width: 100%;
-    margin: 30px 0; /* Simplified margin shorthand */
+    margin: 70px 0; 
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -74,22 +84,7 @@ img {
     bottom: 10px; /* Adjust the value for the desired vertical position */
 }
 
-/* Styling for project button */
-.projects-button {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    margin: 0 auto 100px; /* Combined margin shorthand */
-    margin-top: -20px; /* Overriding previous margin-top */
-    height: 60px;
-    transition: transform 0.3s ease;
-    animation: pulse 2s infinite; /* Applying animation */
-}
 
-/* Project button text */
-.projects-button h1 {
-    font-size: 17px;
-}
 
 /* General text styles */
 a, p {
@@ -98,21 +93,14 @@ a, p {
 
 /* Animation for project button */
 @keyframes pulse {
-    0% {
+    0%, 100% {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
+        transform: scale(1.2);
     }
 }
 
-/* Hover effect on project button */
-.projects-button:hover {
-    cursor: pointer; /* Fixed typo: Changed 'cursor: cursor;' to 'cursor: pointer;' */
-}
 
 /* Styling for links */
 .link {
@@ -130,7 +118,7 @@ a, p {
 /* Overlay image styling */
 .overlay-image {
     position: absolute;
-    bottom: -10px; /* Distance from the bottom */
+    bottom: -20px; /* Distance from the bottom */
     right: 10px; /* Distance from the right */
     width: 30px; /* Width of the overlay image */
     border: none;
@@ -168,16 +156,27 @@ a, p {
     width: 90%;
     margin: 0 auto;
     line-height: 25px;
+    margin-bottom: 150px;
+}
+
+.quotesSection h2 {
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: 500;
+}
+.quotesSection p {
+    line-height: 25px;
+    font-size: 15px;
 }
 
 /* Individual quote container */
 .quoteContainer {
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     font-size: 30px;
     padding: 10px;
-    height: 130px;
+    height: 100px;
     border: 1px solid rgba(31, 31, 31, 0.509);
     border-radius: 20px;
     box-shadow: 0 8px 12px 0 rgba(31, 31, 31, 0.212);
@@ -185,14 +184,14 @@ a, p {
 
 /* Quote sign */
 .quoteSign {
-    margin-top: -50px;
+    margin-top: -45px;
+    margin-left: 10px;
 }
 
 /* Styling for quotes */
 .quote {
-    margin-top: -90px;
-    margin-left: 30px;
-    padding-right: 20px;
+    margin-top: -10px;
+    padding: 15px;
 }
 
 /* Styling for end quote */
@@ -205,31 +204,45 @@ a, p {
 /* Wondering section */
 .wonderingSection {
     width: 90%;
-    margin: 0 auto;
+    margin: 100px auto;
 }
 
-/* Headline within Wondering section */
-.wonderingSection h1 {
-    float: left;
-    width: 100%;
+.wonderingSection h2 {
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: 500;
     margin-top: 100px;
 }
-
+.wonderingSection p {
+    line-height: 25px;
+    font-size: 15px;
+}
 /* Styling for links within Wondering section */
 .wonderingSection a {
     color: #1f1f1f;
     text-decoration: none;
 }
 
-/* Mini headline section */
-.miniHeadline {
+.buttons {
+    margin: 50px auto 100px auto;
+    width: 80%;
+}
+.buttons button {
     width: 100%;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    text-align: center;
+    height: 55px;
+    margin: 20px auto;
+
+    background: none;
+
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px 0 rgba(31, 31, 31, 0.409);
 }
 
-/* Styling for text within Mini headline section */
-.miniHeadline p {
-    font-size: 25px;
+button a {
+    font-family: "Kalnia", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
 }

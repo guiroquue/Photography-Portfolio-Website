@@ -8,16 +8,17 @@
 
     <link rel="stylesheet" href="css/viewProjects.css">
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/other/icon.ico" />
-    <title>View Project</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/other/whiteLogo.ico" />
+
+    <title>Eoqru Photos</title>
 </head>
 <body>
     <div class="header">
         <a href="index.html" class="logo">Eoqru Photos</a>
         <div class="header-right" id="headerLinks">
             <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="collaborations.html">collaborations</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="collaborations.html">Collaborations</a>
             <a href="https://instagram.com/qrupics?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">Instagram</a>
             <a href="about.html">About</a>
         </div>
@@ -66,10 +67,6 @@
         }
 
         window.addEventListener('load', updateImages);
-
-
-        window.addEventListener('load', () => document.title = `Project ${localStorage.getItem('projectID').replace(/\D/g, '')}`);
-
         
     </script>
 </body>

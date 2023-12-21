@@ -1,19 +1,7 @@
-h1, p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    
-    margin-top: 50px;
-    margin-bottom: 5px;
+.headline {
+    margin-top: 70px;
 }
 
-p {
-    font-size: 30px;
-}
-
-
-/* Adjust styles as needed */
 .row {
     display: flex;
     justify-content: center;
@@ -37,12 +25,11 @@ p {
 .column img {
     border-radius: 2px;
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     width: 100%;
     border: 1px solid #1f1f1f;
     transition: transform 0.3s ease-in-out;
 }
-
 
 /* Media Queries */
 @media screen and (min-width: 720px) {
