@@ -53,12 +53,13 @@
 
             for (let index = 0; index < 50; index++) {
                 const imagePath = `/assets/images/${storedProjectID}/img (${index + 1}).JPG`;
-                
+
                 const tempImg = new Image();
-                tempImg.onload = function() {
+                tempImg.onload = function () {
                     const img = document.createElement('img');
                     img.src = imagePath;
                     img.classList.add(`img-${index + 1}`);
+                    img.setAttribute('loading', 'lazy'); // Add loading="lazy"
                     gridContainer.appendChild(img);
                 };
 
@@ -67,6 +68,7 @@
         }
 
         window.addEventListener('load', updateImages);
+
         
     </script>
 </body>
