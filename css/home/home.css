@@ -1,0 +1,70 @@
+.svg {
+    border: 0;
+    box-shadow: none;
+    width: 100%;
+    height: 1%;
+    margin-top: 30px;
+}
+
+.container {
+    width: 85%;
+    max-width: 700px;
+    margin: 100px auto;
+
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.container a{
+    text-decoration: none;
+    color: black;
+}
+
+.previewContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+    max-width: 1000px;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.imageHolder img {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+.littleUp {
+    margin-top: -30px;
+}
+
+.littleDown {
+    margin-top: 30px;
+}
+
+.quoteCard {
+    border-radius: 10px;
+    margin: 60px auto;
+    height: 120px;
+
+    box-shadow: -1px 14px 23px 2px rgba(0,0,0,0.45);
+    -webkit-box-shadow: -1px 14px 23px 2px rgba(0,0,0,0.45);
+    -moz-box-shadow: -1px 14px 23px 2px rgba(0,0,0,0.45);
+
+    background-color: #F5F5F5;
+    
+}
+
+.quoteCard img {
+    width: 50px;
+    height: auto;
+    margin-top: -50px;
+    margin-left: 20px;
+}
+
+.quoteCard p {
+    padding: 20px;
+    padding-top: 10px;
+    font-size: 18px;
+}

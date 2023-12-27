@@ -1,0 +1,14 @@
+.footer {
+    text-align: center;
+    border-top: 1px solid black;
+    padding: 20px 0;
+    bottom: 100px;
+    margin-top: auto;
+  }
+  
+  /* Optional: Styling for copyright text */
+  .copyright {
+    font-size: 14px;
+    color: black;
+  }
+  

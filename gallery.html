@@ -4,64 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
-    <link rel="stylesheet" href="css/gallery.css">
-    <link rel="stylesheet" href="css/shared/runningElements.css">
+    <link rel="stylesheet" href="/css/shared/header.css">
+    <link rel="stylesheet" href="/css/shared/footer.css">
+    <link rel="stylesheet" href="/css/gallery.css">
 
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/other/whiteLogo.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/other/whiteLogo.ico" />
 
-    <title>Eoqru Photos</title>
+    <title>Gallery</title>
 </head>
 <body>
-    <div class="header">
-        <a href="index.html" class="logo">Eoqru Photos</a>
-        <div class="header-right" id="headerLinks">
-            <a href="index.html">Home</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="collaborations.html">Collaborations</a>
-            <a href="https://www.instagram.com/eoqruphotos?igsh=YzVkODRmOTdmMw==" target="_blank">Instagram</a>
-            <a href="about.html">About</a>
-        </div>
-        <div class="hamburger-menu" id="hamburgerMenu">
-            <div class="hamburger-icon" id="hamburgerIcon" onclick="toggleMenu()">&#9776;</div>
-        </div>
-    </div>
-    <div class="overlay" id="overlay"></div>
-
-    <p class="headline" style="text-align: center; font-size: 20px;">You can view the whole shoot by pressing on the image</p>
-
-    <div class="row">
-        <div class="grid-container">
-            <div class="column">
-                <img src="assets/images/project (2)/img (1).JPG" alt="Image" style="width:100%" onclick="sendValue('project (2)')">
-                <img src="assets/images/project (3)/img (1).JPG" alt="Image" style="width:100%" onclick="sendValue('project (3)')">
-                <img src="assets/images/project (5)/img (1).JPG" alt="Image" style="width:100%" onclick="sendValue('project (5)')" loading="lazy">
-                <img src="assets/images/project (11)/img (1).JPG" alt="Image" style="width:100%" onclick="sendValue('project (11)')" loading="lazy">
-                <img src="assets/images/project (4)/img (1).JPG" alt="Image" style="width:100%" onclick="sendValue('project (4)')" loading="lazy">
-                <img src="assets/images/project (14)/img (1).JPG" alt="Image" style="width:100%" onclick="sendValue('project (14)')" loading="lazy">
-                <img src="assets/images/project (9)/img (1).JPG" alt="Image" style="width:100%" onclick="sendValue('project (9)')" loading="lazy">
-                <img src="assets/images/project (8)/img (1).JPG" alt="Image" style="width:100%" onclick="sendValue('project (8)')" loading="lazy">
-                <img src="assets/images/project (10)/img (1).JPG" alt="Image" style="width:100%" onclick="sendValue('project (10)')" loading="lazy">
-                <img src="assets/images/project (16)/img (1).JPG" alt="Image" style="width:100%" onclick="sendValue('project (16)')" loading="lazy">
+    <header>
+        <div class="logo" style="font-weight: 500;"><a href="/home.html">Eoqru Photos</a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/gallery.html">Gallery</a></li>
+                <li><a href="https://www.instagram.com/eoqruphotos?igsh=YzVkODRmOTdmMw==" target="_blank">Instagram</a></li>
+                <li><a href="/collaborations.html">Collaborations</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
-            <div class="column">
-                <img src="assets/images/project (1)/img (1).JPG" alt="Image" style="width:100%" onclick="sendValue('project (1)')">
-                <img src="assets/images/project (6)/img (1).JPG" alt="Image" style="width:100%" onclick="sendValue('project (6)')">
-                <img src="assets/images/project (18)/img (1).JPG" alt="Image" style="width:100%" onclick="sendValue('project (18)')" loading="lazy">
-                <img src="assets/images/project (15)/img (1).JPG" alt="Image" style="width:100%" onclick="sendValue('project (15)')" loading="lazy">
-                <img src="assets/images/project (12)/img (1).JPG" alt="Image" style="width:100%" onclick="sendValue('project (12)')" loading="lazy">
-                <img src="assets/images/project (13)/img (1).JPG" alt="Image" style="width:100%" onclick="sendValue('project (13)')" loading="lazy">
-                <img src="assets/images/project (7)/img (1).JPG" alt="Image" style="width:100%" onclick="sendValue('project (7)')" loading="lazy">
-                <img src="assets/images/project (19)/img (1).JPG" alt="Image" style="width:100%" onclick="sendValue('project (19)')" loading="lazy">
-                <img src="assets/images/project (17)/img (1).JPG" alt="Image" style="width:100%" onclick="sendValue('project (17)')" loading="lazy">
+            <div class="close-btn">×</div>
+        </nav>
+        <div class="overlay">
+            <ul class="overlay-nav-links">
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/gallery.html">Gallery</a></li>
+                <li><a href="https://www.instagram.com/eoqruphotos?igsh=YzVkODRmOTdmMw==" target="_blank">Instagram</a></li>
+                <li><a href="/collaborations.html">Collaborations</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <h2 class="heading" style="font-weight: 400; font-size: 20px; margin-bottom: 80px;">You can view the whole shoot by pressing on the image</h2>
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="/assets/images/project (1)/img (1).JPG" alt="Image 1" onclick="sendValue('project (1)')">
+            </div>
+            <div class="image-item">
+                <img src="/assets/images/project (2)/img (1).JPG" alt="Image 2" onclick="sendValue('project (2)')">
             </div>
         </div>
+
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="/assets/images/project (3)/img (1).JPG" alt="Image 3" onclick="sendValue('project (3)')">
+            </div>
+            <div class="image-item">
+                <img src="/assets/images/project (4)/img (1).JPG" alt="Image 4" onclick="sendValue('project (4)')">
+            </div>
+        </div>
+
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="/assets/images/project (5)/img (1).JPG" alt="Image 5" onclick="sendValue('project (5)')">
+            </div>
+            <div class="image-item">
+                <img src="/assets/images/project (6)/img (1).JPG" alt="Image 6" onclick="sendValue('project (6)')">
+            </div>
+        </div>
+
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="/assets/images/project (7)/img (1).JPG" alt="Image 7" onclick="sendValue('project (7)')">
+            </div>
+            <div class="image-item">
+                <img src="/assets/images/project (8)/img (1).JPG" alt="Image 8" onclick="sendValue('project (8)')">
+            </div>
+        </div>
+
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="/assets/images/project (9)/img (1).JPG" alt="Image 9" onclick="sendValue('project (9)')">
+            </div>
+            <div class="image-item">
+                <img src="/assets/images/project (10)/img (1).JPG" alt="Image 10" onclick="sendValue('project (10)')">
+            </div>
+        </div>
+
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="/assets/images/project (11)/img (1).JPG" alt="Image 11" onclick="sendValue('project (11)')">
+            </div>
+            <div class="image-item">
+                <img src="/assets/images/project (12)/img (1).JPG" alt="Image 12" onclick="sendValue('project (12)')">
+            </div>
+        </div>
+
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="/assets/images/project (13)/img (1).JPG" alt="Image 13" onclick="sendValue('project (13)')">
+            </div>
+            <div class="image-item">
+                <img src="/assets/images/project (14)/img (1).JPG" alt="Image 14" onclick="sendValue('project (14)')">
+            </div>
+        </div>
+
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="/assets/images/project (15)/img (1).JPG" alt="Image 15" onclick="sendValue('project (15)')">
+            </div>
+            <div class="image-item">
+                <img src="/assets/images/project (16)/img (1).JPG" alt="Image 16" onclick="sendValue('project (16)')">
+            </div>
+        </div>
+
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="/assets/images/project (17)/img (1).JPG" alt="Image 17" onclick="sendValue('project (17)')">
+            </div>
+            <div class="image-item">
+                <img src="/assets/images/project (18)/img (1).JPG" alt="Image 18" onclick="sendValue('project (18)')">
+            </div>
+        </div>
+
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="/assets/images/project (19)/img (1).JPG" alt="Image 19" onclick="sendValue('project (19)')">
+            </div>
+            <div class="image-item">
+                <img src=""   style="border: none;">
+            </div>
+        </div>
     </div>
 
-    <footer>
-        <p>© 2023 Guilherme Roque. All Rights Reserved.
+    <footer class="footer">
+        <div class="copyright">
+            &copy; 2023 Gui Roque. All Rights Reserved.
+        </div>
     </footer>
-
-    <script src="javascript/resize.js"></script>
+    
+    <script src="/javascript/headerBar.js"></script>
 </body>
 </html>

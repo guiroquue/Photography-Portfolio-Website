@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="/css/shared/header.css">
-    <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/shared/footer.css">
+    <link rel="stylesheet" href="/css/viewShoot.css">
 
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/other/whiteLogo.ico" />
-
-    <title>About</title>
+    <title>View photoshoot</title>
 </head>
 <body>
     <header>
@@ -41,29 +39,11 @@
         </div>
     </header>
 
-
-    <div class="card">
-        <div class="content">
-            <div class="text">
-                <h2 style="font-weight: 500; font-size: 25px;">Gui Roque</h2>
-                <p style="font-weight: 400; font-size: 15px;">Professional photographer</p>
-            </div>
-            <div class="image">
-                <img src="/assets/other/imgMe.JPG" alt="Image" width="85" height="85" style="border-radius: 50px;">
-            </div>
+    <div class="row">
+        <div class="grid-container">
+            
         </div>
     </div>
-
-    <main>
-        <h1 style="font-weight: 500;">About me-</h1><br><br>
-        <p>
-            I'm Gui, a portrait photographer based in Iceland. <br><br>
-            I specialize in creating up and close intimate portraits that reflect the beauty that is in everyone of us. Whether it's a casual session or a professional shoot, my goal is to make you comfortable in front of the camera and deliver portraits that resonate with your personality. <br> <br>
-            I started taking photos back in late 2022, and have since been improving my skill and style. <br><br>
-            "It's not the camera but who's behind it that makes for a good photograph." - Ken Rockwell. Though maybe a little bit chessy it is true. I use a Canon EOS 400D, with its stock lens and a zoom lens. <br><br>
-            Feel free to explore my portfolio and get in touch for your next memorable images of you.
-        </p>
-    </main>
 
     <footer class="footer">
         <div class="copyright">
@@ -72,5 +52,31 @@
     </footer>
 
     <script src="/javascript/headerBar.js"></script>
+    
+    <script>
+        function updateImages() {
+            const storedProjectID = localStorage.getItem('projectID');
+            const gridContainer = document.querySelector('.grid-container');
+
+            for (let index = 0; index < 50; index++) {
+                const imagePath = `/assets/images/${storedProjectID}/img (${index + 1}).JPG`;
+
+                const tempImg = new Image();
+                tempImg.onload = function () {
+                    const img = document.createElement('img');
+                    img.src = imagePath;
+                    img.classList.add(`img-${index + 1}`);
+                    img.setAttribute('loading', 'lazy'); // Add loading="lazy"
+                    gridContainer.appendChild(img);
+                };
+
+                tempImg.src = imagePath;
+            }
+        }
+
+        window.addEventListener('load', updateImages);
+
+        
+    </script>
 </body>
 </html>
