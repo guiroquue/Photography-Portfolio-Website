@@ -3,157 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="author" content="Gui Roque">
     <meta name="description" content="Hey I'm Gui, and I take portraits. Explore my diverse gallery of images, where I like to capture emotions with my camera. And if you feel like you deserve to be seen more clearly, you can contact me just as easily.">
     <meta name="keywords" content="photos, photgraphy, photoshoots, portraits, emotions, camera">
 
-    <link rel="stylesheet" href="/css/shared/header.css">
-    <link rel="stylesheet" href="/css/shared/footer.css">
+    <link rel="stylesheet" href="/css/runningMarginals.css">
+    <link rel="stylesheet" href="/css/index.css">
 
-    <link rel="stylesheet" href="/css/home/home.css">
-    <link rel="stylesheet" href="/css/home/carousel.css">
-
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/other/whiteLogo.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/other/pagesIcon.ico"/>
 
     <title>Eoqru Photos</title>
 </head>
 <body>
-    <header>
-        <div class="logo" style="font-weight: 500;"><a href="/index.html">Eoqru Photos</a></div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/gallery.html">Gallery</a></li>
-                <li><a href="https://www.instagram.com/eoqruphotos?igsh=YzVkODRmOTdmMw==" target="_blank">Instagram</a></li>
-                <li><a href="/collaborations.html">Collaborations</a></li>
-                <li><a href="/about.html">About</a></li>
-            </ul>
-            <div class="hamburger-menu">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+    <div class="loading-overlay">Loading...</div>
+    <div class="overlay">
+        <div class="items-in-overlay">
+            <div class="overlay-nav-links">
+                <ul>
+                    <li><a href="/about.html">ABOUT</a></li>
+                    <li><a href="/Commercial.html">COMMERCIAL</a></li>
+                    <li><a href="/faq.html">FAQ</a></li>
+                </ul>
             </div>
-            <div class="close-btn">×</div>
-        </nav>
-        <div class="overlay">
-            <ul class="overlay-nav-links">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/gallery.html">Gallery</a></li>
-                <li><a href="https://www.instagram.com/eoqruphotos?igsh=YzVkODRmOTdmMw==" target="_blank">Instagram</a></li>
-                <li><a href="/collaborations.html">Collaborations</a></li>
-                <li><a href="/about.html">About</a></li>
+            
+            <div class="image-row">
+                <div class="image-container" style="transform: rotate(-10deg);">
+                    <img src="/assets/images/project (16)/img (9).JPG" onclick="sendValue('project (16)')">
+                </div>
+                <div class="image-container" style="transform: rotate(-3deg); z-index: 2;">
+                    <img src="/assets/images/project (5)/img (3).JPG" onclick="sendValue('project (5)')">
+                </div>
+                <div class="image-container" style="transform: rotate(7deg);">
+                    <img src="/assets/images/project (4)/img (18).JPG" onclick="sendValue('project (4)')">
+                </div>
+            </div>
+            <div class="contact-info">
+                <h2>Contact</h2>
+                <a href="https://www.instagram.com/eoqruphotos?igsh=YzVkODRmOTdmMw==" target="_blank" style="font-size: 15px;">Instgram</a>
+                <p style="font-size: 15px; margin: 0px;">g.sroque04@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <header id="header-container">
+        <div class="logo"><a href="/index.html">EOQRU PHOTOS</a></div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="/about.html">ABOUT</a></li>
+                <li><a href="/Commercial.html">COMMERCIAL</a></li>
+                <li><a href="/faq.html">FAQ</a></li>
             </ul>
+        </div>
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
     </header>
 
 
     <div class="slider">
-        <div class="slides">
-            <img src="/assets/images/project (1)/img (1).JPG" alt="Image 1" onclick="sendValue('project (1)')">
-            <img src="/assets/images/project (2)/img (1).JPG" alt="Image 2" onclick="sendValue('project (2)')">
-            <img src="/assets/images/project (4)/img (1).JPG" alt="Image 3" onclick="sendValue('project (4)')">
-            <img src="/assets/images/project (14)/img (1).JPG" alt="Image 4" onclick="sendValue('project (14)')">
-            <img src="/assets/images/project (6)/img (1).JPG" alt="Image 5" onclick="sendValue('project (6)')">
-            <img src="/assets/images/project (5)/img (1).JPG" alt="Image 6" onclick="sendValue('project (5)')">
-            <img src="/assets/images/project (11)/img (12).JPG" alt="Image 7" onclick="sendValue('project (11)')">
-            <img src="/assets/images/project (10)/img (1).JPG" alt="Image 8" onclick="sendValue('project (10)')">
-            <img src="/assets/images/project (7)/img (1).JPG" alt="Image 9" onclick="sendValue('project (7)')">
-            <img src="/assets/images/project (18)/img (15).JPG" alt="Image 10" onclick="sendValue('project (18)')">
-            <img src="/assets/images/project (13)/img (1).JPG" alt="Image 11" onclick="sendValue('project (13)')">
-            <img src="/assets/images/project (15)/img (1).JPG" alt="Image 12" onclick="sendValue('project (15)')">
-            <img src="/assets/images/project (8)/img (1).JPG" alt="Image 13" onclick="sendValue('project (8)')">
-            <img src="/assets/images/project (12)/img (1).JPG" alt="Image 14" onclick="sendValue('project (12)')">
-            <img src="/assets/images/project (3)/img (1).JPG" alt="Image 15" onclick="sendValue('project (3)')">
-            <!-- ... Add more images as needed -->
+        <div class="cards-container">
+            <div class="card" onclick="sendValue('project (1)')">
+                <div class="pola">
+                    <img src="/assets/images/project (1)/img (1).JPG" alt="Image 1">
+                    <h3>Model- Eda</h3>
+                    <p style="font-weight: 400;">Photography & post production- <br>Guilherme Roque<p style="text-align: right;">*Press* / *Swipe*</p></p>
+                </div>
+            </div>
+            <div class="card" onclick="sendValue('project (2)')">
+                <div class="pola">
+                    <img src="/assets/images/project (2)/img (1).JPG" alt="Image 2">
+                    <h3>Model- Orsen</h3>
+                    <p style="font-weight: 400;">Photography & post production- <br>Guilherme Roque<p style="text-align: right;">EOS 400D</p></p>
+                </div>
+            </div>
+
+            <div class="card" onclick="sendValue('project (3)')">
+                <div class="pola">
+                    <img src="/assets/images/project (3)/img (1).JPG" alt="Image 1">
+                    <h3>Model- Grace</h3>
+                    <p style="font-weight: 400;">Photography & post production- <br>Guilherme Roque<p style="text-align: right;">EOS 400D</p></p>
+                </div>
+            </div>
+            <div class="card" onclick="sendValue('project (4)')">
+                <div class="pola">
+                    <img src="/assets/images/project (4)/img (1).JPG" alt="Image 2">
+                    <h3>Model- Joana</h3>
+                    <p style="font-weight: 400;">Photography & post production- <br>Guilherme Roque<p style="text-align: right;">EOS 400D</p></p>
+                </div>
+            </div>
+
+            <div class="card" onclick="sendValue('project (5)')">
+                <div class="pola">
+                    <img src="/assets/images/project (5)/img (1).JPG" alt="Image 1">
+                    <h3>Model- Anton</h3>
+                    <p style="font-weight: 400;">Photography & post production- <br>Guilherme Roque<p style="text-align: right;">EOS 400D</p></p>
+                </div>
+            </div>
+            <div class="card" onclick="sendValue('project (6)')">
+                <div class="pola">
+                    <img src="/assets/images/project (6)/img (1).JPG" alt="Image 2">
+                    <h3>Model- Lilja</h3>
+                    <p style="font-weight: 400;">Photography & post production- <br>Guilherme Roque<p style="text-align: right;">EOS 400D</p></p>
+                </div>
+            </div>
+
+            <div class="card" onclick="sendValue('project (7)')">
+                <div class="pola">
+                    <img src="/assets/images/project (7)/img (1).JPG" alt="Image 1">
+                    <h3>Model- Natalia</h3>
+                    <p style="font-weight: 400;">Photography & post production- <br>Guilherme Roque<p style="text-align: right;">EOS 400D</p></p>
+                </div>
+            </div>
+            <div class="card" onclick="sendValue('project (8)')">
+                <div class="pola">
+                    <img src="/assets/images/project (8)/img (1).JPG" alt="Image 2">
+                    <h3>Model- Sunny</h3>
+                    <p style="font-weight: 400;">Photography & post production- <br>Guilherme Roque<p style="text-align: right;">EOS 400D</p></p>
+                </div>
+            </div>
+
+            <div class="card" onclick="sendValue('project (9)')">
+                <div class="pola">
+                    <img src="/assets/images/project (9)/img (1).JPG" alt="Image 1">
+                    <h3>Model- Anton</h3>
+                    <p style="font-weight: 400;">Photography & post production- <br>Guilherme Roque<p style="text-align: right;">EOS 400D</p></p>
+                </div>
+            </div>
+            <div class="card" onclick="sendValue('project (10)')">
+                <div class="pola">
+                    <img src="/assets/images/project (10)/img (1).JPG" alt="Image 2">
+                    <h3>Model- Antonio</h3>
+                    <p style="font-weight: 400;">Photography & post production- <br>Guilherme Roque<p style="text-align: right;">EOS 400D</p></p>
+                </div>
+            </div>
+
+            <div class="card" onclick="sendValue('project (11)')">
+                <div class="pola">
+                    <img src="/assets/images/project (11)/img (8).JPG" alt="Image 1">
+                    <h3>Model- Bia</h3>
+                    <p style="font-weight: 400;">Photography & post production- <br>Guilherme Roque<p style="text-align: right;">EOS 400D</p></p>
+                </div>
+            </div>
+            <div class="card" onclick="sendValue('project (12)')">
+                <div class="pola">
+                    <img src="/assets/images/project (12)/img (1).JPG" alt="Image 2">
+                    <h3>Model- Con</h3>
+                    <p style="font-weight: 400;">Photography & post production- <br>Guilherme Roque<p style="text-align: right;">EOS 400D</p></p>
+                </div>
+            </div>
+
+            <div class="card" onclick="sendValue('project (13)')">
+                <div class="pola">
+                <img src="/assets/images/project (13)/img (1).JPG" alt="Image 1">
+                    <h3>Model- Haffi</h3>
+                    <p style="font-weight: 400;">Photography & post production- <br>Guilherme Roque<p style="text-align: right;">EOS 400D</p></p>
+                </div>
+            </div>
+            <div class="card" onclick="sendValue('project (14)')">
+                <div class="pola">
+                    <img src="/assets/images/project (14)/img (1).JPG" alt="Image 2">
+                    <h3>Model- Emma</h3>
+                    <p style="font-weight: 400;">Photography & post production- <br>Guilherme Roque<p style="text-align: right;">EOS 400D</p></p>
+                </div>
+            </div>
+
+            <div class="card" onclick="sendValue('project (15)')">
+                <div class="pola">
+                    <img src="/assets/images/project (15)/img (10).JPG" alt="Image 1">
+                    <h3>Model- Kai</h3>
+                    <p style="font-weight: 400;">Photography & post production- <br>Guilherme Roque<p style="text-align: right;">EOS 400D</p></p>
+                </div>
+            </div>
+            <div class="card" onclick="sendValue('project (16)')">
+                <div class="pola">
+                    <img src="/assets/images/project (16)/img (1).JPG" alt="Image 2">
+                    <h3>Model- Matti</h3>
+                    <p style="font-weight: 400;">Photography & post production- <br>Guilherme Roque<p style="text-align: right;">EOS 400D</p></p>
+                </div>
+            </div>
+
+            <div class="card" onclick="sendValue('project (17)')">
+                <div class="pola">
+                    <img src="/assets/images/project (17)/img (1).JPG" alt="Image 1">
+                    <h3>Model- Zuza</h3>
+                    <p style="font-weight: 400;">Photography & post production- <br>Guilherme Roque<p style="text-align: right;">EOS 400D</p></p>
+                </div>
+            </div>
+            <div class="card" onclick="sendValue('project (18)')">
+                <div class="pola">
+                    <img src="/assets/images/project (18)/img (4).JPG" alt="Image 2">
+                    <h3>Model- Nesli</h3>
+                    <p style="font-weight: 400;">Photography & post production- <br>Guilherme Roque<p style="text-align: right;">EOS 400D</p></p>
+                </div>
+            </div>
+
+            <div class="card" onclick="sendValue('project (19)')">
+                <div class="pola">
+                    <img src="/assets/images/project (19)/img (1).JPG" alt="Image 1">
+                    <h3>Model- Sara</h3>
+                    <p style="font-weight: 400;">Photography & post production- <br>Guilherme Roque<p style="text-align: right;">EOS 400D</p></p>
+                </div>
+            </div>
         </div>
-        <button class="prev"><img src="/assets/other/arrow.svg" alt=""></button>
-        <button class="next"><img src="/assets/other/arrow.svg" alt=""></button>
     </div>
     
-    
-
-    <div class="container">
-        <h2 style="font-weight: 400; font-size: 30px; line-height: normal;">Are you wondering how this works ?</h2> <br><br>
-        <p>
-            First you contact me. Through Instagram or email, where our photoshoot process begins with a chat to explore ideas if you don't have any in mind. We'll work together to decide on outfits and on a cool place for the shoot. <br><br>
-            When the shoot day arrives, we'll take lots of pictures. Afterward, you'll get X number of photos to keep and use however you like. I'll also pick some photos that I think are great for the project I create out of our shoot, and if you're happy with them, I'll use those. <br><br>
-            It's all about making sure you feel comfortable and that the pictures we take really capture your style and story. I'm here to make sure you're happy with the whole process from start to finish. <br><br><br>
-            <a href="https://www.instagram.com/eoqruphotos?igsh=YzVkODRmOTdmMw==" target="_blank">@Eoqruphotos</a> <br><br>
-            g.sroque04@gmail.com
-        </p>
-    </div>
-
-    <div class="previewContainer">
-        <div class="imageHolder">
-            <img src="/assets/images/project (9)/img (1).JPG" alt="Image 16" onclick="sendValue('project (9)')">
+    <footer class="footer-container">
+        <div class="footer-column"></div>
+        <div class="footer-column">
+            <p class="copyright">© 2023 Guilherme Roque. <br> All rights reserved.</p>
         </div>
-        <div class="imageHolder">
-            <img src="/assets/images/project (17)/img (1).JPG" alt="Image 17" class="littleDown" onclick="sendValue('project (17)')">
-        </div>
-    </div>
-
-    <div class="container">
-        <h2 style="font-weight: 400; font-size: 30px; line-height: normal;">How much does it cost ?</h2> <br><br>
-        <p>
-            I actually do most of my photoshoots for free. I do this because it helps me get better at what I love—photography. It's like adding pieces to my photo collection while I learn new things. <br><br>
-            But when it's a private event, things change a bit. That's when I work entirely for the client, for you. It's not just about taking pictures; it's about making sure I capture exactly what you want and make your event look amazing. <br><br>
-            Doing these paid gigs shows how serious I am about my work. It's all about giving you the best experience and making sure your special moments are captured beautifully. <br><br>
-            That doen't mean my normal usually free photoshoots come out any worse. It's just a more casual side of my work, where there is less pressure and the main objective is to keep things fun and exiting.
-        </p>
-    </div>
-
-    <div class="previewContainer">
-        <div class="imageHolder">
-            <img src="/assets/images/project (16)/img (1).JPG" alt="Image 18" class="littleUp" onclick="sendValue('project (16)')">
-        </div>
-        <div class="imageHolder">
-            <img src="/assets/images/project (19)/img (1).JPG" alt="Image 19" onclick="sendValue('project (19)')">
-        </div>
-    </div>
-
-
-
-    <div class="container">
-        <h2 style="font-weight: 400; font-size: 30px; line-height: normal;">If you're not certain you'll be happy...?</h2> <br>
-        <p>
-            Check out what the people I have worked with have said about my work.
-        </p>
-
-        <div class="quoteCard">
-            <img src="/assets/other/quote.svg" alt="">
-            <p>it was really fun</p>
-        </div>
-
-        <div class="quoteCard">
-            <img src="/assets/other/quote.svg" alt="">
-            <p>U are an artist bro I keep saying this</p>
-        </div>
-
-        <div class="quoteCard">
-            <img src="/assets/other/quote.svg" alt="">
-            <p>woo these look good man</p>
-        </div>
-
-        <div class="quoteCard">
-            <img src="/assets/other/quote.svg" alt="">
-            <p>Yeah I really love them thanku so much</p>
-        </div>
-
-        <div class="quoteCard">
-            <img src="/assets/other/quote.svg" alt="">
-            <p>i love them</p>
-        </div>
-    </div>
-    
-
-    <footer class="footer">
-        <div class="copyright">
-            &copy; 2023 Gui Roque. All Rights Reserved.
+        <div class="footer-column">
+            <button class="previous-slide"><img src="/assets/other/navigationArrow.svg" alt="Left" style="transform: scaleX(-1);"></button>
+            <button class="next-slide"><img src="/assets/other/navigationArrow.svg" alt="Right"></button>
         </div>
     </footer>
+    
+    <script src="/javascript/headerElements.js"></script>
+    <script src="/javascript/shootsCardSlider.js"></script>
 
-    <script src="/javascript/headerBar.js"></script>
-    <script src="/javascript/carousel.js"></script>
 </body>
 </html>

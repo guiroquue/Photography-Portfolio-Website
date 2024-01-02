@@ -1,0 +1,292 @@
+@font-face {
+    font-family: 'Kalnia';
+    src: url('/assets/font/Kalnia-VariableFont_wdth\,wght.ttf') format('woff2');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Kalnia', sans-serif;
+    font-weight: 500;
+}
+
+
+/* Loading overlay Styles */
+.loading-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    font-size: 24px;
+}
+
+.loaded {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/* Header styles */
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black; 
+    position: relative;
+    z-index: 2;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links ul li {
+    margin-left: 20px;
+}
+
+.overlay-nav-links ul li a, .nav-links ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+
+/* Hamburger menu styles */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    cursor: pointer;
+}
+
+.hamburger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.hamburger-menu.active .line:nth-child(1) {
+    transform: rotate(-60deg) translate(-6px, 6px);
+}
+
+.hamburger-menu.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .line:nth-child(3) {
+    transform: rotate(60deg) translate(-7px, -7px);
+}
+
+.overlay {
+    position: fixed;
+    margin-top: 90px;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background-color: white;
+    z-index: 2;
+    transition: width 0.8s ease;
+    pointer-events: none; 
+}
+
+.overlay.active {
+    width: 100%;
+    pointer-events: auto;
+}
+
+.overlay-nav-links ul {
+    list-style-type: none;
+    height: 100%;
+    margin-top: 50px;
+    text-align: right;
+}
+
+.overlay-nav-links ul li{
+    margin-bottom: 20px;
+    margin-right: 25px;
+}
+
+.overlay-nav-links ul li a{
+    font-size: 8vw;
+}
+
+.contact-info {
+    margin-left: 20px;
+    margin-top: 20%;
+    font-size: 15px;
+    
+
+    left: 20px;
+    text-align: left;
+}
+
+.contact-info h2 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: black;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 80%;
+    height: auto;
+
+    margin: 20px auto;
+    margin-top: 9vh;
+}
+
+.items-in-overlay {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.image-container {
+    border: 1px solid black;
+    padding: 5px 5px 15px 5px;
+    background-color: white;
+
+    -webkit-box-shadow: 0px 5px 15px 2px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 5px 15px 2px rgba(0,0,0,0.6);
+    box-shadow: 0px 5px 15px 2px rgba(0,0,0,0.6);
+}
+
+.image-row img {
+    width: 10vh;
+    height: auto;
+    border: 1px solid black;
+}
+
+
+/* Footer styles */
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+
+    font-size: 15px;
+    font-weight: 500;
+    z-index: 3;
+}
+
+.footer-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer-column:nth-child(2) {
+    flex: 2; 
+}
+
+.footer-column:last-child {
+    justify-content: flex-end;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+button img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-container .footer-column:last-child button {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.footer-container .copyright br {
+    display: none;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+
+
+    /* Header styles */
+    .nav-links ul {
+        display: none;
+    }
+
+    .nav-links ul.active {
+        display: block;
+    }
+
+
+    /* Hamburger menu styles */
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+
+    /* Footer styles */
+
+    .footer-container {
+        font-size: 10px;
+    }
+
+    .footer-column:first-child {
+        display: none;
+    }
+
+    .footer-column:nth-child(2) {
+        justify-content: left;
+        align-items: left;
+        margin-left: 10px;
+    }
+
+    .footer-container .copyright br {
+        display: block;
+    }
+}
+
+@media screen and (max-height: 760px) {
+
+    /* Polaroid images on overlay menu */
+    .image-row {
+        display: none;
+    }
+}

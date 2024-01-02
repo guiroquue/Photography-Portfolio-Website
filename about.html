@@ -4,73 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/css/shared/header.css">
+    <link rel="stylesheet" href="/css/runningMarginals.css">
     <link rel="stylesheet" href="/css/about.css">
-    <link rel="stylesheet" href="/css/shared/footer.css">
 
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/other/whiteLogo.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/other/pagesIcon.ico"/>
 
     <title>About</title>
 </head>
 <body>
-    <header>
-        <div class="logo" style="font-weight: 500;"><a href="/index.html">Eoqru Photos</a></div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/gallery.html">Gallery</a></li>
-                <li><a href="https://www.instagram.com/eoqruphotos?igsh=YzVkODRmOTdmMw==" target="_blank">Instagram</a></li>
-                <li><a href="/collaborations.html">Collaborations</a></li>
-                <li><a href="/about.html">About</a></li>
-            </ul>
-            <div class="hamburger-menu">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <div class="close-btn">×</div>
-        </nav>
-        <div class="overlay">
-            <ul class="overlay-nav-links">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/gallery.html">Gallery</a></li>
-                <li><a href="https://www.instagram.com/eoqruphotos?igsh=YzVkODRmOTdmMw==" target="_blank">Instagram</a></li>
-                <li><a href="/collaborations.html">Collaborations</a></li>
-                <li><a href="/about.html">About</a></li>
-            </ul>
-        </div>
-    </header>
+    <div class="loading-overlay">Loading...</div>
 
-
-    <div class="card">
-        <div class="content">
-            <div class="text">
-                <h2 style="font-weight: 500; font-size: 25px;">Gui Roque</h2>
-                <p style="font-weight: 400; font-size: 15px;">Professional photographer</p>
+    <div class="overlay">
+        <div class="items-in-overlay">
+            <div class="overlay-nav-links">
+                <ul>
+                    <li><a href="/about.html">ABOUT</a></li>
+                    <li><a href="/Commercial.html">COMMERCIAL</a></li>
+                    <li><a href="/faq.html">FAQ</a></li>
+                </ul>
             </div>
-            <div class="image">
-                <img src="/assets/other/imgMe.JPG" alt="Image" width="85" height="85" style="border-radius: 50px;">
+            
+            <div class="image-row">
+                <div class="image-container" style="transform: rotate(-10deg);">
+                    <img src="/assets/images/project (16)/img (9).JPG" onclick="sendValue('project (16)')">
+                </div>
+                <div class="image-container" style="transform: rotate(-3deg); z-index: 2;">
+                    <img src="/assets/images/project (5)/img (3).JPG" onclick="sendValue('project (5)')">
+                </div>
+                <div class="image-container" style="transform: rotate(7deg);">
+                    <img src="/assets/images/project (4)/img (18).JPG" onclick="sendValue('project (4)')">
+                </div>
+            </div>
+            <div class="contact-info">
+                <h2 style="margin: 0; margin-bottom: 10px;">Contact</h2>
+                <a href="https://www.instagram.com/eoqruphotos?igsh=YzVkODRmOTdmMw==" target="_blank" style="font-size: 3vw;">Instgram</a>
+                <p style="font-size: 3vw; margin: 0px;">g.sroque04@gmail.com</p>
             </div>
         </div>
     </div>
+    
+    <header id="header-container">
+        <div class="logo"><a href="/index.html">EOQRU PHOTOS</a></div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="/about.html">ABOUT</a></li>
+                <li><a href="/Commercial.html">COMMERCIAL</a></li>
+                <li><a href="/faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
 
     <main>
-        <h1 style="font-weight: 500;">About me-</h1><br><br>
-        <p>
-            I'm Gui, a portrait photographer based in Iceland. <br><br>
-            I specialize in creating up and close intimate portraits that reflect the beauty that is in everyone of us. Whether it's a casual session or a professional shoot, my goal is to make you comfortable in front of the camera and deliver portraits that resonate with your personality. <br> <br>
-            I started taking photos back in late 2022, and have since been improving my skill and style. <br><br>
-            "It's not the camera but who's behind it that makes for a good photograph." - Ken Rockwell. Though maybe a little bit chessy it is true. I use a Canon EOS 400D, with its stock lens and a zoom lens. <br><br>
-            Feel free to explore my portfolio and get in touch for your next memorable images of you.
-        </p>
-    </main>
+        <h1>About</h1>
+        <div class="text-container">
+            <p>
+                I'm Gui, a portrait photographer based in Iceland. <br><br>
+                I specialize in creating up and close intimate portraits. Whether it's a casual session or a professional shoot, my goal is to make you comfortable in front of the camera and deliver portraits that resonate with your personality. <br><br>
+            </p>
+        </div>
 
-    <footer class="footer">
-        <div class="copyright">
-            &copy; 2023 Gui Roque. All Rights Reserved.
+        <h2 style="font-weight: 400;">Since starting-</h2>
+        <div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h1>19</h1>
+                    <p>Photoshoots</p>
+                </div>
+    
+                <div class="grid-item">
+                    <h1>250+</h1>
+                    <p>Followers</p>
+                </div>
+            
+                <div class="grid-item">
+                    <h1>3</h1>
+                    <p>Clients</p>
+                </div>
+            
+                <div class="grid-item">
+                    <h1>1</h1>
+                    <p>Countries</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="profile-container">
+            <img src="/assets/other/imgMe2.JPG" alt="">
+            <p style="margin-bottom: 30px; margin-top: -10px;">Guilherme Roque</p>
+        </div>
+        
+        
+        <div class="text-container" style="margin-bottom: 50px;">
+            <p>
+                I started taking photos back in late 2022, and have since been improving my skill and style. Feel free to explore my portfolio and get in touch for your next memorable images of you.
+            </p>
+        </div>
+    </main>
+    
+    <footer class="footer-container">
+        <div class="footer-column"></div>
+        <div class="footer-column">
+            <p class="copyright">© 2023 Guilherme Roque. <br> All rights reserved.</p>
+        </div>
+        <div class="footer-column">
+            <button class="previous-slide"></button>
+            <button class="next-slide"></button>
         </div>
     </footer>
 
-    <script src="/javascript/headerBar.js"></script>
+    <script src="/javascript/headerElements.js"></script>
 </body>
 </html>

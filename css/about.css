@@ -1,61 +1,61 @@
-
-
-.card {
-    overflow: hidden;
-    width: 90%; /* Adjust as needed */
-    max-width: 600px;
-    background-color: #F5F5F5;
-    border-radius: 10px;
+h1, h2 , .text-container{
     margin: 0 auto;
-    margin-top: 130px;
-
-    box-shadow: -1px 14px 23px 2px rgba(0,0,0,0.45);
-    -webkit-box-shadow: -1px 14px 23px 2px rgba(0,0,0,0.45);
-    -moz-box-shadow: -1px 14px 23px 2px rgba(0,0,0,0.45);
-
-}
-
-.content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.text {
-    float: left;
-    width: 70%; /* Adjust as needed */
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 1rem;
-    box-sizing: border-box;
-}
-
-.image {
-    float: right;
-    width: 30%; /* Adjust as needed */
-    text-align: right;
-    padding: 20px 20px 20px 0;
-    box-sizing: border-box; 
-}
-
-.image img {
-    border-radius: 50px;
-}
-
-main {
-    width: 80%; /* Adjust as needed */
+    width: 90%;
     max-width: 800px;
-    margin: 60px auto;
-    font-size: 20px;
+    font-weight: 500;
+}
+
+.text-container {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.grid-container {
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.grid-item {
+    padding: 20px;
+    font-size: 25px;
 }
 
 
-@media screen and (max-width: 700px) {
-    main {
-        font-size: 15px;
-    }
-    main h1{
-        font-size: 30px;
-    }
+.grid-item p{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.profile-container {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    border: 1px solid black;
+    -webkit-box-shadow: 0px 5px 15px 2px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 5px 15px 2px rgba(0,0,0,0.6);
+    box-shadow: 0px 5px 15px 2px rgba(0,0,0,0.6);
+}
+
+.profile-container img {
+    width: 94%;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.profile-container p {
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* Footer styles */
+.footer-container {
+    position: relative;
+    opacity: 1;
 }

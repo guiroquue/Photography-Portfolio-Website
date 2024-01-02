@@ -1,0 +1,52 @@
+.slider {
+    overflow: hidden;
+    width: 100%;
+    height: 85vh;
+    position: relative;
+  }
+  
+  .cards-container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .card {
+    flex: 0 0 100%; /* Adjust the size of the card here */
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .pola {
+    padding: 8px;
+    width: 80vw;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid black;
+
+    -webkit-box-shadow: 0px 5px 15px 2px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 5px 15px 2px rgba(0,0,0,0.6);
+    box-shadow: 0px 5px 15px 2px rgba(0,0,0,0.6);
+
+    text-align: left;
+    
+  }
+  
+  .pola img {
+    width: 80vw;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+
+    border: 1px solid black;
+  }
+  
+  .pola h3 {
+    margin-top: 5px;
+    font-weight: 500;
+  }
+
+  .pola p {
+    margin: 0;
+    font-size: 13px;
+  }
