@@ -132,12 +132,12 @@ body {
 }
 
 .overlay-nav-links ul li a{
-    font-size: 8vw;
+    font-size: 6vw;
 }
 
 .contact-info {
     margin-left: 20px;
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 15px;
     
 
@@ -283,7 +283,7 @@ button img {
     }
 }
 
-@media screen and (max-height: 760px) {
+@media screen and (max-height: 600px) {
 
     /* Polaroid images on overlay menu */
     .image-row {
