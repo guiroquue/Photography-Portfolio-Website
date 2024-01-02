@@ -40,7 +40,7 @@ slider.addEventListener('touchmove', (e) => {
     if (!isDown) return;
     e.preventDefault();
     const x = e.touches[0].pageX - slider.offsetLeft;
-    const walk = (x - startX) * 1.2; // Adjust the multiplier for smoother scrolling
+    const walk = (x - startX) * 2; // Adjust the multiplier for smoother scrolling
     slider.scrollLeft = scrollLeft - walk;
 });
 
