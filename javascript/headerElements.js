@@ -143,13 +143,76 @@ document.querySelector('.hamburger-menu').addEventListener('click', function() {
     }
 });
 
+
+
 window.addEventListener('load', function() {
     const loadingOverlay = document.querySelector('.loading-overlay');
+    const overlay = document.querySelector('.overlay');
+    const headerContainer = document.querySelector('#header-container');
+    const slider = document.querySelector('.slider');
+    const footerContainer = document.querySelector('.footer-container');
+    
+    let hasVisitedMainPage = localStorage.getItem('visitedMainPage');
 
-    setTimeout(() => {
-        loadingOverlay.classList.add('loaded');
-    }, 500);
-});
+    
+
+
+    if (window.location.href.includes('/Commercial.html') || window.location.href.includes('/about.html') || window.location.href.includes('/viewshoot.html') || window.location.href.includes('/faq.html')) {
+        setTimeout(() => {
+            loadingOverlay.classList.add('loaded');
+        }, 400);
+    } else {
+        if (hasVisitedMainPage) {
+            setTimeout(() => {
+                loadingOverlay.classList.add('loaded');
+            }, 400);
+
+            setTimeout(() => {
+    
+                overlay.style.opacity = '1';
+                overlay.style.transform = 'translateY(0)';
+                headerContainer.style.opacity = '1';
+                headerContainer.style.transform = 'translateY(0)';
+        
+                slider.style.opacity = '1';
+                slider.style.transform = 'translateY(0)';
+            }, 100); 
+            
+            setTimeout(() => {
+                // Slide up footer after a delay
+                footerContainer.style.opacity = '1';
+                footerContainer.style.transform = 'translateY(0)';
+            }, 800);
+        } else {
+            setTimeout(() => {
+                loadingOverlay.classList.add('loaded');
+            }, 2000);
+            localStorage.setItem('visitedMainPage', true);
+
+            setTimeout(() => {
+    
+                overlay.style.opacity = '1';
+                overlay.style.transform = 'translateY(0)';
+                headerContainer.style.opacity = '1';
+                headerContainer.style.transform = 'translateY(0)';
+        
+                slider.style.opacity = '1';
+                slider.style.transform = 'translateY(0)';
+            }, 2500); 
+            
+            setTimeout(() => {
+                // Slide up footer after a delay
+                footerContainer.style.opacity = '1';
+                footerContainer.style.transform = 'translateY(0)';
+            }, 3200);
+        }
+    }
+    
+
+
+    
+  });
+  
 
 function sendValue(projectID) {
     localStorage.setItem('projectID', projectID);

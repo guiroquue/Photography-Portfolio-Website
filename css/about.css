@@ -19,7 +19,7 @@ h1, h2 , .text-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    margin: 50px auto;
+    margin: 0px auto;
     text-align: center;
 }
 

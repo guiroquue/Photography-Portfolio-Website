@@ -6,7 +6,7 @@ body {
     display: flex;
     width: 100%;
     max-width: 600px;
-    margin: 50px auto 100px;
+    margin: 0 auto;
 }
 
 .grid-container {
@@ -36,7 +36,7 @@ body {
 
 @media (min-width: 1000px) {
     .modelId h1, .modelId p {
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 
