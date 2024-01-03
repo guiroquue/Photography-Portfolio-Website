@@ -5,6 +5,8 @@ const nextButton = document.querySelector('.next-slide');
 let cardIndex = 0;
 let touchStartX = 0;
 let touchEndX = 0;
+let touchStartY = 0;
+let touchEndY = 0;
 
 function showCard(index) {
   const cardWidth = document.querySelector('.card').offsetWidth;
@@ -27,18 +29,23 @@ nextButton.addEventListener('click', slideNext);
 
 cardsContainer.addEventListener('touchstart', (e) => {
   touchStartX = e.touches[0].clientX;
+  touchStartY = e.touches[0].clientY;
+});
+
+cardsContainer.addEventListener('touchmove', (e) => {
+  touchEndX = e.touches[0].clientX;
+  touchEndY = e.touches[0].clientY;
 });
 
 cardsContainer.addEventListener('touchend', (e) => {
-  touchEndX = e.changedTouches[0].clientX;
-  handleGesture();
-});
-
-function handleGesture() {
-  const sensitivity = 20; // Adjust this value for swipe sensitivity
-  if (touchEndX < touchStartX - sensitivity) {
-    slideNext();
-  } else if (touchEndX > touchStartX + sensitivity) {
-    slidePrev();
+  const sensitivity = 50; // Adjust this value for swipe sensitivity
+  const deltaX = touchEndX - touchStartX;
+  const deltaY = touchEndY - touchStartY;
+  if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > sensitivity) {
+    if (deltaX > 0) {
+      slidePrev();
+    } else {
+      slideNext();
+    }
   }
-}
+});
