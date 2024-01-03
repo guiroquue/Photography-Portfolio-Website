@@ -108,19 +108,16 @@ const overlay = document.querySelector('.hamburger-menu');
 
 const prevCarouselButton = document.querySelector('.previous-slide');
 const nextCarouselButton = document.querySelector('.next-slide');
-const imageRow = document.querySelector('.image-row');
 
 function toggleButtonsVisibility() {
     if (overlay.classList.contains('active')) {
         prevCarouselButton.style.opacity = '0';
         nextCarouselButton.style.opacity = '0';
-        imageRow.style.opcity = '1';
         prevCarouselButton.style.pointerEvents = 'none'; 
         nextCarouselButton.style.pointerEvents = 'none'; 
     } else {
         prevCarouselButton.style.opacity = '1';
         nextCarouselButton.style.opacity = '1';
-        imageRow.style.opcity = '0';
         prevCarouselButton.style.pointerEvents = 'auto';
         nextCarouselButton.style.pointerEvents = 'auto'; 
     }

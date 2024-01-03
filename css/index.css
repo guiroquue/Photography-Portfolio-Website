@@ -19,8 +19,8 @@
   
   .pola {
     padding: 8px;
-    width: 58vw;
-    max-width: 500px;
+    width: 70vw;
+    max-width: 600px;
     margin: 0 auto;
     border: 1px solid black;
 
@@ -33,8 +33,8 @@
   }
   
   .pola img {
-    width: 58vw;
-    max-width: 500px;
+    width: 70vw;
+    max-width: 600px;
     height: auto;
     margin: 0 auto;
 

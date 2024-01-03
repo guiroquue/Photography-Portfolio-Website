@@ -3,27 +3,27 @@ const prevButton = document.querySelector('.previous-slide');
 const nextButton = document.querySelector('.next-slide');
 
 let cardIndex = 0;
+let touchStartX = 0;
+let touchEndX = 0;
 
 function showCard(index) {
-  const cards = document.querySelectorAll('.card');
-  cardsContainer.style.transform = `translateX(-${index * 100}%)`;
+  const cardWidth = document.querySelector('.card').offsetWidth;
+  cardsContainer.style.transform = `translateX(-${index * cardWidth}px)`;
 }
 
-prevButton.addEventListener('click', () => {
+function slidePrev() {
   cardIndex = Math.max(cardIndex - 1, 0);
   showCard(cardIndex);
-});
+}
 
-nextButton.addEventListener('click', () => {
+function slideNext() {
   const cards = document.querySelectorAll('.card');
   cardIndex = Math.min(cardIndex + 1, cards.length - 1);
   showCard(cardIndex);
-});
+}
 
-// Optional: Add swipe functionality using touch events
-
-let touchStartX = 0;
-let touchEndX = 0;
+prevButton.addEventListener('click', slidePrev);
+nextButton.addEventListener('click', slideNext);
 
 cardsContainer.addEventListener('touchstart', (e) => {
   touchStartX = e.touches[0].clientX;
@@ -35,9 +35,10 @@ cardsContainer.addEventListener('touchend', (e) => {
 });
 
 function handleGesture() {
-  if (touchEndX < touchStartX) {
-    nextButton.click();
-  } else if (touchEndX > touchStartX) {
-    prevButton.click();
+  const sensitivity = 20; // Adjust this value for swipe sensitivity
+  if (touchEndX < touchStartX - sensitivity) {
+    slideNext();
+  } else if (touchEndX > touchStartX + sensitivity) {
+    slidePrev();
   }
 }
