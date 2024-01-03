@@ -1,4 +1,4 @@
-function updateImages() {
+async function updateImages() {
     const storedProjectID = localStorage.getItem('projectID');
     const gridContainer = document.querySelector('.grid-container');
     const modelHeading = document.querySelector('h1');
@@ -33,26 +33,32 @@ function updateImages() {
     const projectName = nameMap[storedProjectID] || 'Default Name'; // Get the corresponding name or use a default name
     nameElement.textContent = projectName;
 
-    for (let index = 0; index < 50; index++) {
-        const imagePath = `/assets/images/${storedProjectID}/img (${index + 1}).JPG`;
+    async function loadImageAndAppend(index) {
+        const imagePath = `/assets/images/${storedProjectID}/img (${index}).JPG`;
 
-        const tempImg = new Image();
-        tempImg.onload = function () {
-            const pTag = document.createElement('p');
-            pTag.textContent = `${index + 1}`;
-            pTag.style.margin = '0';
-            pTag.style.fontSize = '20px';
-            gridContainer.appendChild(pTag);
+        return new Promise((resolve) => {
+            const tempImg = new Image();
+            tempImg.onload = function () {
+                const pTag = document.createElement('p');
+                pTag.textContent = `${index}`;
+                pTag.style.margin = '0';
+                pTag.style.fontSize = '20px';
+                gridContainer.appendChild(pTag);
 
-            const img = document.createElement('img');
-            img.src = imagePath;
-            img.classList.add(`img-${index + 1}`);
-            img.setAttribute('loading', 'lazy');
-            gridContainer.appendChild(img);
-        };
-        tempImg.src = imagePath;
+                const img = document.createElement('img');
+                img.src = imagePath;
+                img.classList.add(`img-${index}`);
+                gridContainer.appendChild(img);
+
+                resolve(); // Resolve the promise when the image and pTag are appended
+            };
+            tempImg.src = imagePath;
+        });
+    }
+
+    for (let index = 1; index <= 50; index++) {
+        await loadImageAndAppend(index);
     }
 }
-
 
 window.addEventListener('load', updateImages);
