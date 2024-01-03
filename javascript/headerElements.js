@@ -44,7 +44,7 @@ document.getElementById('hamburgerMenu').addEventListener('click', function() {
                     footer.style.position = 'absolute';
                     footer.style.opacity = '1';
                 }
-            }, 900);
+            }, 200);
         }
         
     }
