@@ -65,7 +65,7 @@
     width: 280px;
     left: -200px;
     background-color: #ffffffbd;
-    padding: 20px;
+    padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: left 0.5s ease;
@@ -78,6 +78,18 @@
 
 .disclaimer-banner a {
     color: black;
+}
+
+.disclaimer-banner img {
+    position: absolute;
+    top: 80%;
+    right: -15px;
+    float: right;
+}
+
+.disclaimer-banner.show img{
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
 }
 
 
