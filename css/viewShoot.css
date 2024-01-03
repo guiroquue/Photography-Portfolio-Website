@@ -1,3 +1,7 @@
+body {
+    overflow: auto;
+}
+
 .row {
     display: flex;
     width: 100%;
