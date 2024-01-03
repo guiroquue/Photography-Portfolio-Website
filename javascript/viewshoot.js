@@ -1,6 +1,8 @@
 function updateImages() {
     const storedProjectID = localStorage.getItem('projectID');
     const gridContainer = document.querySelector('.grid-container');
+    const modelHeading = document.querySelector('h1');
+    const nameElement = modelHeading.querySelector('p:last-child');
 
     const nameMap = {
       // Map project IDs to names
@@ -29,9 +31,6 @@ function updateImages() {
     };
 
     const projectName = nameMap[storedProjectID] || 'Default Name'; // Get the corresponding name or use a default name
-
-    const modelHeading = document.querySelector('h1');
-    const nameElement = modelHeading.querySelector('p:last-child');
     nameElement.textContent = projectName;
 
     for (let index = 0; index < 50; index++) {
@@ -39,14 +38,21 @@ function updateImages() {
 
         const tempImg = new Image();
         tempImg.onload = function () {
+            const pTag = document.createElement('p');
+            pTag.textContent = `${index + 1}`;
+            pTag.style.margin = '0';
+            pTag.style.fontSize = '20px';
+            gridContainer.appendChild(pTag);
+
             const img = document.createElement('img');
             img.src = imagePath;
             img.classList.add(`img-${index + 1}`);
-            img.setAttribute('loading', 'lazy'); // Add loading="lazy"
+            img.setAttribute('loading', 'lazy');
             gridContainer.appendChild(img);
         };
         tempImg.src = imagePath;
     }
 }
+
 
 window.addEventListener('load', updateImages);

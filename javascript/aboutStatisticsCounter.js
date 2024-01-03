@@ -21,7 +21,7 @@ window.addEventListener('load', function() {
     const clientsElement = document.getElementById('clients');
     const countriesElement = document.getElementById('countries');
 
-    const maxDuration = 3000; // Set the maximum duration among all animations
+    const maxDuration = 2000; // Set the maximum duration among all animations
 
     startCountAnimation(followersElement, 250, maxDuration);
     startCountAnimation(photoshootsElement, 19, maxDuration);

@@ -112,6 +112,7 @@ body {
     width: 0;
     background-color: white;
     z-index: 2;
+    transition: width 0.7s ease;
     pointer-events: none; 
 }
 

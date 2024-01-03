@@ -21,7 +21,7 @@ document.getElementById('hamburgerMenu').addEventListener('click', function() {
         this.classList.toggle('active');
         enableScroll()
 
-        if (window.location.href.includes('/Commercial.html') || window.location.href.includes('/about.html') || window.location.href.includes('/viewshoot.html')) {
+        if (window.location.href.includes('/Commercial.html') || window.location.href.includes('/about.html') || window.location.href.includes('/viewshoot.html') || window.location.href.includes('/prints.html')) {
             setTimeout(function() {
                 if (footer) {
                     footer.style.transition = 'opacity 0.2s ease-in-out';
@@ -35,7 +35,7 @@ document.getElementById('hamburgerMenu').addEventListener('click', function() {
         smoothScrollToTop();
         disableScroll()
 
-        if (window.location.href.includes('/Commercial.html') || window.location.href.includes('/about.html') || window.location.href.includes('/viewshoot.html')) {
+        if (window.location.href.includes('/Commercial.html') || window.location.href.includes('/about.html') || window.location.href.includes('/viewshoot.html') || window.location.href.includes('/prints.html')) {
             footer.style.opacity = '0';
         
             setTimeout(function() {
@@ -66,7 +66,7 @@ function toggleOverlay() {
     if (window.innerWidth >= 768 && isActive) {
         overlay.classList.remove('active');
 
-        if (window.location.href.includes('/Commercial.html') || window.location.href.includes('/about.html') || window.location.href.includes('/viewshoot.html')) {
+        if (window.location.href.includes('/Commercial.html') || window.location.href.includes('/about.html') || window.location.href.includes('/viewshoot.html')  || window.location.href.includes('/prints.html')) {
             footer.style.position = 'relative';
             enableScroll()
         }
@@ -82,23 +82,23 @@ function toggleOverlay() {
 // Disable scrolling
 function disableScroll() {
     document.body.style.overflow = 'hidden';
-  }
+}
   
-  // Enable scrolling
-  function enableScroll() {
+// Enable scrolling
+function enableScroll() {
     document.body.style.overflow = ''; // Reset to default value
-  }
+}
 
-  // Function to smoothly scroll to the top
-  function smoothScrollToTop() {
+// Function to smoothly scroll to the top
+function smoothScrollToTop() {
     const currentPosition = window.scrollY || document.documentElement.scrollTop;
-  
+
     if (currentPosition > 0) {
-      window.requestAnimationFrame(smoothScrollToTop);
-      window.scrollTo(0, currentPosition - currentPosition / 8);
+        window.requestAnimationFrame(smoothScrollToTop);
+        window.scrollTo(0, currentPosition - currentPosition / 8);
     }
-  }
-  
+}
+
 
 window.addEventListener('resize', toggleOverlay);
 toggleOverlay();
@@ -154,10 +154,7 @@ window.addEventListener('load', function() {
     
     let hasVisitedMainPage = localStorage.getItem('visitedMainPage');
 
-    
-
-
-    if (window.location.href.includes('/Commercial.html') || window.location.href.includes('/about.html') || window.location.href.includes('/viewshoot.html') || window.location.href.includes('/faq.html')) {
+    if (window.location.href.includes('/Commercial.html') || window.location.href.includes('/about.html') || window.location.href.includes('/viewshoot.html') || window.location.href.includes('/faq.html') || window.location.href.includes('/prints.html')) {
         setTimeout(() => {
             loadingOverlay.classList.add('loaded');
         }, 400);
@@ -207,12 +204,8 @@ window.addEventListener('load', function() {
             }, 3200);
         }
     }
-    
+});
 
-
-    
-  });
-  
 
 function sendValue(projectID) {
     localStorage.setItem('projectID', projectID);

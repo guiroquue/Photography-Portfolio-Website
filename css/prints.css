@@ -1,0 +1,72 @@
+body {
+  overflow: scroll;
+}
+
+.print-submission-info {
+  width: 90%;
+  max-width: 500px;
+
+  margin: 0 auto;
+}
+
+.print-submission-info h2, h3 {
+  font-weight: 500;
+}
+
+.print-submission-info p {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input,
+  textarea,
+  form button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 20px); 
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  color: black; /* Placeholder color */
+}
+  
+  form button {
+    background-color: #ff0000; /* Change button color */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #b30000; /* Change hover color */
+  }
+
+  .footer-container {
+    position: relative;
+    opacity: 1;
+}
