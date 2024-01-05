@@ -40,7 +40,7 @@ body {
 
 /* Apply the reverse animation */
 .animated-slide-reverse {
-    animation: slideToBottom 8s ease forwards; /* Adjust duration as needed */
+    animation: slideToBottom 4s ease forwards; /* Adjust duration as needed */
 }
 
 .grid-container  img {
@@ -106,7 +106,7 @@ body {
 
 /* Apply the reverse animation */
 .animated-fade-out {
-    animation: fadeOut 2s ease forwards; /* Adjust duration as needed */
+    animation: fadeOut 1.5s ease forwards; /* Adjust duration as needed */
 }
 
 

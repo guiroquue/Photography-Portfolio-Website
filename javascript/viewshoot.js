@@ -59,6 +59,10 @@ async function updateImages() {
     for (let index = 1; index <= 50; index++) {
         await loadImageAndAppend(index);
     }
+    const elementsToAnimate = document.querySelectorAll('.animated-fade-in');
+    elementsToAnimate.forEach(element => {
+        element.classList.add('animated-fade-in');
+    });
 }
 
 window.addEventListener('load', updateImages);
@@ -71,12 +75,6 @@ window.addEventListener('load', function() {
     
 });
 
-window.addEventListener('load', function() {
-    const elementsToAnimate = document.querySelectorAll('.animated-fade-in');
-    elementsToAnimate.forEach(element => {
-        element.classList.add('animated-fade-in');
-    });
-});
 
 
 document.addEventListener("DOMContentLoaded", function() {
