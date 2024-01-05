@@ -59,11 +59,18 @@ async function updateImages() {
     for (let index = 1; index <= 50; index++) {
         await loadImageAndAppend(index);
     }
+}
+
+async function performAnimation() {
+    await updateImages();
     const elementsToAnimate = document.querySelectorAll('.animated-fade-in');
     elementsToAnimate.forEach(element => {
         element.classList.add('animated-fade-in');
     });
 }
+
+performAnimation(); 
+
 
 window.addEventListener('load', updateImages);
 
