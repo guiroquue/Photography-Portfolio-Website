@@ -26,7 +26,7 @@ body {
 }
 
 .animated-slide {
-    animation: slideFromBottom 2s ease forwards; /* Adjust duration as needed */
+    animation: slideFromBottom 3s ease forwards; /* Adjust duration as needed */
 }
 
 @keyframes slideToBottom {
@@ -40,7 +40,7 @@ body {
 
 /* Apply the reverse animation */
 .animated-slide-reverse {
-    animation: slideToBottom 4s ease forwards; /* Adjust duration as needed */
+    animation: slideToBottom 8s ease forwards; /* Adjust duration as needed */
 }
 
 .grid-container  img {
