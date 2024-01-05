@@ -72,8 +72,6 @@ async function performAnimation() {
 performAnimation(); 
 
 
-window.addEventListener('load', updateImages);
-
 window.addEventListener('load', function() {
     const gridContainer = document.querySelector('.animated-slide');
     setTimeout(() => {
