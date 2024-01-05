@@ -143,8 +143,6 @@ document.querySelector('.hamburger-menu').addEventListener('click', function() {
     }
 });
 
-
-
 window.addEventListener('load', function() {
     const loadingOverlay = document.querySelector('.loading-overlay');
     const overlay = document.querySelector('.overlay');
@@ -205,9 +203,3 @@ window.addEventListener('load', function() {
         }
     }
 });
-
-
-function sendValue(projectID) {
-    localStorage.setItem('projectID', projectID);
-    window.location.href = '/viewshoot.html';
-}

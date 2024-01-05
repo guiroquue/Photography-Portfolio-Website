@@ -15,12 +15,15 @@
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .pola {
     padding: 8px;
-    width: 70vw;
-    max-width: 600px;
+    height: 67vh;
+    width: auto;
     margin: 0 auto;
     border: 1px solid black;
 
@@ -29,27 +32,33 @@
     box-shadow: 0px 5px 15px 2px rgba(0,0,0,0.6);
 
     text-align: left;
-    
+    transition: width 2.5s ease, padding 0.5s ease;
   }
   
   .pola img {
-    width: 70vw;
-    max-width: 600px;
-    height: auto;
+    height: 60vh;
+    width: auto;
     margin: 0 auto;
 
     border: 1px solid black;
+    transition: width 2.5s ease;
   }
   
   .pola h3 {
     margin-top: 5px;
     margin: 0;
     font-weight: 500;
+
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0); /* Replace with your text shadow */
+    transition: text-shadow 0.5s ease;
   }
 
   .pola p {
     margin: 0;
     font-size: 13px;
+
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0); /* Replace with your text shadow */
+    transition: text-shadow 0.5s ease;
   }
 
   .overlay, #header-container {
@@ -81,3 +90,15 @@
     transform: translateY(0);
   }
   
+/* Define the fade-out transition for the elements */
+/* Define the fade-out transitions for specific elements */
+.pola.removeBorderAndShadow {
+  border: none;
+  box-shadow: none;
+  transition: border 8s ease, box-shadow 0.5s ease; /* Adjust duration and easing */
+}
+
+.removeTextShadow {
+  opacity: 0;
+  transition: opacity 1s ease; /* Adjust duration and easing */
+}

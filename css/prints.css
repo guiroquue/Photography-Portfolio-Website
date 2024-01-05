@@ -54,7 +54,9 @@ textarea::placeholder {
 }
   
   form button {
-    background-color: #ff0000; /* Change button color */
+    box-shadow:inset 0px -1px 0px 0px #fadcdc;
+	background:linear-gradient(to bottom, #c22d2d 5%, #ff6363 100%);
+	background-color:#c22d2d;
     color: #fff;
     border: none;
     cursor: pointer;
