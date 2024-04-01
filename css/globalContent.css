@@ -1,0 +1,191 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Resetting default margin and padding for the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif; /* Applying Playfair Display font */
+    font-size: 24px;
+    font-weight: 200;
+    color: #202020; /* Setting text color */
+    background-color: #F5F5F5; /* Setting background color */
+    overflow-x: hidden;
+}
+
+#slide-in-content-holder {
+    position: absolute;
+    top: 0;
+    right: -100%; /* Initially off-screen */
+    width: 100%;
+    height: 100%;
+    transition: right 1.5s ease; /* Smooth transition */
+}
+
+#slide-in-content-holder.active {
+    right: 0; /* Slide in from the right */
+}
+
+#slide-in-content-holder.active-out {
+    right: 100%; 
+}
+
+/* Styling for the header */
+header {
+    width: 100%;
+    height: 100px;
+}
+
+/* Placeholder for the fixed header */
+#header-placeholder {
+    position: fixed;
+    background-color: #F5F5F5;
+    z-index: 2;
+    width: 100%;
+    height: 100px;
+}
+
+/* Container for both desktop and mobile headers */
+.desktop-header-container, .mobile-header-container {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto; /* Centering horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styling for mobile header */
+.mobile-header-container {
+    display: none; /* Initially hidden */
+}
+
+/* Styling for header text */
+.desktop-header-container h1, .mobile-header-container h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+/* Styling for header links */
+.desktop-header-container a, .mobile-header-container a {
+    color: #202020;
+    text-decoration: none;
+}
+
+/* Styling for header buttons */
+.desktop-header-container button, .mobile-header-container .mobile-header-button-container button {
+    border: none;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #F5F5F5;
+}
+
+/* Container for page content */
+.page-content-container {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+}
+
+/* Placeholder for the navigation sidebar */
+#navigation-sidebar-placeholder {
+    width: 400px;
+    height: 90vh;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+
+/* Container for content */
+#content-container {
+    width: calc(100% - 400px);
+    height: 0%;
+    overflow: hidden;
+    margin-left: 420px;
+    border-radius: 10px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 1300px) {
+    /* Hide desktop header */
+    .desktop-header-container {
+        display: none;
+    }
+    /* Display mobile header */
+    .mobile-header-container {
+        display: flex;
+    }
+    /* Hide navigation sidebar */
+    #navigation-sidebar-placeholder {
+        display: none;
+    }
+    /* Adjust content container */
+    #content-container {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+/* Styling for sidebar heading */
+.sidebar h2{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin: 0;
+    margin-left: 20px;
+}
+
+/* Styling for sidebar */
+.sidebar {
+    width: 400px;
+    height: 65vh;
+    min-height: 600px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Styling for sidebar list */
+.sidebar ul  {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for sidebar list items */
+.sidebar ul li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+/* Styling for sidebar links */
+.sidebar ul li a {
+    color: #2e2e2e;
+    text-decoration: none;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+/* Hover effect for sidebar links */
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+#sidebar-instagram-link img{
+    width: 20px;
+    height: 20px;
+}
+
+#content-container h2 {
+    font-size: 45px;
+    margin-left: 30px;
+}

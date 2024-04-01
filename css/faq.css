@@ -1,144 +1,41 @@
+#content-container .faq-items-container {
+    width: 100%;
+    height: 100%;
 
-/* FAQ Styles */
-.faq-slider {
-    width: 90%;
-    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+#content-container .faq-items-container .faq-item {
+    width: 100%;
+    height: auto;
+
+    border-radius: 10px;
+    border: 0px solid #202020;
+    background-color: #2020200c;
+}
+
+.faq-item p {
+    padding: 0 20px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.faq-item-header {
+    width: auto;
     margin: 0 auto;
-}
-
-.faq-item {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.faq-item.active {
-    display: block;
-    opacity: 1;
-}
-
-.question {
-    height: 20vw;
-    font-size: 4vw;
-    font-weight: 500;
-}
-
-.answer {
-    font-size: 2vw;
-    height: 20vw;
-    text-align: right;
-    font-weight: 400;
-}
-
-.slider-nav {
-    bottom: 20px;
-    right: 20px;
+    padding: 0 20px;
     display: flex;
     align-items: center;
-    font-weight: 400;
+    justify-content: space-between;
 }
 
-.slider-nav button {
-    width: 30%;
-}
-
-.previous-question,
-.next-question {
-    font-family: 'Kalnia', sans-serif;
-    background-color: transparent;
-    align-content: right;
-    border: none;
-    font-size: 1vw;
-    margin-left: 10px;
-    cursor: pointer;
-}
-
-.counter {
-    width: 80%;
-    margin: 0 10px;
-    font-size: 1vw;
-}
-
-.disclaimer-banner {
-    margin-top: 50px;
-    position: relative;
-    width: 280px;
-    left: -200px;
-    background-color: #ffffffbd;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: left 0.5s ease;
-    z-index: 1;
-}
-
-.disclaimer-banner.show {
-    left: 10%; 
-}
-
-.disclaimer-banner a {
-    color: black;
-}
-
-.disclaimer-banner img {
-    position: absolute;
-    top: 80%;
-    right: -15px;
-    float: right;
-}
-
-.disclaimer-banner.show img{
-    opacity: 0;
-    transition: opacity 0.5s ease-out;
-}
-
-
-@media screen and (max-width: 700px) {
-
-    /*FAQ Styles*/
-    .question {
-        height: 25vw;
-        font-size: 6vw;
-        font-weight: 500;
-    }
-    
-    .answer {
-        font-size: 4vw;
-        height: 25vw;
-        text-align: right;
-    }
-    
-    .previous-question,
-    .next-question {
-        font-size: 4vw;
-    }
-
-    .counter {
-        font-size: 4vw;
-    }
-}
-
-
-@media screen and (min-width: 701px) {
-    
-    /*FAQ Styles*/
-
-    .question {
-        font-size: 30px;
-        height: 100px;
-    }
-    
-    .answer {
-        font-size: 20px;
-        height: 100px;
-    }
-    
-    .previous-question,
-    .next-question {
-        font-size: 20px;
-    }
-
-    .counter {
-        font-size: 20px;
-    }
+.faq-item-header h3, .faq-item-header p {
+    margin: 20px 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
 }

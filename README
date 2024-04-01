@@ -1,0 +1,56 @@
+# Eoqrupics - A Photography Portfolio Website
+
+Eoqrupics is a photography portfolio website designed to showcase my work as a photographer while incorporating my skills in web design. The project aims to create an aesthetically pleasing and user-friendly platform for displaying my portfolio and attracting potential clients.
+
+## Motivation
+
+As a photographer and web designer, I wanted to merge my two passions and create a portfolio that not only highlights my photography skills but also showcases my ability to design and develop interactive web experiences. This project serves as a platform for me to demonstrate my creativity and technical abilities while providing a professional showcase of my work.
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- Figma (for design)
+
+## Features and Challenges
+
+### Features Implemented
+- Dynamically generated navigation sidebar using JavaScript to ensure consistency across multiple pages.
+- Smooth page transitions with swipe-like animations for enhanced user experience.
+- Translation feature allowing users to switch between English and Icelandic languages for all text content.
+- Full-screen image viewing functionality with seamless navigation back to the portfolio.
+- Responsive design optimized for various screen sizes, including mobile devices.
+
+### Challenges Overcome
+- Implementing dynamic navigation required careful consideration of DOM manipulation and event handling to ensure seamless integration across pages.
+- Creating smooth page transitions involved experimenting with CSS animations and JavaScript timing functions to achieve the desired effect.
+- Integrating translation functionality required utilizing JavaScript to ensure what page needed their text changed and pulling the different text from JSON files.
+
+## Installation and Usage
+
+1. Clone the repository: `git clone https://github.com/your-username/eoqrupics.git`
+2. Navigate to the project directory: `cd eoqrupics`
+3. Open `index.html` in your web browser to access the portfolio.
+4. Explore the various sections and features of the website to view the photography portfolio and experience the interactive elements.
+
+or simply search www.eoqrupics.com
+
+
+## Future Improvements
+
+- Enhance accessibility features to ensure the website is usable by individuals with disabilities.
+- Continuously optimize performance and user experience based on feedback and emerging technologies.
+
+## Future Improvements outside of a static website
+
+- Introduce dynamic forms clients can fill out, and reach out from.
+- Introduce dynamic content management system (CMS) capabilities for easy updating and management of the portfolio.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For inquiries or feedback, please contact [your-email@example.com](mailto:your-email@example.com) or visit my [GitHub profile](https://github.com/your-username).
