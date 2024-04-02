@@ -52,3 +52,12 @@ function handleNavigation(event) {
         window.location.href = destination;
     }, 1200); // Assuming the slide-out animation duration is 0.5s (500 milliseconds)
 }
+
+function toggleMobileNavMenu() {
+    const mobileSideMenuSlide = document.getElementById('mobile-side-navigation-container');
+    if (mobileSideMenuSlide.classList.contains('active')) {
+        mobileSideMenuSlide.classList.remove('active'); // Remove 'active' class to slide out
+    } else {
+        mobileSideMenuSlide.classList.add('active'); // Add 'active' class to slide in
+    }
+}

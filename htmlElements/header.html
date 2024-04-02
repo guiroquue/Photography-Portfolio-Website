@@ -8,8 +8,36 @@
         <h1><a href="/index.html">Eoqrupics</a></h1>
         
         <div class="mobile-header-button-container">
-            <button onclick="toggleLanguage()">EN/IS</button>
-            <button>burger</button>
+            <button onclick="toggleMobileNavMenu()">
+                <div class="hambruger-line"></div>
+                <div class="hambruger-line"></div>
+                <div class="hambruger-line"></div>
+            </button>
         </div>
+    </div>
+    <div id="mobile-side-navigation-container">
+        <div class="mobile-side-navigation-header">
+            <button onclick="toggleLanguage()">En/Is</button>
+            <div class="mobile-header-button-container">
+                
+                <button onclick="toggleMobileNavMenu()">
+                    <div class="hambruger-line"></div>
+                    <div class="hambruger-line"></div>
+                    <div class="hambruger-line"></div>
+                </button>
+            </div>
+        </div>
+        
+        <div class="page-navigation">
+            <ul>
+                <li><a id="sidebar-portraits-link" href="#" data-destination="/index.html" onclick="handleNavigation(event)">Portraits</a></li>
+                <li><a id="sidebar-commercial-link" href="#" data-destination="/commercial.html" onclick="handleNavigation(event)">Commercial</a></li>
+                <li><a id="sidebar-pricing-link" href="#" data-destination="/pricing.html" onclick="handleNavigation(event)">Pricing</a></li>
+                <li><a id="sidebar-about-link" href="#" data-destination="/about.html" onclick="handleNavigation(event)">About</a></li>
+                <li><a id="sidebar-faq-link" href="#" data-destination="/faq.html" onclick="handleNavigation(event)">FAQ</a></li>
+                <li><a id="sidebar-instagram-link" href="https://www.instagram.com/eoqrupics/" target="_blank"><img src="/assets/icons/instagramLogo.png" alt="Instagram logo"></a></li>
+            </ul>
+        </div>
+        
     </div>
 </header>

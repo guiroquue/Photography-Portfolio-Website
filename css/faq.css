@@ -39,3 +39,18 @@
     font-weight: 700;
     font-family: "Playfair Display", serif;
 }
+
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 800px) {
+    .faq-item-header h3, .faq-item-header p {
+        font-size: 20px;
+    }
+
+    .faq-item p {
+        font-size: 15px;
+    }
+    .faq-items-container {
+        margin-bottom: 50px;
+    }
+}
