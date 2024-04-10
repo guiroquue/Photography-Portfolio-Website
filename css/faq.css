@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
 
-    gap: 30px;
+    gap: 50px;
 }
 
 #content-container .faq-items-container .faq-item {
@@ -44,7 +44,7 @@
 /* Media query for smaller screens */
 @media only screen and (max-width: 800px) {
     .faq-item-header h3, .faq-item-header p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .faq-item p {

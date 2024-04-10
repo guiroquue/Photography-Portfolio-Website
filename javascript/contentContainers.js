@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
         const slideIn = document.getElementById('slide-in-content-holder');
         slideIn.classList.add('active'); // Add 'active' class to slide in
-    }, 1000); // Adjust the delay time (in milliseconds) as needed
+    }, 800); // Adjust the delay time (in milliseconds) as needed
 });
 
 function handleNavigation(event) {
@@ -37,10 +37,7 @@ function handleNavigation(event) {
     const slideIn = document.getElementById('slide-in-content-holder');
     
     // Get the destination URL from the data-destination attribute
-    var destination = event.currentTarget.dataset.destination;
-    
-    console.log('Clicked link:', event.target); // Debugging
-    console.log('Destination:', destination); // Debugging
+    let destination = event.currentTarget.dataset.destination;
     
     // Remove 'active' class to trigger slide-out animation
     slideIn.classList.remove('active');
