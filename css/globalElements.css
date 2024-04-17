@@ -1,0 +1,145 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    background-color: #f5f5f5;
+}
+
+/* Navigation */
+nav {
+    width: 95%;
+    max-width: 2000px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+/* Navigation Name */
+nav .name {
+    display: flex;
+    gap: 15px;
+    align-items: baseline;
+}
+
+nav .name h1 {
+    font-weight: 600;
+    font-size: 26px;
+    cursor: pointer;
+    font-family: "Sora", sans-serif;
+}
+
+nav .name a {
+    padding: 2px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Menu Button */
+nav .menu-button,
+nav .menu-button button, 
+footer button {
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+    border: none;
+    background-color: #f5f5f5;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Menu Button Line */
+nav .menu-button button .line {
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+    border-radius: 2px;
+    background-color: black;
+}
+
+/* Overlay Menu */
+#navigation-menu-overlay {
+    position: fixed;
+    top: 0;
+    right: -100%; 
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    transition: right 0.3s ease;
+}
+
+.overlay-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.overlay-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.overlay-menu ul li {
+    margin-bottom: 15px;
+}
+
+.overlay-menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+/* Menu */
+.menu {
+    width: 94%;
+    max-width: 2000px;
+    height: 100%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#page-content-container {
+    width: 95%;
+    max-width: 600px;
+    height: auto;
+    margin: 90px auto;
+}
+
+footer {
+    position: fixed;
+    bottom: 20px;
+}
+
+
+footer button{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

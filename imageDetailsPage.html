@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/globalElements.css">
+    
+    <style>
+        .image, .imageDetails {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .image img {
+            width: 100%;
+        }
+
+        .imageDetails {
+            font-weight: 600;
+            margin: 30px auto;
+        }
+
+    </style>
+
+    <title>About This Image</title>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section id="page-content-container">
+
+        <div class="image">
+            <img id="imageDisplay" alt="Selected Image">
+        </div>
+
+        <div class="imageDetails">
+            <p id="imagecameraDetails01"></p>
+            <p id="imagecameraDetails02"></p>
+        </div>
+    
+    </section>
+
+    <script src="./javascript/insertGlobalElements.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const imageId = urlParams.get('imageId');
+
+        fetch('./json/imageDetails.json')
+            .then(response => response.json())
+            .then(data => {
+                const imageInfo = data[imageId];
+                
+                document.getElementById('imagecameraDetails01').textContent = imageInfo.cameraDetails01;
+                document.getElementById('imagecameraDetails02').textContent = imageInfo.cameraDetails02;
+                document.getElementById('imageDisplay').src = imageInfo.imageUrl;
+            })
+            .catch(error => console.error('Error fetching image info:', error));
+    </script>
+</body>
+</html>

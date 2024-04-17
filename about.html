@@ -4,79 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/css/globalContent.css">
-    <link rel="stylesheet" href="/css/about.css">
-    
-    <title>About Eoqrupics</title>
-    <meta name="description" content="Learn more about portrait photographer Gui Roque.">
-    <meta name="keywords" content="portrait photographer, about me, information, photographer">
+    <link rel="stylesheet" href="./css/globalElements.css">
+
+    <style>
+        .about-container, 
+        .about-container img {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .about-container h2 {
+            font-size: 30px;
+            margin: 10px 0;
+        }
+
+        .statistics-container, .statistics-row {
+            margin: 40px auto;
+        }
+
+        .statistic-text {
+            display: flex; 
+            justify-content: space-around; 
+            font-size: 20px;
+        }
+
+        p span {
+            width: 120px;
+            text-align: center;
+            font-weight: 300;
+        }
+    </style>
+
+    <title>About Gui</title>
 </head>
 <body>
-    <div id="slide-in-content-holder">
-        <div id="header-placeholder"></div>
+    <div id="header-placeholder"></div>
 
-        <section class="page-content-container">
-            <div id="navigation-sidebar-placeholder"></div>
-
-            <div id="content-container">
-                <div class="content-container-header">
-                    <h2 id="page-headline">I'm Gui Roque</h2>
-                    <p id="location-text"><img src="/assets/icons/locationIcon.png" alt="Location Icon"> Iceland, Reykjavik</p>
+    <section id="page-content-container">
+        <div class="about-container">
+            <img src="./assets/images/other/IMG_5420.jpg" alt="Image of photographer">
+            <h2>Gui Roque</h2>
+            <p style="font-size: 18px;">
+                I specialize in creating up and close intimate portraits. Whether it's a casual session 
+                or a professional shoot, my goal is to make you comfortable in front of the camera and 
+                deliver portraits that resonate with your personality. <br><br>
+                I started taking photos back in late 2022, and have since been improving my skill and 
+                style. Feel free to explore my portfolio and get in touch for your next memorable 
+                images of you.
+            </p>
+            <div class="statistics-container">
+                <div class="statistics-row">
+                    <p class="statistic-text"><span>450+</span><span>40+</span></p>
+                    <p class="statistic-text"><span>Followers</span><span>Photo Shoots</span></p>
                 </div>
-                
-                <div class="description">
-                    <p>
-                        I specialize in creating up and close intimate portraits. Whether it's a casual session or a professional shoot, my goal is to make you comfortable in front of the camera and deliver portraits that resonate with your personality. <br> <br>
-                        I started taking photos back in late 2022, and have since been improving my skill and style. Feel free to explore my portfolio and get in touch for your next memorable images of you.
-                    </p>
-                </div>
-                
-
-                <div class="clients-container">
-                    <h3>Clients:</h3>
-                    <p>
-                        Reizel Tattoo <br> <br>
-                        ImprintYoga <br> <br>
-                        CONFDNS
-                    </p>
-        
-                    <h3>Artists:</h3>
-                    <p>
-                        Katrín Myrra <br> <br>
-                        Agla Bríet <br> <br>
-                        Lilja sól <br> <br>
-                        ZIPLOC 
-                    </p>
-                </div>
-                
-
-                <div class="statistics-container">
-                    <h3>Since Starting-</h3>
-
-                    <div class="stats-items-container">
-                        <div class="stats-item">
-                            <h3>450+</h3>
-                            <p>Followers</p>
-                        </div>
-                        <div class="stats-item">
-                            <h3>40+</h3>
-                            <p>Photo Shoots</p>
-                        </div>
-                        <div class="stats-item">
-                            <h3>7</h3>
-                            <p>Professional <br> Clients</p>
-                        </div>
-                        <div class="stats-item">
-                            <h3>2</h3>
-                            <p>Countries <br> Worked In</p>
-                        </div>
-                    </div>
+                <div class="statistics-row">
+                    <p class="statistic-text"><span>7</span><span>2</span></p>
+                    <p class="statistic-text"><span>Clients</span><span>Countries</span></p>
                 </div>
             </div>
-        </section>
-    </div>
+            
+            
+        </div>
+    </section>
 
-    <script src="/javascript/contentContainers.js"></script>
-    <script src="/javascript/translations.js"></script>
+    <script src="./javascript/insertGlobalElements.js"></script>
 </body>
 </html>

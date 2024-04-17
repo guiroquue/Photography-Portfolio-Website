@@ -4,85 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/css/globalContent.css">
-    <link rel="stylesheet" href="/css/faq.css">
+    <link rel="stylesheet" href="./css/globalElements.css">
+    <style>
+        .faq-items-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .faq-item {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #8b8b8b71 ;
+            background-color: #ffffff;
+        }
+
+        .faq-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-info h2{
+            margin: 0;
+        }
+
+        .faq-info,
+        .faq-answer {
+            padding: 20px;
+        }
+    </style>
+    </style>
     
-    <title>facts and Questions</title>
-    <meta name="description" content="Facts and questions page of Gui Roque's photography portfolio, with often ascked questions asked.">
-    <meta name="keywords" content="portrait photographer, questions, answers, information">
+
+    <title>FAQ</title>
 </head>
 <body>
-    <div id="slide-in-content-holder">
-        <div id="header-placeholder"></div>
+    <div id="header-placeholder"></div>
 
-        <section class="page-content-container">
-            <div id="navigation-sidebar-placeholder"></div>
+    <section id="page-content-container">
+        <div class="faq-items-container">
 
-            <div id="content-container">
-                <h2 id="page-headline">FAQ</h2>
-
-                <div class="faq-items-container">
-                    <div class="faq-item">
-                        <div class="faq-item-header">
-                            <h3>Do I need to have modeled before?</h3>
-                            <p>1/7</p>
-                        </div>
-                        <p>No, I'll guide you step by step through the processes, such as posing, and together we'll create amazing photos.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-item-header">
-                            <h3>How do we pick an outfit?</h3>
-                            <p>2/7</p>
-                        </div>
-                        <p>Outfit selection is a joint effort, but usually, I prefer you to bring something from your wardrobe to showcase your unique style.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-item-header">
-                            <h3>How many photos will I receive?</h3>
-                            <p>3/7</p>
-                        </div>
-                        <p>You will recive at least 40 untouched and 10 more edited photos, from our shoot.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-item-header">
-                            <h3>Who selects the photos?</h3>
-                            <p>4/7</p>
-                        </div>
-                        <p>We do, together we pick 10 of the best photos for me to edit and then post.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-item-header">
-                            <h3>When will I get my photos?</h3>
-                            <p>5/7</p>
-                        </div>
-                        <p>Magic takes time, and each project varies. It could take around a week or two.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-item-header">
-                            <h3>Who do you photograph?</h3>
-                            <p>6/7</p>
-                        </div>
-                        <p>I photograph everyone: men, women, couples, friends, families, and also offer maternity sessions!</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-item-header">
-                            <h3>What about companies, artists and brands?</h3>
-                            <p>7/7</p>
-                        </div>
-                        <p>I've worked on song cover arts and product model photography. Commercially, I'm open to various photography projects.</p>
-                    </div>
+            <div class="faq-item">
+                <div class="faq-info">
+                    <h2>Do I need to have modeled before?</h2>
+                    <h3>1/7</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>No. I'll guide you step by step through the processes, such as posing, and outfit selecetion. Together we'll create amazing photos.</p>
                 </div>
             </div>
-        </section>
-    </div>
 
-    <script src="/javascript/contentContainers.js"></script>
-    <script src="/javascript/translations.js"></script>
+            <div class="faq-item">
+                <div class="faq-info">
+                    <h2>Who do you photograph?</h2>
+                    <h3>2/7</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>I offer photo shoots to; Men, Women and maternity shoots.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-info">
+                    <h2>What about companies, artists and brands?</h2>
+                    <h3>3/7</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>I love working with other artists and brands. You can check out some of my commercial work <a href="./commercialWork.html">here.</a></p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-info">
+                    <h2>How many photos will I receive?</h2>
+                    <h3>4/7</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>This depends on our shoot, but minimum of 30 images, with 10 of them edited.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-info">
+                    <h2>Who selects the photos?</h2>
+                    <h3>5/7</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>We do, together we pick 10 of of your favorite photos for me to edit.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-info">
+                    <h2>When will I get my photos?</h2>
+                    <h3>6/6</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>A good unique edited batch of 10 photos can take up 1-2 weeks.</p>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </section>
+
+    <script src="./javascript/insertGlobalElements.js"></script>
 </body>
 </html>
