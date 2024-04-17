@@ -3,115 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./css/globalElements.css">
-    <style>
-        .faq-items-container {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-
-        .faq-item {
-            width: 100%;
-            border-radius: 8px;
-            border: 1px solid #8b8b8b71 ;
-            background-color: #ffffff;
-        }
-
-        .faq-info {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .faq-info h2{
-            margin: 0;
-            max-width: 90%;
-        }
-
-        .faq-info,
-        .faq-answer {
-            padding: 20px;
-        }
-    </style>
-    </style>
-    
-
     <title>FAQ</title>
     <link rel="icon" type="image/x-icon" href="./assets/images/icons/whiteLogo.ico">
+
+    <link rel="stylesheet" href="./css/globalElements.css">
+    <link rel="stylesheet" href="./css/faq.css">
 </head>
 <body>
     <div id="header-placeholder"></div>
 
     <section id="page-content-container">
-        <div class="faq-items-container">
-
-            <div class="faq-item">
-                <div class="faq-info">
-                    <h2>Do I need to have modeled before?</h2>
-                    <h3>1/7</h3>
-                </div>
-                <div class="faq-answer">
-                    <p>No. I'll guide you step by step through the processes, such as posing, and outfit selecetion. Together we'll create amazing photos.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-info">
-                    <h2>Who do you photograph?</h2>
-                    <h3>2/7</h3>
-                </div>
-                <div class="faq-answer">
-                    <p>I offer photo shoots to; Men, Women and maternity shoots.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-info">
-                    <h2>What about companies, artists and brands?</h2>
-                    <h3>3/7</h3>
-                </div>
-                <div class="faq-answer">
-                    <p>I love working with other artists and brands. You can check out some of my commercial work <a href="./commercialWork.html">here.</a></p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-info">
-                    <h2>How many photos will I receive?</h2>
-                    <h3>4/7</h3>
-                </div>
-                <div class="faq-answer">
-                    <p>This depends on our shoot, but minimum of 30 images, with 10 of them edited.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-info">
-                    <h2>Who selects the photos?</h2>
-                    <h3>5/7</h3>
-                </div>
-                <div class="faq-answer">
-                    <p>We do, together we pick 10 of of your favorite photos for me to edit.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-info">
-                    <h2>When will I get my photos?</h2>
-                    <h3>6/6</h3>
-                </div>
-                <div class="faq-answer">
-                    <p>A good unique edited batch of 10 photos can take up 1-2 weeks.</p>
-                </div>
-            </div>
-
-            
-
-        </div>
+        <div id="faq-container" class="faq-items-container"></div>
     </section>
 
     <script src="./javascript/insertGlobalElements.js"></script>
+    <script src="./javascript/faqItemGenerator.js"></script>
 </body>
 </html>

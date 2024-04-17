@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About This Image</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/icons/whiteLogo.ico">
 
     <link rel="stylesheet" href="./css/globalElements.css">
-    
     <style>
-        .image, .imageDetails {
+        /* Image and Image Details */
+        .image,
+        .image-details {
             width: 100%;
             max-width: 600px;
             margin: 0 auto;
         }
 
+        /* Image */
         .image img {
             width: 100%;
         }
 
-        .imageDetails {
+        /* Image Details */
+        .image-details {
             font-weight: 600;
             margin: 10px auto;
         }
-
     </style>
-
-    <title>About This Image</title>
-    <link rel="icon" type="image/x-icon" href="./assets/images/icons/whiteLogo.ico">
 </head>
 <body>
     <div id="header-placeholder"></div>
@@ -35,7 +36,6 @@
         <div class="image">
             <img id="imageDisplay" alt="Selected Image">
         </div>
-
         <div class="imageDetails">
             <p id="imagecameraDetails01"></p>
             <p id="imagecameraDetails02"></p>

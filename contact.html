@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="./css/globalElements.css">
 
     <style>
+        /* Contact Info */
         .contact-info {
             width: 100%;
         }
 
-        form, label {
+        /* Form and Label */
+        form,
+        label {
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -19,7 +22,10 @@
             max-width: 600px;
         }
 
-        input[type=text], input[type=email], textarea {
+        /* Input Fields */
+        input[type=text],
+        input[type=email],
+        textarea {
             width: 100%;
             max-width: 600px;
             padding: 12px;
@@ -28,6 +34,7 @@
             border-radius: 4px;
         }
 
+        /* Submit Button */
         button[type=submit] {
             background-color: #2c2c2c;
             color: white;
@@ -43,9 +50,13 @@
         button[type=submit]:hover {
             background-color: #585858;
         }
+
+        .contact-info-description {
+            margin: 30px 5px 5px 5px;
+        }
     </style>
 
-    <title>Contact Gui</title>
+    <title>Contact</title>
     <link rel="icon" type="image/x-icon" href="./assets/images/icons/whiteLogo.ico">
 </head>
 <body>
@@ -55,8 +66,8 @@
         <div class="contact-info">
             <form action="https://formspree.io/f/xayrybqv" method="POST">
                 <label>
-                    <p style="margin: 30px 5px 5px 5px;">What makes photo shoots an awesome experiance is that they are all different. It's also a very collaborative process. <br> <br> So let's start chatting! </p>
-                    <p style="margin: 30px 5px 5px 5px;">Please fill out this form</p>
+                    <p class="contact-info-description">What makes photo shoots an awesome experiance is that they are all different. It's also a very collaborative process. <br> <br> So let's start chatting! </p>
+                    <p class="contact-info-description">Please fill out this form</p>
                     <input type="text" name="name" placeholder="Name..." required>
                 </label>
                 <label>

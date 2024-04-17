@@ -1,0 +1,61 @@
+/* FAQ Items Container */
+.faq-items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* FAQ Item Button */
+.faq-items-container button {
+    background-color: white;
+    border: none;
+    transition: transform 0.4s ease-in-out;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+/* FAQ Item */
+.faq-item {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #8b8b8b71;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+/* FAQ Info */
+.faq-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-info h2 {
+    margin: 0;
+    max-width: 90%;
+}
+
+/* FAQ Info, FAQ Answer */
+.faq-info,
+.faq-answer {
+    padding: 20px;
+}
+
+/* FAQ Answer */
+.faq-answer {
+    display: none;
+}
+
+.faq-answer.show {
+    display: block;
+    max-height: 200px;
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 600px) {
+    .faq-info h2 {
+        font-size: 20px;
+    }
+}

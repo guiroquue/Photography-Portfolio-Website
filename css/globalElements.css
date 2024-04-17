@@ -1,3 +1,4 @@
+/* Imported Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 /* Reset */
@@ -37,29 +38,29 @@ nav {
     margin: 0 auto;
 }
 
-/* Navigation Name */
-nav .name {
+/* Site Info */
+nav .site-info {
     display: flex;
     gap: 15px;
     align-items: baseline;
 }
 
-nav .name h1 {
+nav .site-info h1 {
     font-weight: 600;
     font-size: 26px;
     cursor: pointer;
     font-family: "Sora", sans-serif;
 }
 
-nav .name a {
+nav .site-info a {
     padding: 2px;
     text-decoration: none;
     color: black;
 }
 
-/* Menu Button */
-nav .menu-button,
-nav .menu-button button, 
+/* Menu Toggle Button */
+nav .menu-toggle-button,
+nav .menu-toggle-button button, 
 footer button {
     width: 30px;
     height: 30px;
@@ -70,8 +71,9 @@ footer button {
     cursor: pointer;
 }
 
-/* Menu Button Line */
-nav .menu-button button .line {
+/* Menu Toggle Button Line */
+nav .menu-toggle-button button 
+.menu-line {
     width: 30px;
     height: 4px;
     margin: 5px 0;
@@ -137,8 +139,7 @@ footer {
     bottom: 20px;
 }
 
-
-footer button{
+footer button {
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
