@@ -11,7 +11,7 @@ fetch('./json/faqQuestionsAnswers.json')
         const faqInfo = document.createElement('div');
         faqInfo.classList.add('faq-info');
 
-        const question = document.createElement('h2');
+        const question = document.createElement('h3');
         question.textContent = item.question;
 
         const button = document.createElement('button');

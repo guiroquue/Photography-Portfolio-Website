@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./css/globalElements.css">
@@ -13,25 +15,55 @@
         }
 
         /* Form and Label */
-        form,
-        label {
+        form, label {
             display: flex;
             flex-direction: column;
             gap: 10px;
-            width: 95%;
+            width: 100%;
             max-width: 600px;
         }
 
-        /* Input Fields */
         input[type=text],
         input[type=email],
         textarea {
-            width: 100%;
+            width: calc(100% - 52px);
             max-width: 600px;
-            padding: 12px;
-            margin: 5px;
+            padding: 12px 12px 12px 40px; /* Add padding on left side for image */
+            margin: 0 auto;
             border: 1px solid #ccc;
             border-radius: 4px;
+            background-position: 10px 9px; /* Adjust position of the background image */
+            background-repeat: no-repeat;
+            background-size: 20px 20px;
+        }
+
+        /* Style for when inputs and textarea are focused */
+        input[type=text]:focus,
+        input[type=email]:focus,
+        textarea:focus {
+            outline: none; /* Remove the default outline */
+            border: 2px solid rgb(73, 241, 73); /* Change the border thickness and color */
+        }
+
+                /* Style for when inputs and textarea are valid */
+        input[type=text]:valid,
+        input[type=email]:valid,
+        textarea:valid {
+            background-color: #98ffc059; /* Change the background color */
+        }
+
+        /* Background images for input and textarea */
+        input[type=text] {
+            background-image: url('./assets/images/icons/User_01.png'); /* Replace with your image path */
+        }
+
+        input[type=email] {
+            background-image: url('./assets/images/icons/Mail.png'); /* Replace with your image path */
+        }
+
+        textarea {
+            margin-top: 30px;
+            background-image: url('./assets/images/icons/Chat_Dots.png'); /* Replace with your image path */
         }
 
         /* Submit Button */
@@ -42,8 +74,6 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            width: 35%;
-            margin: 5px;
             height: 50px;
         }
 
@@ -55,26 +85,36 @@
     <title>Contact</title>
     <link rel="icon" type="image/x-icon" href="./assets/images/icons/whiteLogo.ico">
 </head>
+
 <body>
     <div id="header-placeholder"></div>
 
     <section id="page-content-container">
-        <h3>Looking forward to working <br> together</h3>
+        <h3>Let's create something amazing</h2>
         <div class="contact-info">
             <form action="https://formspree.io/f/xayrybqv" method="POST">
                 <label>
-                    <p class="contact-info-description" style="margin: 30px 5px 5px 5px;">Please fill out this form</p>
-                    <input type="text" name="name" placeholder="Name..." required>
+                    <p class="contact-info-description" style="margin: 30px 0px 5px 0px;">Please fill out this form</p>
+                    <div class="input-container">
+                        <input type="text" name="name" placeholder="Your name..." required>
+                    </div>
                 </label>
                 <label>
-                    <input type="email" name="email" placeholder="Email..." required>
+                    <div class="input-container">
+                        <input type="email" name="email" placeholder="Your email..." required>
+                    </div>
                 </label>
                 <label>
-                    <textarea name="message" placeholder="Write something..." required style="height: 200px; resize: none; margin-top: 30px;"></textarea>
+                    <div class="input-container">
+                        <textarea name="message" placeholder="Describe what you would want..." required style="height: 200px; resize: none;"></textarea>
+                    </div>
                 </label>
-                <!-- your other form fields go here -->
                 <button type="submit">Send</button>
             </form>
+            <div class="formspree-container" style="width: 190px; text-align: center; margin: 5px 0; background-color: #e5122e; border-radius: 4px;">
+                <p style="padding: 5px; color: #f5f5f5; font-weight: bold;">Powered by Formspree</p>
+            </div>
+            
         </div>
     </section>
 

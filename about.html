@@ -13,18 +13,34 @@
         .about-container img {
             width: 100%;
             max-width: 600px;
-            margin: 0 auto;
+            margin: 5px auto 15px;
+            border-radius: 4px;
         }
 
-        /* About Container Heading */
-        .about-container h2 {
-            font-size: 25px;
-            margin: 10px 0;
+        /* About Container text details */
+        #aboutImageDetails {
+            display: flex;
+            justify-content: space-between;
         }
 
         /* About text styling */
         #about-text {
             font-size: 16px;
+        }
+
+        /* Color Pixel Info */
+        .color-pixel-info {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            pointer-events: none;
+        }
+
+        /* Color Dot */
+        .color-dot {
+            width: 16px;
+            height: 16px;
+            border-radius: 100px;
         }
     </style>
 </head>
@@ -33,20 +49,34 @@
 
     <section id="page-content-container">
         <div class="about-container">
+            <div id="aboutImageDetails">
+                <div class="color-pixel-info">
+                    <div class="color-dot" style="background-color: #8a8a8a;"></div>
+                    <div class="color-dot" style="background-color: #121212;"></div>
+                </div>
+                <p>Gui Roque</p>
+            </div>
+            
             <img src="./assets/images/other/IMG_5420.jpg" alt="Image of photographer">
-            <h2> Gui Roque</h2>
             <p id="about-text">
                 I specialize in creating up close intimate portraits. Whether it's a casual session 
                 or a professional shoot, my goal is to make you comfortable in front of the camera and 
                 deliver portraits that resonate with your personality. <br><br>
                 I started taking photos back in late 2022, and have since been improving my skill and 
                 style. I take inspiration from entertainment today. Wether it be celebreties, movies, 
-                TV show or video games, I always pull from something. <br><br>
+                TV show or video games, I always pull from something. <br><br> <br>
                 I Also take insperation from Yulia Gorbchenko and Jack Bridgeland. Their styles and vision 
                 are something I really gravitate towards and want to make my own spin out of. <br><br>
                 Feel free to explore my portfolio and get in touch for your next memorable photos of you.
             </p>
         </div>
+        </div>
+        <div class="social-icons" style="display: flex; gap: 10px; margin-top: 50px;">
+            <a href="https://www.instagram.com/eoqrupics/" target="_blank"><img src="../assets/images/icons/IG_brand_asset_pack_2023/Instagram_Glyph_Black.svg" alt="Instagram" height="18" width="18"></a>
+            <a href="https://www.threads.net/@eoqrupics" target="_blank"><img src="../assets/images/icons/Threads-Brand-Resource-Center/threads-logo-black.svg" alt="Threads" height="18" width="18"></a>
+        </div>
+        <p>eoqrupics@gmail.com</p>
+    </div>
     </section>
 
     <script src="./javascript/insertGlobalElements.js"></script>

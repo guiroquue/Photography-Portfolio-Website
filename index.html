@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eoqrupics</title>
     <link rel="icon" type="image/x-icon" href="./assets/images/icons/whiteLogo.ico">
 
     <link rel="stylesheet" href="./css/globalElements.css">
-
     <style>
         /* Image Grid */
         .image-grid {
@@ -22,11 +22,12 @@
             margin: 20px 0;
         }
 
-        /* Image in Image Grid */
+        /* Image Grid > Image Item > Image */
         .image-grid .image-item img {
             width: 100%;
             height: auto;
             pointer-events: none;
+            border-radius: 4px;
         }
 
         /* Image Info */
@@ -36,7 +37,7 @@
             margin-bottom: 5px;
         }
 
-        /* Image Info Button */
+        /* Image Info > Button */
         .image-info button {
             border: none;
             color: black;
@@ -44,6 +45,41 @@
             font-size: 16px;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /* Color Pixel Info */
+        .color-pixel-info {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            pointer-events: none;
+        }
+
+        /* Color Dot */
+        .color-dot {
+            width: 16px;
+            height: 16px;
+            border-radius: 100px;
+        }
+
+        /* Added styles from inline */
+        /* Reach out container */
+        .reach-out-interact-container {
+            text-align: center;
+        }
+
+        /* Link styles */
+        .reach-out-interact-container a {
+            color: black;
+        }
+
+        /* Instagram link styles */
+        .reach-out-interact-container h3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
         }
     </style>
 </head>
@@ -52,31 +88,18 @@
 
     <section id="page-content-container">
         <div class="image-grid">
-
-            <div class="image-item">
-                <div class="image-info">
-                    <p>3888 x 2592</p>
-                    <button onclick="learnMoreAboutRedirect(23)">Learn more</button>
-                </div>
-                <img src="./assets/images/portraits/IMG (23).JPG" alt="Showcase image 1">
-            </div>
-
-            <div class="image-item">
-                <div class="image-info">
-                    <p>1536 x 2304</p>
-                    <button onclick="learnMoreAboutRedirect(14)">Learn more</button>
-                </div>
-                <img src="./assets/images/portraits/IMG (14).JPG" alt="Showcase image 2">
-            </div>
-
+            <!-- Image grid content here -->
+        </div>
+        <div class="reach-out-interact-container">
+            <a href="https://www.instagram.com/eoqrupics/" target="_blank">
+                <h3>Check out more of my work <img src="../assets/images/icons/IG_brand_asset_pack_2023/Instagram_Glyph_Black.svg" alt="Instagram" height="20" width="20"></h3>
+            </a>
+            <br>
+            <a href="./contact.html">Send me a message here!</a>
         </div>
     </section>
 
     <script src="./javascript/insertGlobalElements.js"></script>
-    <script>
-        function learnMoreAboutRedirect(imageId) {
-            window.location.href = "imageDetailsPage.html?imageId=" + imageId;
-        }
-    </script>
+    <script src="./javascript/imageItemGenerator.js"></script>
 </body>
 </html>

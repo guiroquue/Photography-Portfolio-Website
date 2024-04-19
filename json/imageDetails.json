@@ -2,11 +2,141 @@
     "23": {
         "cameraDetails01": "Canon EOS 400D EF-S 55-250mm f4-5.6 IS",
         "cameraDetails02": "ISO 200 • f4.5 • 3888 x 2592 • 1/500 s",
-        "imageUrl": "./assets/images/portraits/IMG (23).JPG"
+        "imageUrl": "./assets/images/portraits/IMG (23).JPG",
+
+        "paragraph01": "Originally we were trying to capture a musician vibe inside. But we actually switched outfits and went outside and improvised.",
+        "paragraph02": "Purely accidental we got this shot that, to me, resembles the character Jhonny Silverhand form the video game Cyberpunk 2077. It quickly became on of my favorite photos, because of the meaning I drew from it.",
+        "paragraph03": "In the end we did manage to capture other shots more inline with our original idea.",
+        "comment": "“Goddamn they are all awesome.”"
     },
     "14": {
         "cameraDetails01": "Canon EOS 400D EF-S 55-250mm f4-5.6 IS",
         "cameraDetails02": "ISO 1600 • f5 • 1536 x 2304 • 1/60 s",
-        "imageUrl": "./assets/images/portraits/IMG (14).JPG"
+        "imageUrl": "./assets/images/portraits/IMG (14).JPG",
+        
+        "paragraph01": "This one was a little lighting course for me. I had brought 1 extra light, that we tried a few colors with.",
+        "paragraph02": "Truned out one of the cealing lights was red. So we unscrwed the other bulbs and placed the light I brought to the left on the image.",
+        "paragraph03": "This worked out really great, because of how the lights were positioned it gave him (the subject) very nice and clean contrasted shadows.",
+        "comment": "“Bro thas so sick.”"
+    },
+    "24": {
+        "cameraDetails01": "",
+        "cameraDetails02": "",
+        "imageUrl": "./assets/images/portraits/IMG (24).JPG",
+        
+        "paragraph01": "",
+        "paragraph02": "",
+        "paragraph03": "",
+        "comment": "“I like it.”"
+    },
+    "35": {
+        "cameraDetails01": "",
+        "cameraDetails02": "",
+        "imageUrl": "./assets/images/portraits/IMG (35).JPG",
+        
+        "paragraph01": "",
+        "paragraph02": "",
+        "paragraph03": "",
+        "comment": ""
+    },
+    "21": {
+        "cameraDetails01": "",
+        "cameraDetails02": "",
+        "imageUrl": "./assets/images/portraits/IMG (21).JPG",
+        
+        "paragraph01": "",
+        "paragraph02": "",
+        "paragraph03": "",
+        "comment": ""
+    },
+    "4": {
+        "cameraDetails01": "",
+        "cameraDetails02": "",
+        "imageUrl": "./assets/images/portraits/IMG (4).JPG",
+        
+        "paragraph01": "",
+        "paragraph02": "",
+        "paragraph03": "",
+        "comment": ""
+    },
+    "9": {
+        "cameraDetails01": "",
+        "cameraDetails02": "",
+        "imageUrl": "./assets/images/portraits/IMG (9).JPG",
+        
+        "paragraph01": "",
+        "paragraph02": "",
+        "paragraph03": "",
+        "comment": ""
+    },
+    "12": {
+        "cameraDetails01": "",
+        "cameraDetails02": "",
+        "imageUrl": "./assets/images/portraits/IMG (12).JPG",
+        
+        "paragraph01": "",
+        "paragraph02": "",
+        "paragraph03": "",
+        "comment": "“This is awesome!! thank you very much!!”"
+    },
+    "33": {
+        "cameraDetails01": "",
+        "cameraDetails02": "",
+        "imageUrl": "./assets/images/portraits/IMG (33).JPG",
+        
+        "paragraph01": "",
+        "paragraph02": "",
+        "paragraph03": "",
+        "comment": ""
+    },
+    "38": {
+        "cameraDetails01": "",
+        "cameraDetails02": "",
+        "imageUrl": "./assets/images/portraits/IMG (38).JPG",
+        
+        "paragraph01": "",
+        "paragraph02": "",
+        "paragraph03": "",
+        "comment": ""
+    },
+    "8": {
+        "cameraDetails01": "",
+        "cameraDetails02": "",
+        "imageUrl": "./assets/images/portraits/IMG (8).JPG",
+        
+        "paragraph01": "",
+        "paragraph02": "",
+        "paragraph03": "",
+        "comment": ""
+    },
+    "7": {
+        "cameraDetails01": "",
+        "cameraDetails02": "",
+        "imageUrl": "./assets/images/portraits/IMG (7).JPG",
+        
+        "paragraph01": "",
+        "paragraph02": "",
+        "paragraph03": "",
+        "comment": ""
+    },
+    "28": {
+        "cameraDetails01": "",
+        "cameraDetails02": "",
+        "imageUrl": "./assets/images/portraits/IMG (28).JPG",
+        
+        "paragraph01": "",
+        "paragraph02": "",
+        "paragraph03": "",
+        "comment": ""
+    },
+    "1": {
+        "cameraDetails01": "",
+        "cameraDetails02": "",
+        "imageUrl": "./assets/images/portraits/images (1).jpeg",
+        
+        "paragraph01": "",
+        "paragraph02": "",
+        "paragraph03": "",
+        "comment": ""
     }
 }

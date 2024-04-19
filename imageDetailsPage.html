@@ -26,6 +26,30 @@
             font-weight: 600;
             margin: 10px auto;
         }
+
+        /* Article Styles */
+        article, .testimonial-wrapper {
+            margin: 40px 0;
+        }
+
+        article p {
+            margin: 15px 0;
+        }
+
+        /* Testimonial Styles */
+        .testimonial-container {
+            width: calc(100% - 20px);
+            height: auto;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 1px solid #8b8b8b71;
+            background-color: #ffffff;
+        }
+
+        .testimonial-container p {
+            margin: 5px 0;
+        }
     </style>
 </head>
 <body>
@@ -40,7 +64,22 @@
             <p id="imagecameraDetails01"></p>
             <p id="imagecameraDetails02"></p>
         </div>
-    
+        
+        <article>
+            <h2>A small BTS story</h2>
+            <p id="btsParagraph01">stuff stuff</p>
+            <p id="btsParagraph02">stuff stuff</p>
+            <p id="btsParagraph03">stuff stuff</p>
+        </article>
+
+        <div class="testimonial-wrapper">
+            <h3>Feedback:</h3>
+            <div class="testimonial-container">
+                <p id="testimonialComment"></p>
+                <p style="text-align: right; margin-top: 10px;">Model/Client</p>
+            </div>
+        </div>
+        
     </section>
 
     <script src="./javascript/insertGlobalElements.js"></script>
@@ -56,8 +95,23 @@
                 document.getElementById('imagecameraDetails01').textContent = imageInfo.cameraDetails01;
                 document.getElementById('imagecameraDetails02').textContent = imageInfo.cameraDetails02;
                 document.getElementById('imageDisplay').src = imageInfo.imageUrl;
+
+                if (!imageInfo.paragraph01 || imageInfo.paragraph01.trim() === '') {
+                    document.querySelector('article').style.display = 'none';
+                } else {
+                    document.getElementById('btsParagraph01').textContent = imageInfo.paragraph01;
+                    document.getElementById('btsParagraph02').textContent = imageInfo.paragraph02;
+                    document.getElementById('btsParagraph03').textContent = imageInfo.paragraph03;
+                }
+
+                // Conditionally hide the testimonial-wrapper if imageInfo.comment is empty
+                if (!imageInfo.comment || imageInfo.comment.trim() === '') {
+                    document.querySelector('.testimonial-wrapper').style.display = 'none';
+                } else {
+                    document.getElementById('testimonialComment').textContent = imageInfo.comment;
+                }
             })
-            .catch(error => console.error('Error fetching image info:', error));
+        .catch(error => console.error('Error fetching image info:', error));
     </script>
 </body>
 </html>

@@ -1,26 +1,66 @@
 [
     {
-        "question": "Do I need to have modeled before?",
-        "answer": "No. I'll guide you step by step through the processes, such as posing, and outfit selection. Together we'll create amazing photos."
+        "question": "What services do you offer?",
+        "answer": "I offer portrait photo shoots for individuals and couples, including men, women, friends, maternity shoots, and more."
     },
     {
-        "question": "Who do you photograph?",
-        "answer": "I offer photo shoots to; Men, Women, and maternity shoots."
+        "question": "How do I book a session?",
+        "answer": "You can reach out to me on <a href='https://www.instagram.com/eoqrupics/' target='_blank'>Instagram</a> or on my <a href='./contact.html'>contact</a> page, or email me at eoqrupics@gmail.com."
     },
     {
-        "question": "What about artists and brands?",
-        "answer": "I love working with other artists and brands. You can check out some of my commercial work <a href='./commercialWork.html'>here.</a>"
+        "question": "What should I wear for my session?",
+        "answer": "If you need outfit guidance, I can provide advice and send inspiration photos to match the theme of the shoot."
+    },
+    {
+        "question": "What should I expect during the session?",
+        "answer": "Expect a positive and enjoyable experience with a friendly atmosphere."
+    },
+    {
+        "question": "How long does a typical session last?",
+        "answer": "Sessions usually last between 1 to 3 hours, depending on the type of shoot and other factors."
     },
     {
         "question": "How many photos will I receive?",
-        "answer": "This depends on our shoot, but minimum of 30 images, with 10 of them edited."
+        "answer": "The number of photos you receive depends on the shoot, but a minimum of 30 images is typical, including 10 edited photos."
     },
     {
-        "question": "Who selects the photos?",
-        "answer": "We do, together we pick 10 of your favorite photos for me to edit."
+        "question": "Do you offer retouching and editing?",
+        "answer": "Yes, I usually offer 5-15 retouched and edited photos, but I can do more if necessary."
     },
     {
-        "question": "When will I get my photos?",
-        "answer": "A good unique edited batch of 10 photos can take up 1-2 weeks."
+        "question": "How long does it take to receive the final photos?",
+        "answer": "You can typically expect to receive your final photos within 1 to 3 weeks, depending on the amount of content shot and the extent of editing required."
+    },
+    {
+        "question": "What happens if I need to reschedule or cancel my session?",
+        "answer": "Rescheduling or cancellation is possible with at least one day's notice."
+    },
+    {
+        "question": "What happens in case of bad weather for outdoor sessions?",
+        "answer": "If the weather is unfavorable, we can reschedule the shoot to a more suitable date."
+    },
+    {
+        "question": "Do you have examples of your work?",
+        "answer": "Yes, you can view my work on the <a href='./index.html'>portraits</a> page or follow me on <a href='https://www.instagram.com/eoqrupics/' target='_blank'>Instagram</a>."
+    },
+    {
+        "question": "Do you offer retouching and editing services for commercial work?",
+        "answer": "Yes, I provide editing and retouching services for commercial projects, typically offering 5-15 edited photos but can adjust based on needs."
+    },
+    {
+        "question": "How do you handle revisions and feedback?",
+        "answer": "I appreciate feedback when working towards a specific look or when you have concerns about certain edits. We will work together to make necessary changes."
+    },
+    {
+        "question": "What is your turnaround time for commercial projects?",
+        "answer": "My turnaround time is flexible and can be adjusted based on your priorities."
+    },
+    {
+        "question": "Can you collaborate with other creatives (e.g., stylists, makeup artists, etc.)?",
+        "answer": "Yes, I'm open to collaboration with other creatives. Communication is key to ensure everyone is aligned when shooting the project."
+    },
+    {
+        "question": "What about artists and brands?",
+        "answer": "I love working with other artists and brands. You can check out some of my commercial work on my <a href='./commercialWork.html'>commercial work</a> page."
     }
 ]
