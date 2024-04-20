@@ -5,101 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eoqrupics</title>
+    
     <link rel="icon" type="image/x-icon" href="./assets/images/icons/whiteLogo.ico">
-
-    <link rel="stylesheet" href="./css/globalElements.css">
-    <style>
-        /* Image Grid */
-        .image-grid {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-            margin: 80px auto;
-        }
-
-        /* Image Item */
-        .image-item {
-            margin: 20px 0;
-        }
-
-        /* Image Grid > Image Item > Image */
-        .image-grid .image-item img {
-            width: 100%;
-            height: auto;
-            pointer-events: none;
-            border-radius: 4px;
-        }
-
-        /* Image Info */
-        .image-info {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 5px;
-        }
-
-        /* Image Info > Button */
-        .image-info button {
-            border: none;
-            color: black;
-            background-color: #f5f5f5;
-            font-size: 16px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            text-decoration: underline;
-            cursor: pointer;
-        }
-
-        /* Color Pixel Info */
-        .color-pixel-info {
-            display: flex;
-            gap: 8px;
-            align-items: center;
-            pointer-events: none;
-        }
-
-        /* Color Dot */
-        .color-dot {
-            width: 16px;
-            height: 16px;
-            border-radius: 100px;
-        }
-
-        /* Added styles from inline */
-        /* Reach out container */
-        .reach-out-interact-container {
-            text-align: center;
-        }
-
-        /* Link styles */
-        .reach-out-interact-container a {
-            color: black;
-        }
-
-        /* Instagram link styles */
-        .reach-out-interact-container h3 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/globalElements/globalElements.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <div id="header-placeholder"></div>
 
     <section id="page-content-container">
+        <div class="filter-tabs">
+            <div class="tab-item active">
+                <p>All</p>
+            </div>
+            <div class="tab-item">
+                <p>Portraits</p>
+            </div>
+            <div class="tab-item">
+                <p>Artists</p>
+            </div>
+            <div class="tab-item">
+                <p>Brands</p>
+            </div>
+            <div class="tab-item">
+                <p>w/ Review</p>
+            </div>
+        </div>
+        
         <div class="image-grid">
             <!-- Image grid content here -->
         </div>
-        <div class="reach-out-interact-container">
+        
+        <div id="reach-out-interact-container" class="reach-out-interact-container">
             <a href="https://www.instagram.com/eoqrupics/" target="_blank">
                 <h3>Check out more of my work <img src="../assets/images/icons/IG_brand_asset_pack_2023/Instagram_Glyph_Black.svg" alt="Instagram" height="20" width="20"></h3>
             </a>
-            <br>
-            <a href="./contact.html">Send me a message here!</a>
         </div>
     </section>
 
-    <script src="./javascript/insertGlobalElements.js"></script>
-    <script src="./javascript/imageItemGenerator.js"></script>
+    <footer>
+        <p>Copyright Gui Roque © All rights reserved.</p>
+    </footer>
+
+    <script src="./javascript/htmlElements/insertGlobalElements.js"></script>
+    <script src="./javascript/imageGridGenerator.js"></script>
 </body>
 </html>

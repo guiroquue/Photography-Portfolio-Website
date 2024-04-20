@@ -1,0 +1,52 @@
+/* About Container and Image Styles */
+.about-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 5px auto 15px;
+}
+
+.about-container img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* About Container Text Details */
+#aboutImageDetails {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+/* About Text Styling */
+#about-text {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Color Pixel Info Styles */
+.color-pixel-info {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    pointer-events: none;
+}
+
+/* Color Dot Styles */
+.color-dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+/* Social Links Styles */
+.social-links {
+    margin: 30px auto 0;
+}
+
+.social-links h4 {
+    margin-bottom: 5px;
+}
+
+.social-links a {
+    color: black;
+}

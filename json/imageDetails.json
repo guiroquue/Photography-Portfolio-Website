@@ -1,142 +1,259 @@
 {
-    "23": {
-        "cameraDetails01": "Canon EOS 400D EF-S 55-250mm f4-5.6 IS",
-        "cameraDetails02": "ISO 200 • f4.5 • 3888 x 2592 • 1/500 s",
-        "imageUrl": "./assets/images/portraits/IMG (23).JPG",
+    "images": [
+        {
+            "id": 23,
+            "src": "./assets/images/portraits/IMG (23).JPG",
+            "alt": "Showcase image 1",
+            "colors": ["#a2ddff", "#766551"],
 
-        "paragraph01": "Originally we were trying to capture a musician vibe inside. But we actually switched outfits and went outside and improvised.",
-        "paragraph02": "Purely accidental we got this shot that, to me, resembles the character Jhonny Silverhand form the video game Cyberpunk 2077. It quickly became on of my favorite photos, because of the meaning I drew from it.",
-        "paragraph03": "In the end we did manage to capture other shots more inline with our original idea.",
-        "comment": "“Goddamn they are all awesome.”"
-    },
-    "14": {
-        "cameraDetails01": "Canon EOS 400D EF-S 55-250mm f4-5.6 IS",
-        "cameraDetails02": "ISO 1600 • f5 • 1536 x 2304 • 1/60 s",
-        "imageUrl": "./assets/images/portraits/IMG (14).JPG",
-        
-        "paragraph01": "This one was a little lighting course for me. I had brought 1 extra light, that we tried a few colors with.",
-        "paragraph02": "Truned out one of the cealing lights was red. So we unscrwed the other bulbs and placed the light I brought to the left on the image.",
-        "paragraph03": "This worked out really great, because of how the lights were positioned it gave him (the subject) very nice and clean contrasted shadows.",
-        "comment": "“Bro thas so sick.”"
-    },
-    "24": {
-        "cameraDetails01": "",
-        "cameraDetails02": "",
-        "imageUrl": "./assets/images/portraits/IMG (24).JPG",
-        
-        "paragraph01": "",
-        "paragraph02": "",
-        "paragraph03": "",
-        "comment": "“I like it.”"
-    },
-    "35": {
-        "cameraDetails01": "",
-        "cameraDetails02": "",
-        "imageUrl": "./assets/images/portraits/IMG (35).JPG",
-        
-        "paragraph01": "",
-        "paragraph02": "",
-        "paragraph03": "",
-        "comment": ""
-    },
-    "21": {
-        "cameraDetails01": "",
-        "cameraDetails02": "",
-        "imageUrl": "./assets/images/portraits/IMG (21).JPG",
-        
-        "paragraph01": "",
-        "paragraph02": "",
-        "paragraph03": "",
-        "comment": ""
-    },
-    "4": {
-        "cameraDetails01": "",
-        "cameraDetails02": "",
-        "imageUrl": "./assets/images/portraits/IMG (4).JPG",
-        
-        "paragraph01": "",
-        "paragraph02": "",
-        "paragraph03": "",
-        "comment": ""
-    },
-    "9": {
-        "cameraDetails01": "",
-        "cameraDetails02": "",
-        "imageUrl": "./assets/images/portraits/IMG (9).JPG",
-        
-        "paragraph01": "",
-        "paragraph02": "",
-        "paragraph03": "",
-        "comment": ""
-    },
-    "12": {
-        "cameraDetails01": "",
-        "cameraDetails02": "",
-        "imageUrl": "./assets/images/portraits/IMG (12).JPG",
-        
-        "paragraph01": "",
-        "paragraph02": "",
-        "paragraph03": "",
-        "comment": "“This is awesome!! thank you very much!!”"
-    },
-    "33": {
-        "cameraDetails01": "",
-        "cameraDetails02": "",
-        "imageUrl": "./assets/images/portraits/IMG (33).JPG",
-        
-        "paragraph01": "",
-        "paragraph02": "",
-        "paragraph03": "",
-        "comment": ""
-    },
-    "38": {
-        "cameraDetails01": "",
-        "cameraDetails02": "",
-        "imageUrl": "./assets/images/portraits/IMG (38).JPG",
-        
-        "paragraph01": "",
-        "paragraph02": "",
-        "paragraph03": "",
-        "comment": ""
-    },
-    "8": {
-        "cameraDetails01": "",
-        "cameraDetails02": "",
-        "imageUrl": "./assets/images/portraits/IMG (8).JPG",
-        
-        "paragraph01": "",
-        "paragraph02": "",
-        "paragraph03": "",
-        "comment": ""
-    },
-    "7": {
-        "cameraDetails01": "",
-        "cameraDetails02": "",
-        "imageUrl": "./assets/images/portraits/IMG (7).JPG",
-        
-        "paragraph01": "",
-        "paragraph02": "",
-        "paragraph03": "",
-        "comment": ""
-    },
-    "28": {
-        "cameraDetails01": "",
-        "cameraDetails02": "",
-        "imageUrl": "./assets/images/portraits/IMG (28).JPG",
-        
-        "paragraph01": "",
-        "paragraph02": "",
-        "paragraph03": "",
-        "comment": ""
-    },
-    "1": {
-        "cameraDetails01": "",
-        "cameraDetails02": "",
-        "imageUrl": "./assets/images/portraits/images (1).jpeg",
-        
-        "paragraph01": "",
-        "paragraph02": "",
-        "paragraph03": "",
-        "comment": ""
-    }
+            "cameraDetails01": "Canon EOS 400D EF-S 55-250mm f4-5.6 IS",
+            "cameraDetails02": "ISO 200 • f4.5 • 3888 x 2592 • 1/500 s",
+
+            "paragraph01": "Originally, we were trying to capture a musician vibe inside. However, we switched outfits and went outside to improvise.",
+            "paragraph02": "Purely by accident, we got this shot that, to me, resembles the character Johnny Silverhand from the video game Cyberpunk 2077. It quickly became one of my favorite photos because of the meaning I derived from it.",
+            "paragraph03": "In the end, we did manage to capture other shots more in line with our original idea.",
+
+            "comment": "“Goddamn, they are all awesome.”",
+            "review": "yes",
+            "client": "portraits"
+        },
+        {
+            "id": 14,
+            "src": "./assets/images/portraits/IMG (14).JPG",
+            "alt": "Showcase image 2",
+            "colors": ["#d91402", "#100806"],
+
+            "cameraDetails01": "Canon EOS 400D EF-S 55-250mm f4-5.6 IS",
+            "cameraDetails02": "ISO 1600 • f5 • 1536 x 2304 • 1/60 s",
+
+            "paragraph01": "This one was a little lighting course for me. I brought one extra light, and we experimented with a few colors.",
+            "paragraph02": "It turned out that one of the ceiling lights was red, so we unscrewed the other bulbs and placed the light I brought to the left of the image.",
+            "paragraph03": "This worked out really well because the lights' positioning gave the subject very nice, clean, and contrasted shadows.",
+            
+            "comment": "“Bro, that’s so sick.”",
+            "review": "yes",
+            "client": "portraits"
+        },
+        {
+            "id": 24,
+            "src": "./assets/images/portraits/IMG (24).JPG",
+            "alt": "Showcase image 3",
+            "colors": ["#424242", "#0d1215"],
+
+            "cameraDetails01": "",
+            "cameraDetails02": "",
+
+            "paragraph01": "",
+            "paragraph02": "",
+            "paragraph03": "",
+
+            "comment": "",
+            "review": "no",
+            "client": "portraits"
+        },
+        {
+            "id": 16,
+            "src": "./assets/images/portraits/IMG (16).JPG",
+            "alt": "Showcase image 5",
+            "colors": ["#9a2679", "#7f0329"],
+
+            "cameraDetails01": "",
+            "cameraDetails02": "",
+
+            "paragraph01": "",
+            "paragraph02": "",
+            "paragraph03": "",
+
+            "comment": "",
+            "review": "no",
+            "client": "portraits"
+        },
+        {
+            "id": 35,
+            "src": "./assets/images/portraits/IMG (35).JPG",
+            "alt": "Showcase image 4",
+            "colors": ["#c6c6c5", "#0d1215"],
+
+            "cameraDetails01": "",
+            "cameraDetails02": "",
+
+            "paragraph01": "",
+            "paragraph02": "",
+            "paragraph03": "",
+
+            "comment": "",
+            "review": "no",
+            "client": "portraits"
+        },
+        {
+            "id": 21,
+            "src": "./assets/images/portraits/IMG (21).JPG",
+            "alt": "Showcase image 5",
+            "colors": ["#6d0e03", "#060606"],
+
+            "cameraDetails01": "",
+            "cameraDetails02": "",
+
+            "paragraph01": "",
+            "paragraph02": "",
+            "paragraph03": "",
+
+            "comment": "",
+            "review": "no",
+            "client": "portraits"
+        },
+        {
+            "id": 4,
+            "src": "./assets/images/portraits/IMG (4).JPG",
+            "alt": "Showcase image 6",
+            "colors": ["#af381a", "#d0c0b7"],
+
+            "cameraDetails01": "",
+            "cameraDetails02": "",
+
+            "paragraph01": "",
+            "paragraph02": "",
+            "paragraph03": "",
+
+            "comment": "",
+            "review": "no",
+            "client": "portraits"
+        },
+        {
+            "id": 9,
+            "src": "./assets/images/portraits/IMG (9).JPG",
+            "alt": "Showcase image 7",
+            "colors": ["#024653", "#575644"],
+
+            "cameraDetails01": "",
+            "cameraDetails02": "",
+
+            "paragraph01": "",
+            "paragraph02": "",
+            "paragraph03": "",
+
+            "comment": "",
+            "review": "no",
+            "client": "portraits"
+        },
+        {
+            "id": 12,
+            "src": "./assets/images/portraits/IMG (12).JPG",
+            "alt": "Showcase image 8",
+            "colors": ["#293915", "#adc4cf"],
+
+            "cameraDetails01": "",
+            "cameraDetails02": "",
+
+            "paragraph01": "",
+            "paragraph02": "",
+            "paragraph03": "",
+
+            "comment": "",
+            "review": "no",
+            "client": "portraits"
+        },
+        {
+            "id": 33,
+            "src": "./assets/images/portraits/IMG (33).JPG",
+            "alt": "Showcase image 9",
+            "colors": ["#424242", "#0d1215"],
+
+            "cameraDetails01": "",
+            "cameraDetails02": "",
+
+            "paragraph01": "",
+            "paragraph02": "",
+            "paragraph03": "",
+
+            "comment": "",
+            "review": "no",
+            "client": "brands"
+        },
+        {
+            "id": 38,
+            "src": "./assets/images/portraits/IMG (38).JPG",
+            "alt": "Showcase image 10",
+            "colors": ["#c9240c", "#4b1f01"],
+
+            "cameraDetails01": "",
+            "cameraDetails02": "",
+
+            "paragraph01": "",
+            "paragraph02": "",
+            "paragraph03": "",
+
+            "comment": "",
+            "review": "no",
+            "client": "artists"
+        },
+        {
+            "id": 8,
+            "src": "./assets/images/portraits/IMG (8).JPG",
+            "alt": "Showcase image 11",
+            "colors": ["#a24724", "#dbd1d6"],
+
+            "cameraDetails01": "",
+            "cameraDetails02": "",
+
+            "paragraph01": "",
+            "paragraph02": "",
+            "paragraph03": "",
+
+            "comment": "",
+            "review": "no",
+            "client": "portraits"
+        },
+        {
+            "id": 7,
+            "src": "./assets/images/portraits/IMG (7).JPG",
+            "alt": "Showcase image 12",
+            "colors": ["#af4c1e", "#6d8a8a"],
+
+            "cameraDetails01": "",
+            "cameraDetails02": "",
+
+            "paragraph01": "",
+            "paragraph02": "",
+            "paragraph03": "",
+
+            "comment": "",
+            "review": "no",
+            "client": "portraits"
+        },
+        {
+            "id": 28,
+            "src": "./assets/images/portraits/IMG (28).JPG",
+            "alt": "Showcase image 13",
+            "colors": ["#8cabc7", "#4c3c3e"],
+
+            "cameraDetails01": "",
+            "cameraDetails02": "",
+
+            "paragraph01": "",
+            "paragraph02": "",
+            "paragraph03": "",
+
+            "comment": "",
+            "review": "no",
+            "client": "portraits"
+        },
+        {
+            "id": 1,
+            "src": "./assets/images/portraits/images (1).jpeg",
+            "alt": "Showcase image 14",
+            "colors": ["#557780", "#0d0d0d"],
+
+            "cameraDetails01": "",
+            "cameraDetails02": "",
+
+            "paragraph01": "",
+            "paragraph02": "",
+            "paragraph03": "",
+
+            "comment": "",
+            "review": "no",
+            "client": "portraits"
+        }
+    ]
 }

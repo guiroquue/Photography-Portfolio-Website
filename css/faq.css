@@ -2,76 +2,68 @@
 .faq-items-container {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-}
-
-/* FAQ Item Button */
-.faq-items-container button {
-    background-color: white;
-    border: none;
-    width: 30px;
-    height: 30px;
-    transition: transform 0.4s ease-in-out;
-}
-
-.rotate {
-    transform: rotate(180deg);
-}
-
-/* FAQ Item */
-.faq-item {
+    gap: 20px;
     width: 100%;
-    height: auto;
+}
+
+/* FAQ Item Styles */
+.faq-item {
+    width: calc(100% - 40px);
     border-radius: 8px;
     border: 1px solid #8b8b8b71;
-    background-color: #ffffff;
     cursor: pointer;
+    padding: 20px;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .faq-item:hover {
-    background: rgba(255, 255, 255, 0.658);
+    background-color: rgba(255, 255, 255, 0.658);
 }
 
-/* FAQ Info */
 .faq-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 
-.faq-info h2 {
-    margin: 0;
-    max-width: 90%;
-}
-
-/* FAQ Info, FAQ Answer */
-.faq-info,
-.faq-answer {
-    padding: 20px;
-}
-
-/* FAQ Answer */
 .faq-answer {
     display: none;
+    max-height: 200px;
+    padding-top: 20px;
 }
 
 .faq-answer.show {
     display: block;
-    max-height: 200px;
+    background-color: white;
 }
 
+/* FAQ Button Styles */
+button {
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+button.rotate {
+    transform: rotate(180deg);
+}
+
+/* Contact Info */
 .contact-info {
-    margin: 30px 0;
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 10px;
+    margin: 30px 0 160px;
 }
 
 /* Media Query for Small Screens */
 @media screen and (max-width: 600px) {
-    .faq-info h2 {
+    .faq-info h3 {
         font-size: 18px;
     }
 }

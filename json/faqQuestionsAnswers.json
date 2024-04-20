@@ -5,7 +5,7 @@
     },
     {
         "question": "How do I book a session?",
-        "answer": "You can reach out to me on <a href='https://www.instagram.com/eoqrupics/' target='_blank'>Instagram</a> or on my <a href='./contact.html'>contact</a> page, or email me at eoqrupics@gmail.com."
+        "answer": "You can reach out to me on <a href='https://www.instagram.com/eoqrupics/' target='_blank' style='color: blue;'>Instagram</a> or on my <a href='./contact.html' style='color: blue;'>contact</a> page, or email me at eoqrupics@gmail.com."
     },
     {
         "question": "What should I wear for my session?",
@@ -41,7 +41,7 @@
     },
     {
         "question": "Do you have examples of your work?",
-        "answer": "Yes, you can view my work on the <a href='./index.html'>portraits</a> page or follow me on <a href='https://www.instagram.com/eoqrupics/' target='_blank'>Instagram</a>."
+        "answer": "Yes, you can view my work on the <a href='./index.html' style='color: blue;'>portraits</a> page or follow me on <a href='https://www.instagram.com/eoqrupics/' target='_blank' style='color: blue;''>Instagram</a>."
     },
     {
         "question": "Do you offer retouching and editing services for commercial work?",
@@ -61,6 +61,6 @@
     },
     {
         "question": "What about artists and brands?",
-        "answer": "I love working with other artists and brands. You can check out some of my commercial work on my <a href='./commercialWork.html'>commercial work</a> page."
+        "answer": "I love working with other artists and brands. You can check out some of my commercial work on my <a href='./commercialWork.html' style='color: blue;'>commercial work</a> page."
     }
 ]

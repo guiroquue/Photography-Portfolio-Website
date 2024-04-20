@@ -9,6 +9,7 @@ fetch('./htmlGlobalElements/header.html')
 
 function toggleOverlay() {
     const overlay = document.getElementById('navigation-menu-overlay');
+    
     if (overlay.style.right === '0px') {
         overlay.style.right = '-100%'; // Slide out the overlay to the right
     } else {
