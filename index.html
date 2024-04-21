@@ -9,11 +9,27 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/icons/whiteLogo.ico">
     <link rel="stylesheet" href="./css/globalElements/globalElements.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/globalElements/filterTabs.css">
+    <link rel="stylesheet" href="./css/globalElements/videoContainers.css">
 </head>
 <body>
     <div id="header-placeholder"></div>
 
     <section id="page-content-container">
+        <div id="video-headline-container">
+            <div class="video-header">
+                <h3>Coming Soon</h3>
+                <img src="./assets/images/icons/close.png" alt="Close" onclick="hideVideoContainer()">
+            </div>
+            <div class="video-player">
+                <!-- Video player goes here -->
+            </div>
+            <div class="video-description">
+                <h4 id="video-description">Photographer VS Photographer - Part 1  <br> w/ <a href="https://snjokallinn.com/" target="_blank">Snjokallin</a></h4>
+                <a href="#" target="_blank"><img src="./assets/images/icons/externalLink.svg" alt="External link" class="external-link"></a>
+            </div>
+        </div>        
+
         <div class="filter-tabs">
             <div class="tab-item active">
                 <p>All</p>
@@ -49,5 +65,14 @@
 
     <script src="./javascript/htmlElements/insertGlobalElements.js"></script>
     <script src="./javascript/imageGridGenerator.js"></script>
+    <script>
+        // Function to hide the video-headline-container
+        function hideVideoContainer() {
+            const videoContainer = document.getElementById('video-headline-container');
+            if (videoContainer) {
+                videoContainer.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>

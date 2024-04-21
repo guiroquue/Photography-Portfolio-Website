@@ -29,21 +29,6 @@ function displayImages(images) {
         const imageInfo = document.createElement('div');
         imageInfo.classList.add('image-info');
 
-        // Create the color pixel info div
-        const colorPixelInfo = document.createElement('div');
-        colorPixelInfo.classList.add('color-pixel-info');
-
-        // Create the color dots
-        image.colors.forEach(color => {
-            const colorDot = document.createElement('div');
-            colorDot.classList.add('color-dot');
-            colorDot.style.backgroundColor = color;
-            colorPixelInfo.appendChild(colorDot);
-        });
-
-        // Add the color pixel info to the image info div
-        imageInfo.appendChild(colorPixelInfo);
-
         // Create the "Learn More" link
         const learnMoreLink = document.createElement('a');
         learnMoreLink.href = `./imageDetails.html?id=${image.id}`;

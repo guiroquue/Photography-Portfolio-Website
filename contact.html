@@ -9,29 +9,50 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/icons/whiteLogo.ico">
     <link rel="stylesheet" href="./css/globalElements/globalElements.css">
     <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/globalElements/filterTabs.css">
 </head>
 <body>
     <div id="header-placeholder"></div>
 
     <section id="page-content-container">
-        <h3>Let's create something amazing</h3>
+        <h2 style="font-size: 25px;">Let's create something <br> amazing Together</h2>
+        <p style="margin-top: 10px;">Please fill out this form</p>
+
+        <h4 style="margin-top: 35px;">I'm a/an... <span>(Required)</span></h2>
+        <div class="filter-tabs">
+            <div class="tab-item active">
+                <p>Individual</p>
+            </div>
+            <div class="tab-item">
+                <p>Artist</p>
+            </div>
+            <div class="tab-item">
+                <p>Brand</p>
+            </div>
+            <div class="tab-item">
+                <p>Other</p>
+            </div>
+        </div>
+
         <div class="contact-info">
             <form action="https://formspree.io/f/xayrybqv" method="POST">
                 <label>
-                    <p class="contact-info-description">Please fill out this form</p>
-                    <div class="input-container">
-                        <input type="text" name="name" placeholder="Your name..." required>
+                    <div class="input-container" style="margin-top: 20px;">
+                        <h4>Name <span>(Required)</span></h4>
+                        <input type="text" name="name" placeholder="Name..." required>
                     </div>
                 </label>
                 
                 <label>
                     <div class="input-container">
+                        <h4>Email <span>(Required)</span></h4>
                         <input type="email" name="email" placeholder="Your email..." required>
                     </div>
                 </label>
                 
                 <label>
-                    <div class="input-container">
+                    <div class="input-container" style="margin-top: 35px;">
+                        <h4>Your message <span>(Required)</span></h4>
                         <textarea name="message" placeholder="Describe what you would want..." required style="height: 200px; resize: none;"></textarea>
                     </div>
                 </label>
@@ -50,5 +71,6 @@
     </footer>
 
     <script src="./javascript/htmlElements/insertGlobalElements.js"></script>
+    <script src="./javascript/formAddition.js"></script>
 </body>
 </html>

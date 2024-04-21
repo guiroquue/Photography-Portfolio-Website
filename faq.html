@@ -9,19 +9,40 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/icons/whiteLogo.ico">
     <link rel="stylesheet" href="./css/globalElements/globalElements.css">
     <link rel="stylesheet" href="./css/faq.css">
+    <link rel="stylesheet" href="./css/globalElements/filterTabs.css">
 </head>
 <body>
     <div id="header-placeholder"></div>
 
     <section id="page-content-container">
-        <h2 style="margin: 100px 0 20px; text-align: left;">Your Questions Answered</h2>
+
+        <div class="filter-tabs" style="margin-bottom: 30px;">
+            <div class="tab-item active">
+                <p>All</p>
+            </div>
+            <div class="tab-item">
+                <p>Services</p>
+            </div>
+            <div class="tab-item">
+                <p>Session Details</p>
+            </div>
+            <div class="tab-item">
+                <p>Deliverables</p>
+            </div>
+            <div class="tab-item">
+                <p>Rescheduling</p>
+            </div>
+            <div class="tab-item">
+                <p>Portfolio</p>
+            </div>
+        </div>
         
         <div id="faq-container" class="faq-items-container"></div>
         
         <div class="contact-info">
             <h3>Was your question not answered?</h3>
-            <p>Send me a message <a href="./contact.html" style="color: blue;">here</a> or 
-                <a href="https://www.instagram.com/eoqrupics/" target="_blank" style="color: blue;">Instagram</a>.
+            <p>Send me a message <a href="./contact.html" style="color: black;">here</a> or 
+                <a href="https://www.instagram.com/eoqrupics/" target="_blank" style="color: black;">Instagram</a>.
             </p>
         </div>
     </section>
@@ -32,5 +53,4 @@
 
     <script src="./javascript/htmlElements/insertGlobalElements.js"></script>
     <script src="./javascript/faqItemGenerator.js"></script>
-</body>
 </html>
