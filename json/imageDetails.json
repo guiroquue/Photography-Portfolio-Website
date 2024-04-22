@@ -3,257 +3,303 @@
         {
             "id": 23,
             "src": "./assets/images/portraits/IMG (23).JPG",
-            "alt": "Showcase image 1",
+            "alt": "Showcase image 23",
+            "cameraDetails01": "Canon EOS 400D EF-S 55-250mm",
+            "cameraDetails02": "ISO 200 • f4.5 • 3888 x 2592 • 1/50 s",
             "colors": ["#a2ddff", "#766551"],
-
-            "cameraDetails01": "Canon EOS 400D EF-S 55-250mm f4-5.6 IS",
-            "cameraDetails02": "ISO 200 • f4.5 • 3888 x 2592 • 1/500 s",
 
             "paragraph01": "Originally, we were trying to capture a musician vibe inside. However, we switched outfits and went outside to improvise.",
             "paragraph02": "Purely by accident, we got this shot that, to me, resembles the character Johnny Silverhand from the video game Cyberpunk 2077. It quickly became one of my favorite photos because of the meaning I derived from it.",
             "paragraph03": "In the end, we did manage to capture other shots more in line with our original idea.",
-
             "comment": "“Goddamn, they are all awesome.”",
-            "review": "yes",
+            "review": "review",
+
             "client": "portraits"
         },
         {
             "id": 14,
             "src": "./assets/images/portraits/IMG (14).JPG",
-            "alt": "Showcase image 2",
+            "alt": "Showcase image 14",
+            "cameraDetails01": "Canon EOS 400D EF-S 55-250mm",
+            "cameraDetails02": "ISO 1600 • f5.0 • 1536 x 2304 • 1/60 s",
             "colors": ["#d91402", "#100806"],
-
-            "cameraDetails01": "Canon EOS 400D EF-S 55-250mm f4-5.6 IS",
-            "cameraDetails02": "ISO 1600 • f5 • 1536 x 2304 • 1/60 s",
 
             "paragraph01": "This one was a little lighting course for me. I brought one extra light, and we experimented with a few colors.",
             "paragraph02": "It turned out that one of the ceiling lights was red, so we unscrewed the other bulbs and placed the light I brought to the left of the image.",
             "paragraph03": "This worked out really well because the lights' positioning gave the subject very nice, clean, and contrasted shadows.",
-            
             "comment": "“Bro, that’s so sick.”",
-            "review": "yes",
+            "review": "review",
+
             "client": "portraits"
         },
         {
             "id": 24,
             "src": "./assets/images/portraits/IMG (24).JPG",
-            "alt": "Showcase image 3",
+            "alt": "Showcase image 24",
+            "cameraDetails01": "Canon EOS 400D EF-S 28-80mm",
+            "cameraDetails02": "ISO 400 • f6.3 • 2575 x 3219 • 1/25 s",
             "colors": ["#424242", "#0d1215"],
 
-            "cameraDetails01": "",
-            "cameraDetails02": "",
+            "paragraph01": "paragraph 1",
+            "paragraph02": "paragraph 2",
+            "paragraph03": "paragraph 3",
+            "comment": "no comment",
+            "review": "no review",
 
-            "paragraph01": "",
-            "paragraph02": "",
-            "paragraph03": "",
-
-            "comment": "",
-            "review": "no",
             "client": "portraits"
         },
         {
             "id": 16,
             "src": "./assets/images/portraits/IMG (16).JPG",
-            "alt": "Showcase image 5",
+            "alt": "Showcase image 16",
+            "cameraDetails01": "Canon EOS 400D EF-S 28-80mm",
+            "cameraDetails02": "ISO 1600 • f5.0 • 3888 x 2592 • 1/30 s",
             "colors": ["#9a2679", "#7f0329"],
 
-            "cameraDetails01": "",
-            "cameraDetails02": "",
+            "paragraph01": "paragraph 1",
+            "paragraph02": "paragraph 2",
+            "paragraph03": "paragraph 3",
+            "comment": "no comment",
+            "review": "no review",
 
-            "paragraph01": "",
-            "paragraph02": "",
-            "paragraph03": "",
-
-            "comment": "",
-            "review": "no",
             "client": "portraits"
         },
         {
             "id": 35,
             "src": "./assets/images/portraits/IMG (35).JPG",
-            "alt": "Showcase image 4",
+            "alt": "Showcase image 35",
+            "cameraDetails01": "Canon EOS 400D EF-S 55-250mm",
+            "cameraDetails02": "ISO 400 • f8.0 • 1537 x 2224 • 1/20 s",
             "colors": ["#c6c6c5", "#0d1215"],
 
-            "cameraDetails01": "",
-            "cameraDetails02": "",
+            "paragraph01": "paragraph 1",
+            "paragraph02": "paragraph 2",
+            "paragraph03": "paragraph 3",
+            "comment": "no comment",
+            "review": "no review",
 
-            "paragraph01": "",
-            "paragraph02": "",
-            "paragraph03": "",
-
-            "comment": "",
-            "review": "no",
             "client": "portraits"
+        },
+        {
+            "id": 82,
+            "src": "./assets/images/artists/image (82).JPG",
+            "alt": "Showcase image 82",
+            "cameraDetails01": "Canon EOS 400D EF-S 55-250mm",
+            "cameraDetails02": "ISO 800 • f4.0 • 2592 x 3888 • 1/125 s",
+            "colors": ["#b9b9b9", "#212121"],
+
+            "paragraph01": "paragraph 1",
+            "paragraph02": "paragraph 2",
+            "paragraph03": "paragraph 3",
+            "comment": "“I got the album. All of them look amazing.”",
+            "review": "review",
+
+            "name": "Hieu Nguyen - Reizal Tattoo",
+            "project": "Tattoo session advertisement photography",
+
+            "client": "artists"
         },
         {
             "id": 21,
             "src": "./assets/images/portraits/IMG (21).JPG",
-            "alt": "Showcase image 5",
+            "alt": "Showcase image 21",
+            "cameraDetails01": "Canon EOS 400D EF-S 55-250mm",
+            "cameraDetails02": "ISO 1600 • f5.0 • 1537 x 2305 • 1/15 s",
             "colors": ["#6d0e03", "#060606"],
 
-            "cameraDetails01": "",
-            "cameraDetails02": "",
+            "paragraph01": "paragraph 1",
+            "paragraph02": "paragraph 2",
+            "paragraph03": "paragraph 3",
+            "comment": "no comment",
+            "review": "no review",
 
-            "paragraph01": "",
-            "paragraph02": "",
-            "paragraph03": "",
-
-            "comment": "",
-            "review": "no",
             "client": "portraits"
         },
         {
             "id": 4,
             "src": "./assets/images/portraits/IMG (4).JPG",
-            "alt": "Showcase image 6",
+            "alt": "Showcase image 4",
+            "cameraDetails01": "Canon EOS 400D EF-S 28-80mm",
+            "cameraDetails02": "ISO 400 • f4.0 • 1536 x 2301 • 1/60 s",
             "colors": ["#af381a", "#d0c0b7"],
 
-            "cameraDetails01": "",
-            "cameraDetails02": "",
+            "paragraph01": "paragraph 1",
+            "paragraph02": "paragraph 2",
+            "paragraph03": "paragraph 3",
+            "comment": "no comment",
+            "review": "no review",
 
-            "paragraph01": "",
-            "paragraph02": "",
-            "paragraph03": "",
-
-            "comment": "",
-            "review": "no",
             "client": "portraits"
         },
         {
             "id": 9,
             "src": "./assets/images/portraits/IMG (9).JPG",
-            "alt": "Showcase image 7",
+            "alt": "Showcase image 9",
+            "cameraDetails01": "Canon EOS 400D EF-S 28-80mm",
+            "cameraDetails02": "ISO 1600 • f4.0 • 1537 x 2305 • 1/25 s",
             "colors": ["#024653", "#575644"],
 
-            "cameraDetails01": "",
-            "cameraDetails02": "",
+            "paragraph01": "paragraph 1",
+            "paragraph02": "paragraph 2",
+            "paragraph03": "paragraph 3",
+            "comment": "no comment",
+            "review": "no review",
 
-            "paragraph01": "",
-            "paragraph02": "",
-            "paragraph03": "",
-
-            "comment": "",
-            "review": "no",
             "client": "portraits"
         },
         {
             "id": 12,
             "src": "./assets/images/portraits/IMG (12).JPG",
-            "alt": "Showcase image 8",
+            "alt": "Showcase image 12",
+            "cameraDetails01": "Canon EOS 400D EF-S 55-250mm",
+            "cameraDetails02": "ISO 1600 • f5.0 • 1537 x 2305 • 1/100 s",
             "colors": ["#293915", "#adc4cf"],
 
-            "cameraDetails01": "",
-            "cameraDetails02": "",
+            "paragraph01": "paragraph 1",
+            "paragraph02": "paragraph 2",
+            "paragraph03": "paragraph 3",
+            "comment": "no comment",
+            "review": "no review",
 
-            "paragraph01": "",
-            "paragraph02": "",
-            "paragraph03": "",
-
-            "comment": "",
-            "review": "no",
             "client": "portraits"
         },
         {
             "id": 33,
             "src": "./assets/images/portraits/IMG (33).JPG",
-            "alt": "Showcase image 9",
+            "alt": "Showcase image 33",
+            "cameraDetails01": "Canon EOS 400D EF-S 28-80mm",
+            "cameraDetails02": "ISO 1600 • f6.3 • 2460 x 3074 • 1/60 s",
             "colors": ["#424242", "#0d1215"],
 
-            "cameraDetails01": "",
-            "cameraDetails02": "",
+            "paragraph01": "paragraph 1",
+            "paragraph02": "paragraph 2",
+            "paragraph03": "paragraph 3",
+            "comment": "no comment",
+            "review": "no review",
 
-            "paragraph01": "",
-            "paragraph02": "",
-            "paragraph03": "",
-
-            "comment": "",
-            "review": "no",
-            "client": "brands"
+            "client": "portraits"
         },
         {
             "id": 38,
             "src": "./assets/images/portraits/IMG (38).JPG",
-            "alt": "Showcase image 10",
+            "alt": "Showcase image 38",
+            "cameraDetails01": "Canon EOS 400D EF-S 28-80mm",
+            "cameraDetails02": "ISO Unknown ISO • f4.0 • 2592 x 3240 • 1/50 s",
             "colors": ["#c9240c", "#4b1f01"],
 
-            "cameraDetails01": "",
-            "cameraDetails02": "",
+            "paragraph01": "paragraph 1",
+            "paragraph02": "paragraph 2",
+            "paragraph03": "paragraph 3",
+            "comment": "no comment",
+            "review": "no review",
 
-            "paragraph01": "",
-            "paragraph02": "",
-            "paragraph03": "",
-
-            "comment": "",
-            "review": "no",
-            "client": "artists"
+            "client": "portraits"
         },
         {
             "id": 8,
             "src": "./assets/images/portraits/IMG (8).JPG",
-            "alt": "Showcase image 11",
+            "alt": "Showcase image 8",
+            "cameraDetails01": "Canon EOS 400D EF-S 55-250mm",
+            "cameraDetails02": "ISO 800 • f5.6 • 1537 x 2305 • 1/30 s",
             "colors": ["#a24724", "#dbd1d6"],
 
-            "cameraDetails01": "",
-            "cameraDetails02": "",
+            "paragraph01": "paragraph 1",
+            "paragraph02": "paragraph 2",
+            "paragraph03": "paragraph 3",
+            "comment": "no comment",
+            "review": "no review",
 
-            "paragraph01": "",
-            "paragraph02": "",
-            "paragraph03": "",
-
-            "comment": "",
-            "review": "no",
             "client": "portraits"
         },
         {
             "id": 7,
             "src": "./assets/images/portraits/IMG (7).JPG",
-            "alt": "Showcase image 12",
+            "alt": "Showcase image 7",
+            "cameraDetails01": "Canon EOS 400D EF-S 55-250mm",
+            "cameraDetails02": "ISO 400 • f4.5 • 1536 x 2301 • 1/60 s",
             "colors": ["#af4c1e", "#6d8a8a"],
 
-            "cameraDetails01": "",
-            "cameraDetails02": "",
+            "paragraph01": "paragraph 1",
+            "paragraph02": "paragraph 2",
+            "paragraph03": "paragraph 3",
+            "comment": "no comment",
+            "review": "no review",
 
-            "paragraph01": "",
-            "paragraph02": "",
-            "paragraph03": "",
-
-            "comment": "",
-            "review": "no",
             "client": "portraits"
         },
         {
             "id": 28,
             "src": "./assets/images/portraits/IMG (28).JPG",
-            "alt": "Showcase image 13",
+            "alt": "Showcase image 28",
+            "cameraDetails01": "Canon EOS 400D EF-S 55-250mm",
+            "cameraDetails02": "ISO Unknown ISO • f6.3 • 1536 x 2304 • 1/80 s",
             "colors": ["#8cabc7", "#4c3c3e"],
 
-            "cameraDetails01": "",
-            "cameraDetails02": "",
+            "paragraph01": "paragraph 1",
+            "paragraph02": "paragraph 2",
+            "paragraph03": "paragraph 3",
+            "comment": "no comment",
+            "review": "no review",
 
-            "paragraph01": "",
-            "paragraph02": "",
-            "paragraph03": "",
-
-            "comment": "",
-            "review": "no",
             "client": "portraits"
         },
         {
             "id": 1,
             "src": "./assets/images/portraits/images (1).jpeg",
-            "alt": "Showcase image 14",
+            "alt": "Showcase image 1",
+            "cameraDetails01": "Canon EOS 400D EF-S 28-80mm",
+            "cameraDetails02": "ISO 1600 • f5.0 • 2592 x 3240 • 1/60 s",
             "colors": ["#557780", "#0d0d0d"],
 
-            "cameraDetails01": "",
-            "cameraDetails02": "",
+            "paragraph01": "paragraph 1",
+            "paragraph02": "paragraph 2",
+            "paragraph03": "paragraph 3",
+            "comment": "no comment",
+            "review": "no review",
 
-            "paragraph01": "",
-            "paragraph02": "",
-            "paragraph03": "",
-
-            "comment": "",
-            "review": "no",
             "client": "portraits"
+        },
+        {
+            "id": 52,
+            "src": "./assets/images/brands/confdns/image (52).JPG",
+            "alt": "Showcase image 52",
+            "cameraDetails01": "Canon EOS 400D EF-S 55-250mm",
+            "cameraDetails02": "ISO 1600 • f4.0 • 1450 x 2175 • 1/60",
+            "colors": ["#80725e", "#9b5022"],
+
+            "paragraph01": "paragraph 1",
+            "paragraph02": "paragraph 2",
+            "paragraph03": "paragraph 3",
+            "comment": "“The whole experiance was great! He made the whole shoot easy and comfortable. With creative angles shots. [...] Overall a great experiance.”",
+            "review": "review",
+
+            "name": "CONFDNS (Now known as unveil.)",
+            "logosrc": "./assets/images/brands/confdns/CONFDNSlogo.PNG",
+            "logoalt": "Logo not found",
+            "project": "Model product photography of new clothing collection",
+
+            "client": "brands"
+        },
+        {
+            "id": 62,
+            "src": "./assets/images/brands/imprintyoga/images 20 (1).JPG",
+            "alt": "Showcase image 62",
+            "cameraDetails01": "Canon EOS 400D EF-S 28-80mm",
+            "cameraDetails02": "ISO 1600 • f6.3 • 3888 x 2592 • 1/80",
+            "colors": ["#493b53", "#72502d"],
+
+            "paragraph01": "paragraph 1",
+            "paragraph02": "paragraph 2",
+            "paragraph03": "paragraph 3",
+            "comment": "no comment",
+            "review": "no review",
+
+            "name": "ImprintYoga",
+            "logosrc": "./assets/images/brands/imprintyoga/imprintyogalogo.PNG",
+            "logoalt": "Logo not found",
+            "project": "Class advertisement photography",
+
+            "client": "brands"
         }
     ]
 }

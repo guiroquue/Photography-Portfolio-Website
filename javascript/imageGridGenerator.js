@@ -24,6 +24,7 @@ function displayImages(images) {
         const img = document.createElement('img');
         img.src = image.src;
         img.alt = image.alt;
+        img.loading = 'lazy';
 
         // Create the image info div
         const imageInfo = document.createElement('div');
@@ -65,7 +66,7 @@ function filterImages() {
 
     // Apply review filter if review is true
     if (filterState.review) {
-        filteredImages = filteredImages.filter(image => image.review === 'yes');
+        filteredImages = filteredImages.filter(image => image.review === 'review');
     }
 
     // Display filtered images

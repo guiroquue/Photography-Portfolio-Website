@@ -1,0 +1,66 @@
+#image-information-container {
+    margin-bottom: 30px;
+}
+
+#image-information-container,
+#image-information-container img {
+    width: 100%;
+    height: auto;
+}
+
+#image-information-container img {
+    border-radius: 4px;
+}
+
+#image-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 50px;
+}
+
+/* Color Pixel Info Styles */
+.color-dots{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+    pointer-events: none;
+}
+
+/* Color Dot Styles */
+.color-dot-item {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+#name-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 30px 0 10px;
+}
+
+#name-container img {
+    object-fit: contain;
+    pointer-events: none;
+}
+
+#paragraph-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#review-container {
+    margin: 30px 0;
+}
+
+#review {
+    padding: 20px;
+    margin: 10px 0;
+    width: calc(100% - 40px);
+    border: 1px solid #8b8b8b71;
+    border-radius: 8px;
+}
