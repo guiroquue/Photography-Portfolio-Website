@@ -50,11 +50,6 @@
         "answer": "If the weather is unfavorable, we can reschedule the shoot to a more suitable date."
     },
     {
-        "category": "Portfolio",
-        "question": "Do you have examples of your work?",
-        "answer": "Yes, you can view my work on the <a href='./index.html' style='color: blue;'>portraits</a> page or follow me on <a href='https://www.instagram.com/eoqrupics/' target='_blank' style='color: blue;'>Instagram</a>."
-    },
-    {
         "category": "Services",
         "question": "Do you offer retouching and editing services for commercial work?",
         "answer": "Yes, I provide editing and retouching services for commercial projects, typically offering 5-15 edited photos but can adjust based on needs."

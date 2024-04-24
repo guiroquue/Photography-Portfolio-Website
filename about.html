@@ -2,49 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icons/whiteLogo.ico">
 
-    <link rel="icon" type="image/x-icon" href="./assets/images/icons/whiteLogo.ico">
-    <link rel="stylesheet" href="./css/globalElements/globalElements.css">
-    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/globalCSS/globalStyles.css">
+    <style>
+        #about-me-image-container {
+            width: 90%;
+            max-width: 700px;
+            height: auto;
+            margin: 100px auto var(--space-xs);
+            pointer-events: none;
+        }
+
+        #image-container-header {
+            width: 100%;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: var(--space-xxs);
+        }
+
+        #about-me-image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        #dots-container {
+            display: flex;
+            gap: var(--space-xxs);
+        }
+
+        #paragraph-container,
+        #promotional-links-container {
+            width: 90%;
+            max-width: 700px;
+            height: auto;
+            margin: var(--space-xs) auto var(--space-md);
+        }
+
+        #promotional-links-container {
+            margin: var(--space-xl) auto var(--space-md);
+        }
+
+        .dot-item {
+            width: 15px;
+            height: 15px;
+            border-radius: 10px;
+        }
+
+        #promotional-links-container ul {
+            list-style: none;
+            text-decoration: underline;
+            margin-bottom: var(--space-sm);
+        }
+    </style>
 </head>
 <body>
     <div id="header-placeholder"></div>
 
-    <section id="page-content-container">
-        <div class="about-container">
-            <div id="aboutImageDetails">
-                <div class="color-pixel-info">
-                    <div class="color-dot" style="background-color: #8a8a8a;"></div>
-                    <div class="color-dot" style="background-color: #121212;"></div>
-                </div>
-                <p>Gui Roque</p>
+    <section id="about-me-image-container">
+        <div id="image-container-header">
+            <div id="dots-container">
+                <div class="dot-item" style="background-color: #8a8a8a;"></div>
+                <div class="dot-item" style="background-color: #121212;"></div>
             </div>
-            
-            <img src="./assets/images/other/IMG_5420.jpg" alt="Image of photographer">
-            
-            <p id="about-text">
-                I started my photography journey late 2022, and have since been improving mt style by finding inspiration in the entertainment world, from celebrities and movies to TV shows and video games. I find inspiration all around me. <br><br>
-
-                I'm also influenced by the artistry of Yulia Gorbchenko and Jack Bridgeland, whose distinct styles and visions have left a lasting impression on my work. I strive to infuse their influence with my own creative spin. <br><br>
-
-                I specialize in creating intimate, up-close portraits that capture your true essence. Whether it's a casual session or a professional shoot, my goal is to make you comfortable in front of the camera and deliver portraits that resonate with who you are, and portraits that showcase my creativity and artistry. <br><br>
-
-                Take a look through my portfolio and let's connect to create your next memorable portrait session.
-            </p>
+            <p>Gui Roque</p>
         </div>
-        
-        <div class="social-links">
-            <h4>Follow:</h4>
-            <a href="https://www.instagram.com/eoqrupics/" target="_blank">Instagram</a>
-            <br>
-            <a href="https://www.threads.net/@eoqrupics" target="_blank">Threads</a>
-        </div>
-        
-        <br>
-        
+        <img src="./assets/images/IMG_5420.jpg" alt="Image Not Found">
+    </section>
+
+    <section id="paragraph-container">
+        <p>
+            I started my photography journey late 2022, and have since been improving mt style by finding inspiration in the entertainment world, from celebrities and movies to TV shows and video games. I find inspiration all around me. <br><br>
+            I'm also influenced by the artistry of Yulia Gorbchenko and Jack Bridgeland, whose distinct styles and visions have left a lasting impression on my work. I strive to infuse their influence with my own creative spin. <br><br>
+            I specialize in creating intimate, up-close portraits that capture your true essence. Whether it's a casual session or a professional shoot, my goal is to make you comfortable in front of the camera and deliver portraits that resonate with who you are, and portraits that showcase my creativity and artistry. <br><br>
+            Take a look through my portfolio and let's connect to create your next memorable portrait session.
+        </p>
+    </section>
+
+    <section id="promotional-links-container">
+        <h3>Follow:</h3>
+        <ul>
+            <li><a href="https://www.instagram.com/eoqrupics/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.threads.net/@eoqrupics" target="_blank">Threads</a></li>
+        </ul>
+
         <p>eoqrupics@gmail.com</p>
     </section>
 
@@ -52,6 +98,6 @@
         <p>Copyright Gui Roque © All rights reserved.</p>
     </footer>
 
-    <script src="./javascript/htmlElements/insertGlobalElements.js"></script>
+    <script src="./javascript/htmlElementsInsert/insertHeader.js"></script>
 </body>
 </html>

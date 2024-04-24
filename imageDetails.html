@@ -3,60 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About This Image</title>
-    <link rel="icon" type="image/x-icon" href="./assets/images/icons/whiteLogo.ico">
+    <title>Image Details</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icons/whiteLogo.ico">
 
-    <link rel="stylesheet" href="./css/globalElements/globalElements.css">
-    <link rel="stylesheet" href="./css/imageDetails.css">
+    <link rel="stylesheet" href="./css/globalCSS/globalStyles.css">
+    <style>
+        #image-details {
+            margin: 100px auto var(--space-md);
+            width: 90%;
+            max-width: 700px;
+        }
+
+        #image-details img {
+            border-radius: 5px;
+        }
+
+        #camera-information-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: var(--space-xxs) 0 var(--space-xl);
+        }
+
+        #color-dots-container {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-xxs);
+        }
+
+        .color-dot-item {
+            width: 15px;
+            height: 15px;
+            border-radius: 10px;
+        }
+
+        #paragraph-container {
+            margin: var(--space-xl) 0 var(--space-xl);
+        }
+
+        #paragraph-container h2 {
+            margin-bottom: var(--space-xs);
+        }
+
+        #review-container {
+            margin-top: var(--space-xl);
+        }
+
+        #review {
+            padding: var(--space-md);
+            border: 1px solid var(--text-color);
+            border-radius: 5px;
+            margin: var(--space-xs) 0 var(--space-xl);
+        }
+    </style>
 </head>
 <body>
     <div id="header-placeholder"></div>
 
-    <section id="page-content-container">
+    <div id="image-details"></div>
 
-        <div id="image-information-container">
-            <img src="" alt="No Image Found">
-            <div id="image-information">
-                <div id="info">
-                    <p id="image-details-01">image details 1</p>
-                    <p id="image-details-02">image details 2</p>
-                </div>
-                <div class="color-dots">
-                    <div class="color-dot-item">dot</div>
-                    <div class="color-dot-item">dot</div>
-                </div>
-            </div>
-        </div>
-
-        <div id="name-container">
-            <img src="" alt="logo" width="50px" height="50px">
-            <h2 id="name">name</h2>
-        </div>
-
-        <p id="project-details" style="margin-bottom: 20px;"></p>
-        
-
-        <div id="paragraph-container">
-            <h2>A BTS Story</h2>
-            <p id="paragrapht-01"></p>
-            <p id="paragrapht-02"></p>
-            <p id="paragrapht-03"></p>
-        </div>
-
-        <div id="review-container">
-            <h3>Feedback</h3>
-            <div id="review">
-                <p id="comment"></p>
-            </div>
-        </div>
-        
-    </section>
+    
 
     <footer>
         <p>Copyright Gui Roque © All rights reserved.</p>
     </footer>
 
-    <script src="./javascript/htmlElements/insertGlobalElements.js"></script>
+    <script src="./javascript/htmlElementsInsert/insertHeader.js"></script>
     <script src="./javascript/generateImageDetails.js"></script>
 </body>
 </html>

@@ -2,55 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ</title>
-    
-    <link rel="icon" type="image/x-icon" href="./assets/images/icons/whiteLogo.ico">
-    <link rel="stylesheet" href="./css/globalElements/globalElements.css">
-    <link rel="stylesheet" href="./css/faq.css">
-    <link rel="stylesheet" href="./css/globalElements/filterTabs.css">
+    <link rel="icon" type="image/x-icon" href="./assets/icons/whiteLogo.ico">
+
+    <link rel="stylesheet" href="./css/globalCSS/globalStyles.css">
+    <link rel="stylesheet" href="./css/globalCSS/videoContainers.css">
+    <style>
+        #filter-tabs-container {
+            width: 90%;
+            max-width: 700px;
+            margin: 100px auto var(--space-md);
+        }
+
+        #faq-items-container {
+            width: 90%;
+            max-width: 700px;
+            margin: var(--space-md) auto;
+        }
+
+        #faq-items-container h2 {
+            margin: var(--space-xl) 0 var(--space-sm);
+        }
+
+        .faq-item {
+            padding: var(--space-md);
+            width: calc(100% - (var(--space-md) * 2));
+            border: 1px solid var(--text-color);
+            border-radius: 10px;
+            margin-bottom: var(--space-md);
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .faq-info {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            gap: var(--space-xs);
+        }
+
+        .answer {
+            margin-top: var(--space-md);
+            font-size: var(--size-unit);
+        }
+
+        .faq-info h3 {
+            padding: 0;
+            margin: 0;
+            font-size: var(--size-unit);
+        }
+
+        #cta-for-more {
+            width: 90%;
+            text-align: center;
+            margin: var(--space-xl) auto;
+            font-size: calc(0.85 * var(--size-unit));
+        }
+        
+        #cta-for-more a {
+            text-decoration: underline;
+        }
+
+        @media (min-width: 500px) {
+            #cta-for-more {
+                font-size: var(--size-unit);
+            }
+        }
+    </style>
 </head>
 <body>
     <div id="header-placeholder"></div>
 
-    <section id="page-content-container">
-
-        <div class="filter-tabs" style="margin-bottom: 30px;">
-            <div class="tab-item active">
-                <p>All</p>
-            </div>
-            <div class="tab-item">
-                <p>Services</p>
-            </div>
-            <div class="tab-item">
-                <p>Session Details</p>
-            </div>
-            <div class="tab-item">
-                <p>Deliverables</p>
-            </div>
-            <div class="tab-item">
-                <p>Rescheduling</p>
-            </div>
-            <div class="tab-item">
-                <p>Portfolio</p>
-            </div>
+    <section id="filter-tabs-container">
+        <div class="filter-tab-item">
+            <p>All</p>
         </div>
-        
-        <div id="faq-container" class="faq-items-container"></div>
-        
-        <div class="contact-info">
-            <h3>Was your question not answered?</h3>
-            <p>Send me a message <a href="./contact.html" style="color: black;">here</a> or 
-                <a href="https://www.instagram.com/eoqrupics/" target="_blank" style="color: black;">Instagram</a>.
-            </p>
+        <div class="filter-tab-item">
+            <p>Services</p>
+        </div>
+        <div class="filter-tab-item">
+            <p>Session Details</p>
+        </div>
+        <div class="filter-tab-item">
+            <p>Deliverables</p>
+        </div>
+        <div class="filter-tab-item">
+            <p>Rescheduling</p>
         </div>
     </section>
+
+    <section id="faq-items-container"></section>
+
+    <div id="cta-for-more">
+        <h3>Was your question not answered?</h3>
+        <p>Send me a message <a href="./contact.html">here</a> or <a href="https://www.instagram.com/eoqrupics/" target="_blank">Instagram</a></p>
+    </div>
+
 
     <footer>
         <p>Copyright Gui Roque © All rights reserved.</p>
     </footer>
 
-    <script src="./javascript/htmlElements/insertGlobalElements.js"></script>
-    <script src="./javascript/faqItemGenerator.js"></script>
+    <script src="./javascript/htmlElementsInsert/insertHeader.js"></script>
+    <script src="./javascript/generateFaqItems.js"></script>
+</body>
 </html>

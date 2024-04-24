@@ -2,77 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eoqrupics</title>
-    
-    <link rel="icon" type="image/x-icon" href="./assets/images/icons/whiteLogo.ico">
-    <link rel="stylesheet" href="./css/globalElements/globalElements.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/globalElements/filterTabs.css">
-    <link rel="stylesheet" href="./css/globalElements/videoContainers.css">
+    <link rel="icon" type="image/x-icon" href="./assets/icons/whiteLogo.ico">
+
+    <link rel="stylesheet" href="./css/globalCSS/globalStyles.css">
+    <link rel="stylesheet" href="./css/globalCSS/videoContainers.css">
+    <style>
+        #image-grid {
+            width: 90%;
+            max-width: 700px;
+            margin: 0 auto;
+            transition: opacity 0.05s ease-in-out;
+        } 
+
+        #image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            pointer-events: none;
+        }
+
+        #cta-for-more {
+            display: flex;
+            justify-content: center;
+            margin: var(--space-lg) 0;
+        }
+
+        #cta-for-more a {
+            display: flex;
+            align-items: center;
+            font-weight: var(--font-weight-bold);
+        }
+    </style>
 </head>
 <body>
     <div id="header-placeholder"></div>
 
-    <section id="page-content-container">
-        <div id="video-headline-container">
-            <div class="video-header">
-                <h3>Coming Soon</h3>
-                <img src="./assets/images/icons/close.png" alt="Close" onclick="hideVideoContainer()">
-            </div>
-            <div class="video-player">
-                <!-- Video player goes here -->
-            </div>
-            <div class="video-description">
-                <h4 id="video-description">Photographer VS Photographer - Part 1  <br> w/ <a href="https://snjokallinn.com/" target="_blank">Snjokallin</a></h4>
-                <a href="#" target="_blank"><img src="./assets/images/icons/externalLink.svg" alt="External link" class="external-link"></a>
-            </div>
-        </div>        
+    <div class="video-container" style="margin-top: 100px;">
+        <div class="video-header">
+            <h2>Coming Soon</h2>
+        </div>
+        <div class="video-frame">
+            <img src="./assets/icons/youtubeIcon.svg" alt="Youtube Icon" width="47" height="42.65">
+        </div>
+        <div class="video-description">
+            <p>Photographer VS Photographer <br> Part 1 w/ <a href="https://www.instagram.com/snjokallinn/" target="_blank">Snjokalin</a></p>
+            <img src="./assets/icons/externalLinkIcon.svg" alt="External Link">
+        </div>
+    </div>
 
-        <div class="filter-tabs">
-            <div class="tab-item active">
-                <p>All</p>
-            </div>
-            <div class="tab-item">
-                <p>Portraits</p>
-            </div>
-            <div class="tab-item">
-                <p>Artists</p>
-            </div>
-            <div class="tab-item">
-                <p>Brands</p>
-            </div>
-            <div class="tab-item">
-                <p>w/ Review</p>
-            </div>
+    <section id="filter-tabs-container">
+        <div class="filter-tab-item">
+            <p>All</p>
         </div>
-        
-        <div class="image-grid">
-            <!-- Image grid content here -->
+        <div class="filter-tab-item">
+            <p>Portraits</p>
         </div>
-        
-        <div id="reach-out-interact-container" class="reach-out-interact-container">
-            <a href="https://www.instagram.com/eoqrupics/" target="_blank">
-                <h3>Check out more of my work <img src="../assets/images/icons/IG_brand_asset_pack_2023/Instagram_Glyph_Black.svg" alt="Instagram" height="20" width="20"></h3>
-            </a>
+        <div class="filter-tab-item">
+            <p>Artists</p>
+        </div>
+        <div class="filter-tab-item">
+            <p>Brands</p>
+        </div>
+        <div class="filter-tab-item">
+            <p>w/ Review</p>
         </div>
     </section>
+
+    <section id="image-grid"></section>
+
+    <div id="cta-for-more">
+        <a href="https://www.instagram.com/eoqrupics/" target="_blank">Check out more here -<img src="../assets/icons/instagramIcon.svg" alt="Instagram Link"></a>
+    </div>
 
     <footer>
         <p>Copyright Gui Roque © All rights reserved.</p>
     </footer>
 
-    <script src="./javascript/htmlElements/insertGlobalElements.js"></script>
-    <script src="./javascript/imageGridGenerator.js"></script>
-    <script>
-        // Function to hide the video-headline-container
-        function hideVideoContainer() {
-            const videoContainer = document.getElementById('video-headline-container');
-            if (videoContainer) {
-                videoContainer.style.display = 'none';
-            }
-        }
-    </script>
+    <script src="./javascript/htmlElementsInsert/insertHeader.js"></script>
+    <script src="./javascript/generateImages.js"></script>
 </body>
 </html>

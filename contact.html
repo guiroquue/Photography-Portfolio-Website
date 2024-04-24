@@ -2,67 +2,151 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    
-    <link rel="icon" type="image/x-icon" href="./assets/images/icons/whiteLogo.ico">
-    <link rel="stylesheet" href="./css/globalElements/globalElements.css">
-    <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="./css/globalElements/filterTabs.css">
+    <link rel="icon" type="image/x-icon" href="./assets/icons/whiteLogo.ico">
+
+    <link rel="stylesheet" href="./css/globalCSS/globalStyles.css">
+    <style>
+        #contact-info,
+        #contact-header {
+            width: 90%;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        #contact-info h4 {
+            margin-bottom: var(--space-xxs);
+        }
+
+        h4 span {
+            font-size: var(--size-xs);
+            color: #e5122e;
+        }
+
+        form,
+        label {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+            width: 100%;
+            max-width: 700px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: calc(100% - (var(--space-sm) * 2));
+            max-width: 700px;
+            padding: var(--space-sm);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: transparent;
+            margin-bottom: var(--size-xs);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position: 10px 9px;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            outline: none;
+            border: 1px solid #e5122e;
+        }
+
+        input[type="text"]:valid,
+        input[type="email"]:valid,
+        textarea:valid {
+            background-color: rgba(152, 255, 191, 0);
+        }
+
+        button[type="submit"] {
+            background-color: var(--text-color);
+            color: white;
+            padding: var(--space-md) var(--space-sm);
+            border: 1px solid var(--text-color);
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: var(--font-weight-bold);
+            font-size: var(--size-unit);
+        }
+
+        button[type="submit"]:hover {
+            background-color: var(--background-color);
+            border: 1px solid var(--text-color);
+            color: var(--text-color);
+        }
+
+        .formspree-container {
+            width: 100%;
+            text-align: center;
+            margin: var(--space-xxs) 0;
+            background-color: #e5122e;
+            border-radius: 5px;
+            pointer-events: none;
+        }
+
+        .formspree-container p {
+            padding: var(--space-xxs);
+            color: #f5f5f5;
+            font-weight: var(--font-weight-bold);
+        }
+    </style>
 </head>
 <body>
     <div id="header-placeholder"></div>
 
-    <section id="page-content-container">
-        <h2 style="font-size: 25px;">Let's create something <br> amazing Together</h2>
-        <p style="margin-top: 10px;">Please fill out this form</p>
-
-        <h4 style="margin-top: 35px;">I'm a/an... <span>(Required)</span></h2>
-        <div class="filter-tabs">
-            <div class="tab-item active">
-                <p>Individual</p>
-            </div>
-            <div class="tab-item">
-                <p>Artist</p>
-            </div>
-            <div class="tab-item">
-                <p>Brand</p>
-            </div>
-            <div class="tab-item">
-                <p>Other</p>
-            </div>
+    <div id="contact-header">
+        <h2 style="margin-top: 100px;">Let's create something <br> amazing together!</h3>
+        <p style="margin-top: var(--space-xxs);">Please fill out this form</p>
+    
+        <h4 style="margin-top: var(--space-xl);">I'm a/an... <span>(Required)</span></h4>
+    </div>
+    
+    <section id="filter-tabs-container">
+        <div class="filter-tab-item active">
+            <p>Individual</p>
         </div>
+        <div class="filter-tab-item">
+            <p>Artist</p>
+        </div>
+        <div class="filter-tab-item">
+            <p>Brand</p>
+        </div>
+        <div class="filter-tab-item">
+            <p>Other</p>
+        </div>
+    </section>
 
-        <div class="contact-info">
-            <form action="https://formspree.io/f/xayrybqv" method="POST">
-                <label>
-                    <div class="input-container" style="margin-top: 20px;">
-                        <h4>Name <span>(Required)</span></h4>
-                        <input type="text" name="name" placeholder="Name..." required>
-                    </div>
-                </label>
-                
-                <label>
-                    <div class="input-container">
-                        <h4>Email <span>(Required)</span></h4>
-                        <input type="email" name="email" placeholder="Your email..." required>
-                    </div>
-                </label>
-                
-                <label>
-                    <div class="input-container" style="margin-top: 35px;">
-                        <h4>Your message <span>(Required)</span></h4>
-                        <textarea name="message" placeholder="Describe what you would want..." required style="height: 200px; resize: none;"></textarea>
-                    </div>
-                </label>
-                
-                <button type="submit">Send</button>
-            </form>
+    <section id="contact-info">
+        <form action="https://formspree.io/f/xayrybqv" method="POST">
+            <label>
+                <div class="input-container" style="margin-top: var(--space-md);">
+                    <h4>Name <span>(Required)</span></h4>
+                    <input type="text" name="name" placeholder="Name..." required>
+                </div>
+            </label>
             
-            <div class="formspree-container">
-                <p>Powered by Formspree</p>
-            </div>
+            <label>
+                <div class="input-container">
+                    <h4>Email <span>(Required)</span></h4>
+                    <input type="email" name="email" placeholder="Your email..." required>
+                </div>
+            </label>
+            
+            <label>
+                <div class="input-container" style="margin-top: var(--space-md);">
+                    <h4>Your message <span>(Required)</span></h4>
+                    <textarea name="message" placeholder="Describe what you would want..." required style="height: 200px; resize: none;"></textarea>
+                </div>
+            </label>
+            
+            <button type="submit">Send</button>
+        </form>
+        
+        <div class="formspree-container">
+            <p>Powered by Formspree</p>
         </div>
     </section>
 
@@ -70,7 +154,35 @@
         <p>Copyright Gui Roque © All rights reserved.</p>
     </footer>
 
-    <script src="./javascript/htmlElements/insertGlobalElements.js"></script>
-    <script src="./javascript/formAddition.js"></script>
+    <script src="./javascript/htmlElementsInsert/insertHeader.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all the tab items and the form
+            const tabItems = document.querySelectorAll('.filter-tab-item');
+            const form = document.querySelector('form');
+            const messageTextarea = document.querySelector('textarea[name="message"]');
+            let activeTabText = 'Individual'; // Default to the first tab
+
+            // Add event listeners to each tab item
+            tabItems.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Remove active class from all tabs
+                    tabItems.forEach(t => t.classList.remove('active'));
+                    
+                    // Add active class to the clicked tab
+                    tab.classList.add('active');
+                    
+                    // Update the activeTabText variable with the text of the active tab
+                    activeTabText = tab.querySelector('p').textContent;
+                });
+            });
+
+            // Add event listener to the form submission
+            form.addEventListener('submit', function(event) {
+                // Append the active tab text to the message
+                messageTextarea.value = `${messageTextarea.value}\n\nI'm a/an ${activeTabText}`;
+            });
+        });
+    </script>
 </body>
 </html>

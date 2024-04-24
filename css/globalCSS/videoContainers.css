@@ -1,0 +1,39 @@
+/* Video containers class Styling */
+.video-container {
+    width: 90%;
+    max-width: 700px;
+    margin: var(--space-lg) auto;
+}
+
+.video-header {
+    width: 100%;
+    margin-bottom: var(--space-xs);
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-header img {
+    cursor: pointer;
+}
+
+.video-frame {
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: var(--space-xs);
+}
+
+.video-description img {
+    margin: var(--space-xxs) 0 0 var(--space-xxs);
+    cursor: pointer;
+}
