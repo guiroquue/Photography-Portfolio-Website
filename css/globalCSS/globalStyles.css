@@ -146,7 +146,7 @@ header {
     background-color: var(--background-color);
     border-radius: 10px;
     padding: var(--space-xs) var(--space-sm);
-    margin: var(--space-xs) var(--space-sm) var(--space-xs) 0;
+    margin: var(--space-xs) var(--space-xs) var(--space-xs) 0;
     cursor: pointer;
     border: 1px solid var(--text-color);
 }

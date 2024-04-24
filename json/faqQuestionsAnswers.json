@@ -7,7 +7,7 @@
     {
         "category": "Session Details",
         "question": "How do I book a session?",
-        "answer": "You can reach out to me on <a href='https://www.instagram.com/eoqrupics/' target='_blank' style='color: blue;'>Instagram</a> or on my <a href='./contact.html' style='color: blue;'>contact</a> page, or email me at eoqrupics@gmail.com."
+        "answer": "You can reach out to me on Instagram, email me at eoqrupics@gmail.com or just fill out the form on the contact page."
     },
     {
         "category": "Session Details",
@@ -72,6 +72,6 @@
     {
         "category": "Services",
         "question": "What about artists and brands?",
-        "answer": "I love working with other artists and brands. You can check out some of my commercial work on my <a href='./commercialWork.html' style='color: blue;'>commercial work</a> page."
+        "answer": "I love working with other artists and brands. You can check out some of my work with artists and brands on my projects page."
     }
 ]
