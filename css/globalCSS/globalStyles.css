@@ -180,7 +180,6 @@ footer {
     width: 100%;
     text-align: center;
     margin: var(--space-lg) 0;
-    pointer-events: none;
 }
 
 footer p {

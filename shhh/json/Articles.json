@@ -1,0 +1,38 @@
+[
+    {
+        "id": "0001",
+        "title": "Cyberpunkian musician, and finding meaning after the fact",
+        "description": "How I found meaning in a photo completely accidentally only after having taken it, and straying away from the original idea for the photo shoot.",
+        "tags": ["Portrait", "Photography"],
+        "image": "./assets/images/portraits/IMG (23).JPG",
+        "video": false,
+        "author": "Gui Roque",
+
+        "show": true,
+        "type": "portraits"
+    },
+    {
+        "id": "0002",
+        "title": "Honestly cover art material, and a lighting short course",
+        "description": "How I created a short lighting course for myself unknowingly, and got this shot.",
+        "tags": ["Portrait", "Photography"],
+        "image": "./assets/images/portraits/IMG (14).JPG",
+        "video": false,
+        "author": "Gui Roque",
+
+        "show": true,
+        "type": "portraits"
+    },
+    {
+        "id": "1001",
+        "title": "Photographer VS Photographer Part 1 w/ Snjokallin",
+        "description": "New series starting, where I and another photographer (Snjokalinn) battle it out, in a VS challenge with the same models and locations.",
+        "tags": ["Entertainment", "Photography", "Video", "Series"],
+        "image": null,
+        "video": true,
+        "author": "Gui Roque and Alex Snær",
+
+        "show": true,
+        "type": "videos"
+    }
+]

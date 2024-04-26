@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400;500;600;700;900&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Font weights values */
+    --font-weight-regular: 400;
+    --font-weight-plus-regular: 500;
+    --font-weight-less-bold: 600;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+
+    /* Font sizing values */
+    --size-unit: 1em;
+    --size-xxs: calc(0.25 * var(--size-unit));
+    --size-xs: calc(0.5 * var(--size-unit));
+    --size-sm: calc(0.75 * var(--size-unit));
+    --size-md: calc(1.25 * var(--size-unit));
+    --size-lg: calc(2 * var(--size-unit));
+    --size-xl: calc(3.25 * var(--size-unit));
+    --size-xxl: calc(5.25 * var(--size-unit));
+
+    /* Spacing values */
+    --space-unit: 1rem;
+    --space-xxs: calc(0.25 * var(--space-unit));
+    --space-xs: calc(0.5 * var(--space-unit));
+    --space-sm: calc(0.75 * var(--space-unit));
+    --space-md: calc(1.25 * var(--space-unit));
+    --space-lg: calc(2 * var(--space-unit));
+    --space-xl: calc(3.25 * var(--space-unit));
+    --space-xxl: calc(5.25 * var(--space-unit));
+
+    /* Color values */
+    --background-color: #f5f5f5;
+    --text-color: #202020;
+}
+
+/* Element Styling */
+body {
+    font-family: "Roboto Serif", Georgia, "Times New Roman", serif;
+    font-optical-sizing: auto;
+    font-weight: var(--font-weight-regular);
+    line-height: 1.5;
+    font-size: var(--size-unit);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-bold);
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+p {
+    font-weight: var(--font-weight-regular);
+    line-height: 1.5;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Class and ID Styling */
+#header-placeholder {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    background-color: var(--background-color);
+    top: 0;
+    z-index: 9999;
+}
+
+header {
+    width: 90%;
+    max-width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--text-color);
+    position: relative;
+    z-index: 9999;
+}
+
+header h2 a {
+    letter-spacing: -0.06em;
+    font-size: var(--size-md);
+    font-weight: var(--font-weight-black);
+}
+
+#header-links {
+    height: 30px;
+}
+
+header img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#side-menu {
+    position: fixed;
+    top: -100%;
+    left: 0; /* Adjust if necessary */
+    right: 0; 
+    width: 100%;
+    max-width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    overflow: auto;
+    transition: top 0.3s ease;
+    z-index: 9998;
+}
+
+#side-menu ul li {
+    width: 90%;
+    list-style: none;
+    margin: var(--space-sm) auto;
+    border-bottom: 1px solid black;
+}
+
+#side-menu ul li a {
+    font-size: var(--size-lg);
+    font-weight: var(--font-weight-bold);
+}
+
+#side-menu.open {
+    top: 71px;
+}
+
+#page-content-container {
+    margin: calc(70px + var(--space-md)) auto var(--space-md);
+    width: 90%;
+    max-width: 700px;
+}
+
+footer {
+    text-align: center;
+    margin: var(--space-lg) auto;
+    font-size: var(--size-sm);
+}
+
+/* Media Queries */
+@media (min-width: 1500px) {
+    #side-menu {
+        width: calc(((100% - 1500px) / 2) + 1500px);
+    }
+}
+
+
+
+#filter-tabs-container {
+    margin: var(--space-lg) 0 var(--space-unit);
+}
+
+.seperator {
+    width: 100%;
+    height: 10px;
+    background-color: var(--text-color);
+}
+
+#filter-header {
+    margin-top: var(--space-xs);
+    font-size: var(--size-unit);
+}
+
+
+
+.filter-tabs-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.filter-tabs-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/* Class Styling */
+.filter-item {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: var(--space-xs) var(--space-sm);
+    margin: var(--space-xxs) var(--space-xs) var(--space-xs) 0;
+    cursor: pointer;
+    border: 1px solid var(--text-color);
+}
+
+.filter-item p {
+    font-weight: var(--font-weight-normal);
+}
+
+.filter-item.active {
+    color: var(--background-color);
+    background-color: var(--text-color);
+}
