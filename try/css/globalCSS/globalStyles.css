@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Font weights values */
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+
+    /* Font sizing values */
+    --size-unit: 1em;
+    --size-xxs: calc(0.25 * var(--size-unit));
+    --size-xs: calc(0.5 * var(--size-unit));
+    --size-sm: calc(0.75 * var(--size-unit));
+    --size-md: calc(1.25 * var(--size-unit));
+    --size-lg: calc(2 * var(--size-unit));
+    --size-xl: calc(3.25 * var(--size-unit));
+    --size-xxl: calc(5.25 * var(--size-unit));
+
+    /* Spacing values */
+    --space-unit: 1rem;
+    --space-xxs: calc(0.25 * var(--space-unit));
+    --space-xs: calc(0.5 * var(--space-unit));
+    --space-sm: calc(0.75 * var(--space-unit));
+    --space-md: calc(1.25 * var(--space-unit));
+    --space-lg: calc(2 * var(--space-unit));
+    --space-xl: calc(3.25 * var(--space-unit));
+    --space-xxl: calc(5.25 * var(--space-unit));
+
+    /* Color values */
+    --background-color: hsla(180,1%,97%,1);
+    --text-color: #101010;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Element Styling */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: var(--font-weight-regular);
+    line-height: 1.5;
+    font-size: var(--size-unit);
+    color: var(--text-color);
+    background-color:hsla(180,1%,97%,1);
+    background-image:
+    radial-gradient(at 81% 65%, hsla(218,98%,94%,1) 0px, transparent 50%),
+    radial-gradient(at 95% 99%, hsla(39,95%,94%,1) 0px, transparent 50%),
+    radial-gradient(at 48% 26%, hsla(271,77%,94%,1) 0px, transparent 50%),
+    radial-gradient(at 75% 26%, hsla(197,87%,94%,1) 0px, transparent 50%);
+	background-size: 500% 500%;
+	animation: gradient 9s ease infinite;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-bold);
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+p {
+    font-weight: var(--font-weight-regular);
+    line-height: 1.5;
+}
+
+p span {
+    font-weight: var(--font-weight-bold);
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Header Styling */
+#header-placeholder {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+}
+
+header {
+    width: 90%;
+    max-width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: "Pacifico", cursive;
+    font-size: var(--size-lg);
+    /* Set the background to the linear gradient */
+    background: linear-gradient(90deg, rgba(32, 63, 220) 0%, rgba(180, 43, 150) 100%);
+    /* Define background-clip properties for text effect */
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Set text color to transparent so the background gradient shows through */
+    -webkit-text-fill-color: transparent;
+    padding: 0px 10px 10px 0px;
+    display: inline-block;
+}
+

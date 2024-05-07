@@ -1,0 +1,147 @@
+/* Work Section */
+#work-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#work-section-headline {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xxs);
+    margin-bottom: var(--space-md);
+}
+
+#work-section-headline h2 {
+    font-size: var(--size-md);
+}
+
+#work-section-headline p {
+    font-size: var(--size-sm);
+}
+
+/* Filter Tabs */
+#filter-tabs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-xxs);
+    position: relative;
+    z-index: 999;
+}
+
+#filter-tabs-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#seperators-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    justify-content: space-evenly;
+    border-radius: 12px;
+    background-color: #42424420;
+    padding: var(--space-xxs);
+    height: calc((var(--space-xxs) * 4) + 16px);
+}
+
+.filter-tab {
+    width: 33.3%;
+    text-align: center;
+}
+
+.filter-tab.active {
+    width: 34%;
+}
+
+.filter-tab.active p {
+    background-color: #eaecef;
+    border-radius: 8px;
+    font-weight: var(--font-weight-bold);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+}
+
+.filter-tab p {
+    padding: var(--space-xxs);
+}
+
+/* Separators */
+.seperator {
+    border-radius: 100px;
+    width: 0.3%;
+    max-width: 1px;
+    background-color: #8e8e937c;
+    height: 18px;
+}
+
+
+.number-of-item-visualizer {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xxs);
+    margin: var(--space-xs);
+}
+
+.number-of-item-visualizer p {
+    color: #007AFF;
+    font-size: var(--size-sm);
+}
+
+
+/* Define styles for the grid container */
+.grid-container {
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: var(--space-xxs);
+    width: 100%; /* Adjust the width as per your requirement */
+    aspect-ratio: 4 / 5;
+    margin-top: var(--space-unit);
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+/* Define styles for each grid item */
+.grid-item {
+    position: relative;
+    width: 100%; /* Full width of the grid column */
+    padding-bottom: 100%; /* Maintain a square aspect ratio */
+    overflow: hidden;
+}
+
+/* Add images inside each grid item */
+.grid-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    image-resolution: 300dpi;
+}
+
+/* Define fade effect for the last row of grid items */
+/* This will create an image-to-transparent gradient at the bottom */
+.grid-item:nth-child(3),
+.grid-item:nth-child(4) {
+    /* Mask the images with a linear gradient from black to transparent */
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0), rgba(0, 0, 0), transparent);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0), rgba(0, 0, 0), transparent);
+} 
+
+.portraits,
+.artists,
+.brands {
+    display: none;
+}
+
+.grid-container.active {
+    display: grid;
+    opacity: 1;
+}
