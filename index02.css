@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Comforter'; /* The name of the font */
-    src: url('./font02/Comforter-Regular.ttf') format('truetype'); 
+    src: url('./Comforter-Regular.ttf') format('truetype'); 
     font-weight: 200;
     font-style: normal;
 }
@@ -30,7 +30,7 @@ html, body {
     flex-direction: column;
     gap: 30px;
 
-    background-image: url("./images02/RUNWAYIMAGE.JPG");
+    background-image: url("./RUNWAYIMAGE.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
