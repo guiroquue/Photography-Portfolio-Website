@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Comforter'; /* The name of the font */
+    src: url('./font02/Comforter-Regular.ttf') format('truetype'); 
+    font-weight: 200;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%; /* Ensure html and body take up full height */
+    margin: 0;    /* Avoid any unwanted spacing */
+    background-color: #050808;
+    padding: calc(5px + 0.5vw);
+    pointer-events: none;
+}
+
+#hero {
+    width: 100%;
+    height: 100%; /* This is now 90% of the parent's (body's) height */
+    background-color: #1843D4;
+    border-radius: 10px;
+    padding: calc(10px + 1vw) calc(10px + 1vw) 0px calc(10px + 1vw);
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    background-image: url("./images02/RUNWAYIMAGE.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-size: fill;
+}
+
+#nav_bar {
+    width: 100%;
+    height: 50px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_bar h2 {
+    color: #F5F5F5;
+    font-family: 'Comforter';
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+#nav_bar .stroke {
+    width: 40px;
+    height: 3px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    background-color: #F5F5F5;
+}
+
+#hero_content {
+    width: 100%;
+    height: 100%;
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero_content h1 {
+    font-family: 'Comforter';
+    color: #F5F5F5;
+    font-size: 12rem;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    #hero_content {
+        background-size: calc(100% + 100px); /* Add extra space for smaller containers */
+    }
+
+    #hero_content h1 {
+        font-family: 'Comforter';
+        color: #F5F5F5;
+        font-size: 5rem;
+        font-weight: 400;
+    }
+}
