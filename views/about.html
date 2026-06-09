@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Gui's Photos</title>
+    <script>
+        document.documentElement.classList.add("is-loading");
+        window.addEventListener("load", () => {
+            window.requestAnimationFrame(() => {
+                document.documentElement.classList.remove("is-loading");
+                document.documentElement.classList.add("is-ready");
+            });
+        }, { once: true });
+    </script>
+    <link rel="stylesheet" href="../styles/global.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="narrow-shell about-shell">
+        <section class="about-hero page-intro" aria-labelledby="about-title">
+            <p class="eyebrow">About</p>
+            <h1 id="about-title">Gui Roque</h1>
+            <p>Portrait photographer in Reykjavik, building expressive images around close light, quiet detail, and the feeling a person brings into the room.</p>
+        </section>
+
+        <section class="about-panel" aria-label="About Gui Roque">
+            <p>I started shooting in late 2022 and have been shaping a style built around intimate portraits, dramatic color, and references from film, music, fashion, and games.</p>
+            <p>I want sessions to feel relaxed and collaborative. I guide posing and light, but the goal is not to flatten someone into a perfect version of themselves. The goal is to make images that feel specific, honest, and visually memorable.</p>
+            <p>My work is influenced by artists like Yulia Gorbchenko and Jack Bridgeland, but I keep pulling those references back into my own eye: tighter, moodier, and centered on the person in front of the camera.</p>
+        </section>
+
+        <section class="about-links" aria-label="Contact links">
+            <a class="button-link primary" href="mailto:eoqrupics@gmail.com">Book a shoot</a>
+            <a class="button-link" href="https://www.instagram.com/guiroquue/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a class="button-link" href="https://www.threads.net/@guiroquue" target="_blank" rel="noopener noreferrer">Threads</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright Gui Roque © All rights reserved.</p>
+    </footer>
+
+    <script src="../components/site-header.js"></script>
+</body>
+</html>

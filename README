@@ -1,46 +1,62 @@
-# Eoqrupics - A Photography Portfolio Website
+# Gui's Photos
 
-Eoqrupics is a photography portfolio website designed to showcase my work as a photographer while incorporating my skills in web design. The project aims to create an aesthetically pleasing and user-friendly platform for displaying my portfolio and attracting potential clients.
+Static photography portfolio for Gui Roque.
 
-## Motivation
+The site is intentionally simple: plain HTML, CSS, and JavaScript with a small build script that turns image files into gallery data. There is no CMS and no runtime API.
 
-As a photographer and web designer, I wanted to merge my two passions and create a portfolio that not only highlights my photography skills but also showcases my ability to design and develop interactive web experiences. This project serves as a platform for me to demonstrate my creativity and technical abilities while providing a professional showcase of my work.
+## Open Locally
 
-## Technologies Used
+Open `index.html` in a browser.
 
-- HTML
-- CSS
-- JavaScript
-- Figma (for design)
+The site does not depend on runtime `fetch()` calls, so it works from a normal file open and from static hosting like GitHub Pages.
 
-## Features and Challenges
+## Add Photos
 
-### Features Implemented
-- Dynamically generated header and navigation side menu using JavaScript to ensure consistency across multiple pages.
-- Sending information across pages to view images pressed on with the correct information.
-- Responsive design optimized for various screen sizes, including mobile devices.
-- Using JavaScript to generate faq items, and pulling the text content from a json file for scalability.
-- Implementing a 3rd party service to be able to send forms as this is a static site.
+1. Drop gallery images into `assets/images/`.
+2. Commit and push to `main`.
+3. GitHub Pages runs `npm run generate:gallery` during deployment.
+4. New images are added to the top of the gallery automatically.
 
-### Challenges Overcome
-- Implementing dynamic navigation required careful consideration of DOM manipulation and event handling to ensure seamless integration across pages.
-- Sending information across pages to be able to pull the correct information the user wants to see.
+For local previews after adding images:
 
-## Installation and Usage
+```bash
+npm run generate:gallery
+```
 
-1. Clone the repository: `git clone https://github.com/your-username/eoqrupics.git`
-2. Navigate to the project directory: `cd eoqrupics`
-3. Open `index.html` in your web browser to access the portfolio.
-4. Explore the various sections and features of the website to view the photography portfolio and experience the interactive elements.
+Do not edit `data/gallery.js` by hand. It is generated from `assets/images/` and `data/gallery-meta.json`.
 
-or simply search www.eoqrupics.com to view the site in action.
+If you add `assets/images/about-portrait.jpg` later, the generator will skip it so it can be used on the about page instead of the gallery.
 
+## Optional Image Metadata
 
-## Future Improvements
+Use `data/gallery-meta.json` when an image needs extra detail, such as:
 
-- Continuously optimize performance and user experience based on feedback and emerging technologies.
-- possible translation feature of all text.
+- `alt`
+- `cameraSettings`
+- `imageResolution`
 
-## Future Improvements outside of a static website
+The image detail page only shows camera shot info when `cameraSettings` or `imageResolution` is present.
 
-- Introduce dynamic content management system (CMS) capabilities for easy updating and management of the portfolio. (Improved scalability)
+## Project Structure
+
+- `index.html` - homepage and gallery grid.
+- `views/about.html` - about page.
+- `views/faq.html` - FAQ page.
+- `views/work.html` - selected work detail page.
+- `styles/global.css` - shared design system, layout, responsive rules, and animations.
+- `components/site-header.js` - shared header, navigation, social links, and image fade setup.
+- `components/work-grid.js` - homepage gallery rendering.
+- `components/work-detail.js` - selected work rendering and optional camera details.
+- `components/faq-list.js` - FAQ categories and accordion behavior.
+- `data/faq.js` - FAQ content.
+- `data/gallery-meta.json` - optional metadata for gallery images.
+- `data/gallery.js` - generated gallery data; do not edit manually.
+- `scripts/build-gallery-data.js` - scans `assets/images/` and writes `data/gallery.js`.
+- `assets/images/` - gallery images.
+- `assets/icons/` - social icons.
+- `.github/workflows/pages.yml` - regenerates gallery data and deploys the static site on push.
+- `CNAME` - custom domain config for GitHub Pages; keep it at the root.
+
+## Deployment
+
+Push to `main`. The Pages workflow builds the gallery data and uploads the static site artifact.

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Gui's Photos</title>
+    <script>
+        document.documentElement.classList.add("is-loading");
+        window.addEventListener("load", () => {
+            window.requestAnimationFrame(() => {
+                document.documentElement.classList.remove("is-loading");
+                document.documentElement.classList.add("is-ready");
+            });
+        }, { once: true });
+    </script>
+    <link rel="stylesheet" href="../styles/global.css">
+    <style>
+        .faq-shell {
+            width: min(92%, 980px);
+        }
+
+        .faq-hero {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(220px, 0.42fr);
+            gap: var(--space-xxl);
+            align-items: end;
+            padding: var(--space-xl) 0 var(--space-lg);
+            border-bottom: 1px solid var(--line-color);
+        }
+
+        .faq-hero h1 {
+            max-width: 760px;
+            font-size: 4.8rem;
+            font-weight: var(--font-weight-black);
+        }
+
+        .faq-hero h1 + p {
+            margin-top: var(--space-md);
+        }
+
+        .faq-hero p:not(.eyebrow),
+        .faq-note p,
+        .faq-contact p {
+            color: var(--muted-text-color);
+        }
+
+        .faq-note {
+            padding: var(--space-md);
+            border: 1px solid var(--line-color);
+            border-radius: var(--radius-md);
+            background: var(--surface-color);
+        }
+
+        .faq-note strong {
+            display: block;
+            margin-bottom: var(--space-xs);
+            font-size: var(--size-md);
+        }
+
+        .faq-categories {
+            position: sticky;
+            z-index: 20;
+            top: calc(var(--header-height) - 1px);
+            margin: 0;
+            padding: var(--space-sm) 0;
+            background: color-mix(in srgb, var(--background-color) 92%, white);
+            backdrop-filter: blur(12px);
+        }
+
+        #faq-items-container {
+            display: grid;
+            gap: var(--space-xl);
+            margin: var(--space-lg) 0 var(--space-xl);
+        }
+
+        .faq-category-group {
+            display: grid;
+            gap: var(--space-sm);
+        }
+
+        .faq-category-title {
+            color: var(--accent-color);
+            font-size: var(--size-sm);
+            font-weight: var(--font-weight-bold);
+            text-transform: uppercase;
+        }
+
+        .faq-question {
+            width: 100%;
+            border: 0;
+            min-height: 74px;
+            padding: var(--space-md);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--space-md);
+            background: transparent;
+            text-align: left;
+            cursor: pointer;
+            font-weight: var(--font-weight-bold);
+        }
+
+        .faq-item {
+            overflow: hidden;
+            border: 1px solid var(--line-color);
+            border-radius: var(--radius-md);
+            background: var(--surface-color);
+            opacity: 0;
+            transition: border-color 180ms ease, background 180ms ease, transform 180ms ease;
+        }
+
+        .is-ready .faq-item {
+            animation: faqFadeUp 420ms ease both;
+            animation-delay: var(--delay, 0ms);
+        }
+
+        .faq-item:hover,
+        .faq-item.open {
+            border-color: color-mix(in srgb, var(--accent-color) 48%, var(--line-color));
+            background: var(--surface-color);
+        }
+
+        .faq-item:hover {
+            transform: translateY(-2px);
+        }
+
+        .faq-indicator {
+            position: relative;
+            flex: 0 0 auto;
+            width: 34px;
+            height: 34px;
+            border: 1px solid var(--line-color);
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            color: var(--accent-color);
+            transition: transform 180ms ease, color 180ms ease, background 180ms ease, border-color 180ms ease;
+        }
+
+        .faq-indicator::before,
+        .faq-indicator::after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 13px;
+            height: 2px;
+            border-radius: 999px;
+            background: currentColor;
+            content: "";
+            transform: translate(-50%, -50%);
+        }
+
+        .faq-indicator::after {
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+
+        .faq-item.open .faq-indicator {
+            color: var(--surface-color);
+            border-color: var(--text-color);
+            background: var(--text-color);
+            transform: rotate(45deg);
+        }
+
+        .faq-answer-panel {
+            display: grid;
+            grid-template-rows: 0fr;
+            opacity: 0;
+            transition: grid-template-rows 220ms ease, opacity 180ms ease;
+        }
+
+        .faq-item.open .faq-answer-panel {
+            grid-template-rows: 1fr;
+            opacity: 1;
+        }
+
+        .faq-answer-inner {
+            overflow: hidden;
+        }
+
+        .faq-answer {
+            max-width: 720px;
+            margin: 0;
+            padding: 0 var(--space-md) var(--space-md);
+            color: var(--muted-text-color);
+        }
+
+        .faq-contact {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            gap: var(--space-md);
+            align-items: center;
+            padding: var(--space-lg) 0;
+            border-top: 1px solid var(--line-color);
+        }
+
+        .faq-contact h2 {
+            margin-bottom: var(--space-xs);
+        }
+
+        @keyframes faqFadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(14px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .faq-hero,
+            .faq-item {
+                animation: none;
+            }
+
+            .faq-item,
+            .faq-answer-panel,
+            .faq-indicator {
+                transition: none;
+            }
+
+            .faq-item {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 760px) {
+            .faq-hero,
+            .faq-contact {
+                grid-template-columns: 1fr;
+            }
+
+            .faq-hero {
+                gap: var(--space-lg);
+            }
+
+            .faq-note {
+                max-width: 420px;
+            }
+
+            .faq-hero h1 {
+                font-size: 3.5rem;
+            }
+        }
+
+        @media (max-width: 540px) {
+            .faq-hero h1 {
+                font-size: 2.65rem;
+            }
+
+            .faq-question {
+                min-height: 66px;
+                padding: var(--space-sm);
+            }
+
+            .faq-answer {
+                padding: 0 var(--space-sm) var(--space-sm);
+            }
+
+            .faq-contact .button-link {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="narrow-shell faq-shell">
+        <section class="faq-hero" aria-labelledby="faq-title">
+            <div>
+                <p class="eyebrow">FAQ</p>
+                <h1 id="faq-title">Questions, answered plainly.</h1>
+                <p>A quick guide to sessions, delivery, edits, and rescheduling before we shoot.</p>
+            </div>
+            <aside class="faq-note" aria-label="Booking note">
+                <strong>Ready to plan?</strong>
+                <p>Send the mood, the dates, and any references you have. We can shape the rest from there.</p>
+            </aside>
+        </section>
+
+        <section class="category-controls faq-categories" aria-label="FAQ categories">
+            <button class="category-button active" type="button" data-faq-category="All" aria-pressed="true">All</button>
+            <button class="category-button" type="button" data-faq-category="Services" aria-pressed="false">Services</button>
+            <button class="category-button" type="button" data-faq-category="Session Details" aria-pressed="false">Session Details</button>
+            <button class="category-button" type="button" data-faq-category="Deliverables" aria-pressed="false">Deliverables</button>
+            <button class="category-button" type="button" data-faq-category="Rescheduling" aria-pressed="false">Rescheduling</button>
+        </section>
+
+        <section id="faq-items-container" aria-live="polite"></section>
+
+        <section class="faq-contact" aria-labelledby="faq-contact-title">
+            <div>
+                <p class="eyebrow">Still unsure?</p>
+                <h2 id="faq-contact-title">Ask before booking.</h2>
+                <p>Send a note and I'll help you figure out the session shape, timing, and next steps.</p>
+            </div>
+            <a class="button-link primary" href="mailto:eoqrupics@gmail.com">Email me</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright Gui Roque © All rights reserved.</p>
+    </footer>
+
+    <script src="../data/faq.js"></script>
+    <script src="../components/site-header.js"></script>
+    <script src="../components/faq-list.js"></script>
+</body>
+</html>

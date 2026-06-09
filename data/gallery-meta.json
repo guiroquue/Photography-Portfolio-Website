@@ -1,0 +1,85 @@
+{
+    "assets/images/runway.jpg": {
+        "alt": "Fashion runway photograph by Gui Roque"
+    },
+    "assets/images/sunglasses-leather-jacket.jpg": {
+        "alt": "Outdoor portrait with sunglasses and a leather jacket",
+        "cameraSettings": "Canon EOS 400D EF-S 55-250mm",
+        "imageResolution": "ISO 200 - f4.5 - 3888 x 2592 - 1/50 s"
+    },
+    "assets/images/red-light-portrait.jpg": {
+        "alt": "Portrait lit with red and neutral light",
+        "cameraSettings": "Canon EOS 400D EF-S 55-250mm",
+        "imageResolution": "ISO 1600 - f5.0 - 1536 x 2304 - 1/60 s"
+    },
+    "assets/images/low-light-monochrome.jpg": {
+        "alt": "Low-light black and white portrait",
+        "cameraSettings": "Canon EOS 400D EF-S 28-80mm",
+        "imageResolution": "ISO 400 - f6.3 - 2575 x 3219 - 1/25 s"
+    },
+    "assets/images/magenta-light-portrait.jpg": {
+        "alt": "Portrait with saturated magenta lighting",
+        "cameraSettings": "Canon EOS 400D EF-S 28-80mm",
+        "imageResolution": "ISO 1600 - f5.0 - 3888 x 2592 - 1/30 s"
+    },
+    "assets/images/neutral-close-portrait.jpg": {
+        "alt": "Close portrait with neutral tones",
+        "cameraSettings": "Canon EOS 400D EF-S 55-250mm",
+        "imageResolution": "ISO 400 - f8.0 - 1537 x 2224 - 1/20 s"
+    },
+    "assets/images/tattoo-session.jpg": {
+        "alt": "Portrait during a tattoo session",
+        "cameraSettings": "Canon EOS 400D EF-S 55-250mm",
+        "imageResolution": "ISO 800 - f4.0 - 2592 x 3888 - 1/125 s"
+    },
+    "assets/images/deep-red-portrait.jpg": {
+        "alt": "Portrait in deep red lighting",
+        "cameraSettings": "Canon EOS 400D EF-S 55-250mm",
+        "imageResolution": "ISO 1600 - f5.0 - 1537 x 2305 - 1/15 s"
+    },
+    "assets/images/warm-indoor-portrait.jpg": {
+        "alt": "Warm indoor portrait",
+        "cameraSettings": "Canon EOS 400D EF-S 28-80mm",
+        "imageResolution": "ISO 400 - f4.0 - 1536 x 2301 - 1/60 s"
+    },
+    "assets/images/teal-shadow-portrait.jpg": {
+        "alt": "Portrait with teal shadows",
+        "cameraSettings": "Canon EOS 400D EF-S 28-80mm",
+        "imageResolution": "ISO 1600 - f4.0 - 1537 x 2305 - 1/25 s"
+    },
+    "assets/images/green-blue-portrait.jpg": {
+        "alt": "Portrait with green and pale blue tones",
+        "cameraSettings": "Canon EOS 400D EF-S 55-250mm",
+        "imageResolution": "ISO 1600 - f5.0 - 1537 x 2305 - 1/100 s"
+    },
+    "assets/images/monochrome-studio-portrait.jpg": {
+        "alt": "Studio-like black and white portrait",
+        "cameraSettings": "Canon EOS 400D EF-S 28-80mm",
+        "imageResolution": "ISO 1600 - f6.3 - 2460 x 3074 - 1/60 s"
+    },
+    "assets/images/red-orange-portrait.jpg": {
+        "alt": "Warm portrait with red-orange highlights",
+        "cameraSettings": "Canon EOS 400D EF-S 28-80mm",
+        "imageResolution": "ISO Unknown - f4.0 - 2592 x 3240 - 1/50 s"
+    },
+    "assets/images/warm-toned-portrait.jpg": {
+        "alt": "Warm-toned portrait",
+        "cameraSettings": "Canon EOS 400D EF-S 55-250mm",
+        "imageResolution": "ISO 800 - f5.6 - 1537 x 2305 - 1/30 s"
+    },
+    "assets/images/orange-blue-portrait.jpg": {
+        "alt": "Portrait with orange and muted blue tones",
+        "cameraSettings": "Canon EOS 400D EF-S 55-250mm",
+        "imageResolution": "ISO 400 - f4.5 - 1536 x 2301 - 1/60 s"
+    },
+    "assets/images/cool-blue-portrait.jpg": {
+        "alt": "Portrait with cool blue tones",
+        "cameraSettings": "Canon EOS 400D EF-S 55-250mm",
+        "imageResolution": "ISO Unknown - f6.3 - 1536 x 2304 - 1/80 s"
+    },
+    "assets/images/teal-dark-portrait.jpeg": {
+        "alt": "Portrait with teal and dark tones",
+        "cameraSettings": "Canon EOS 400D EF-S 28-80mm",
+        "imageResolution": "ISO 1600 - f5.0 - 2592 x 3240 - 1/60 s"
+    }
+}

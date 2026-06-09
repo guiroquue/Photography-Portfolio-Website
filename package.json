@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "build": "node scripts/build-gallery-data.js",
+        "generate:gallery": "node scripts/build-gallery-data.js"
+    }
+}

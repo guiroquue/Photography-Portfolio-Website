@@ -3,84 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eoqrupics</title>
-    <link rel="icon" type="image/x-icon" href="./assets/icons/whiteLogo.ico">
-
-    <link rel="stylesheet" href="./css/globalCSS/globalStyles.css">
-    <link rel="stylesheet" href="./css/globalCSS/videoContainers.css">
-    <style>
-        #image-grid {
-            width: 90%;
-            max-width: 700px;
-            margin: 0 auto;
-            transition: opacity 0.05s ease-in-out;
-        } 
-
-        #image-grid img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-            pointer-events: none;
-        }
-
-        #cta-for-more {
-            display: flex;
-            justify-content: center;
-            margin: var(--space-lg) 0;
-        }
-
-        #cta-for-more a {
-            display: flex;
-            align-items: center;
-            font-weight: var(--font-weight-bold);
-        }
-    </style>
+    <title>Gui's Photos | Photography by Gui Roque</title>
+    <script>
+        document.documentElement.classList.add("is-loading");
+        window.addEventListener("load", () => {
+            window.requestAnimationFrame(() => {
+                document.documentElement.classList.remove("is-loading");
+                document.documentElement.classList.add("is-ready");
+            });
+        }, { once: true });
+    </script>
+    <link rel="stylesheet" href="./styles/global.css">
 </head>
 <body>
     <div id="header-placeholder"></div>
 
-    <div class="video-container" style="margin-top: 100px;">
-        <div class="video-header">
-            <h2>Coming Soon!</h2>
-        </div>
-        <div class="video-frame">
-            <img src="./assets/icons/youtubeIcon.svg" alt="Youtube Icon" width="47" height="42.65">
-        </div>
-        <div class="video-description">
-            <p>Photographer VS Photographer <br> Part 1 w/ <a href="https://www.instagram.com/snjokallinn/" target="_blank" style="text-decoration: underline;">Snjokalin</a></p>
-            <img src="./assets/icons/externalLinkIcon.svg" alt="External Link">
-        </div>
-    </div>
+    <main class="page-shell">
+        <section class="hero" aria-labelledby="home-title">
+            <div class="hero-copy">
+                <p class="eyebrow">Reykjavik portrait photography</p>
+                <h1 id="home-title">Gui's Photos</h1>
+                <p>Portrait-led photography by Gui Roque, shaped around intimate close-ups, expressive lighting, and visual stories.</p>
+                <div class="hero-actions">
+                    <a class="button-link primary" href="mailto:eoqrupics@gmail.com">Book a shoot</a>
+                    <a class="button-link" href="https://www.instagram.com/guiroquue/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </div>
+            </div>
+            <img class="hero-image image-fade" src="./assets/images/runway.jpg" alt="Fashion runway photograph by Gui Roque">
+        </section>
 
-    <section id="filter-tabs-container">
-        <div class="filter-tab-item">
-            <p>All</p>
-        </div>
-        <div class="filter-tab-item">
-            <p>Portraits</p>
-        </div>
-        <div class="filter-tab-item">
-            <p>Artists</p>
-        </div>
-        <div class="filter-tab-item">
-            <p>Brands</p>
-        </div>
-        <div class="filter-tab-item">
-            <p>w/ Review</p>
-        </div>
-    </section>
+        <section class="portfolio-section" aria-labelledby="portfolio-title">
+            <div class="page-intro">
+                <p class="eyebrow">Projects</p>
+                <h2 id="portfolio-title">Selected work</h2>
+                <p>Recent portraits and visual experiments.</p>
+            </div>
 
-    <section id="image-grid"><a href="./index02.html"></a></section>
-
-    <div id="cta-for-more">
-        <a href="https://www.instagram.com/eoqrupics/" target="_blank">Check out more here -<img src="../assets/icons/instagramIcon.svg" alt="Instagram Link"></a>
-    </div>
+            <section id="image-grid" class="gallery-grid" aria-live="polite"></section>
+        </section>
+    </main>
 
     <footer>
-        <p>Copyright Gui Roque © All rights <a href="./try/index.html">reserved.</a></p>
+        <p>Copyright Gui Roque © All rights reserved.</p>
     </footer>
 
-    <script src="./javascript/htmlElementsInsert/insertHeader.js"></script>
-    <script src="./javascript/generateImages.js"></script>
+    <script src="./data/gallery.js"></script>
+    <script src="./components/site-header.js"></script>
+    <script src="./components/work-grid.js"></script>
 </body>
 </html>

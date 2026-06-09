@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selected Work</title>
+    <script>
+        document.documentElement.classList.add("is-loading");
+        window.addEventListener("load", () => {
+            window.requestAnimationFrame(() => {
+                document.documentElement.classList.remove("is-loading");
+                document.documentElement.classList.add("is-ready");
+            });
+        }, { once: true });
+    </script>
+    <link rel="stylesheet" href="../styles/global.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="narrow-shell detail-shell">
+        <a class="text-link detail-back-link" href="../index.html">Back to projects</a>
+        <div id="work-details"></div>
+    </main>
+
+    <footer>
+        <p>Copyright Gui Roque © All rights reserved.</p>
+    </footer>
+
+    <script src="../data/gallery.js"></script>
+    <script src="../components/site-header.js"></script>
+    <script src="../components/work-detail.js"></script>
+</body>
+</html>
