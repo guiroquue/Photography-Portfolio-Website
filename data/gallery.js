@@ -4,7 +4,9 @@ window.galleryImages = [
         "id": "cool-blue-portrait",
         "src": "assets/images/cool-blue-portrait.jpg",
         "alt": "Portrait with cool blue tones",
-        "createdAt": 1780975155,
+        "createdAt": 1781022660,
+        "width": 1536,
+        "height": 2304,
         "cameraSettings": "Canon EOS 400D EF-S 55-250mm",
         "imageResolution": "ISO Unknown - f6.3 - 1536 x 2304 - 1/80 s"
     },
@@ -12,7 +14,9 @@ window.galleryImages = [
         "id": "deep-red-portrait",
         "src": "assets/images/deep-red-portrait.jpg",
         "alt": "Portrait in deep red lighting",
-        "createdAt": 1780975155,
+        "createdAt": 1781022660,
+        "width": 1537,
+        "height": 2305,
         "cameraSettings": "Canon EOS 400D EF-S 55-250mm",
         "imageResolution": "ISO 1600 - f5.0 - 1537 x 2305 - 1/15 s"
     },
@@ -20,7 +24,9 @@ window.galleryImages = [
         "id": "green-blue-portrait",
         "src": "assets/images/green-blue-portrait.jpg",
         "alt": "Portrait with green and pale blue tones",
-        "createdAt": 1780975155,
+        "createdAt": 1781022660,
+        "width": 1537,
+        "height": 2305,
         "cameraSettings": "Canon EOS 400D EF-S 55-250mm",
         "imageResolution": "ISO 1600 - f5.0 - 1537 x 2305 - 1/100 s"
     },
@@ -28,7 +34,9 @@ window.galleryImages = [
         "id": "low-light-monochrome",
         "src": "assets/images/low-light-monochrome.jpg",
         "alt": "Low-light black and white portrait",
-        "createdAt": 1780975155,
+        "createdAt": 1781022660,
+        "width": 2575,
+        "height": 3219,
         "cameraSettings": "Canon EOS 400D EF-S 28-80mm",
         "imageResolution": "ISO 400 - f6.3 - 2575 x 3219 - 1/25 s"
     },
@@ -36,7 +44,9 @@ window.galleryImages = [
         "id": "magenta-light-portrait",
         "src": "assets/images/magenta-light-portrait.jpg",
         "alt": "Portrait with saturated magenta lighting",
-        "createdAt": 1780975155,
+        "createdAt": 1781022660,
+        "width": 3888,
+        "height": 2592,
         "cameraSettings": "Canon EOS 400D EF-S 28-80mm",
         "imageResolution": "ISO 1600 - f5.0 - 3888 x 2592 - 1/30 s"
     },
@@ -44,7 +54,9 @@ window.galleryImages = [
         "id": "monochrome-studio-portrait",
         "src": "assets/images/monochrome-studio-portrait.jpg",
         "alt": "Studio-like black and white portrait",
-        "createdAt": 1780975155,
+        "createdAt": 1781022660,
+        "width": 2460,
+        "height": 3074,
         "cameraSettings": "Canon EOS 400D EF-S 28-80mm",
         "imageResolution": "ISO 1600 - f6.3 - 2460 x 3074 - 1/60 s"
     },
@@ -52,7 +64,9 @@ window.galleryImages = [
         "id": "neutral-close-portrait",
         "src": "assets/images/neutral-close-portrait.jpg",
         "alt": "Close portrait with neutral tones",
-        "createdAt": 1780975155,
+        "createdAt": 1781022660,
+        "width": 1537,
+        "height": 2224,
         "cameraSettings": "Canon EOS 400D EF-S 55-250mm",
         "imageResolution": "ISO 400 - f8.0 - 1537 x 2224 - 1/20 s"
     },
@@ -60,7 +74,9 @@ window.galleryImages = [
         "id": "orange-blue-portrait",
         "src": "assets/images/orange-blue-portrait.jpg",
         "alt": "Portrait with orange and muted blue tones",
-        "createdAt": 1780975155,
+        "createdAt": 1781022660,
+        "width": 1536,
+        "height": 2301,
         "cameraSettings": "Canon EOS 400D EF-S 55-250mm",
         "imageResolution": "ISO 400 - f4.5 - 1536 x 2301 - 1/60 s"
     },
@@ -68,13 +84,17 @@ window.galleryImages = [
         "id": "portrait-study",
         "src": "assets/images/portrait-study.jpg",
         "alt": "Portrait Study photograph by Gui Roque",
-        "createdAt": 1780975155
+        "createdAt": 1781022660,
+        "width": 1537,
+        "height": 2305
     },
     {
         "id": "red-light-portrait",
         "src": "assets/images/red-light-portrait.jpg",
         "alt": "Portrait lit with red and neutral light",
-        "createdAt": 1780975155,
+        "createdAt": 1781022660,
+        "width": 1536,
+        "height": 2304,
         "cameraSettings": "Canon EOS 400D EF-S 55-250mm",
         "imageResolution": "ISO 1600 - f5.0 - 1536 x 2304 - 1/60 s"
     },
@@ -82,7 +102,9 @@ window.galleryImages = [
         "id": "red-orange-portrait",
         "src": "assets/images/red-orange-portrait.jpg",
         "alt": "Warm portrait with red-orange highlights",
-        "createdAt": 1780975155,
+        "createdAt": 1781022660,
+        "width": 2592,
+        "height": 3240,
         "cameraSettings": "Canon EOS 400D EF-S 28-80mm",
         "imageResolution": "ISO Unknown - f4.0 - 2592 x 3240 - 1/50 s"
     },
@@ -90,13 +112,17 @@ window.galleryImages = [
         "id": "runway",
         "src": "assets/images/runway.jpg",
         "alt": "Fashion runway photograph by Gui Roque",
-        "createdAt": 1780975155
+        "createdAt": 1781022660,
+        "width": 3838,
+        "height": 4797
     },
     {
         "id": "sunglasses-leather-jacket",
         "src": "assets/images/sunglasses-leather-jacket.jpg",
         "alt": "Outdoor portrait with sunglasses and a leather jacket",
-        "createdAt": 1780975155,
+        "createdAt": 1781022660,
+        "width": 3888,
+        "height": 2592,
         "cameraSettings": "Canon EOS 400D EF-S 55-250mm",
         "imageResolution": "ISO 200 - f4.5 - 3888 x 2592 - 1/50 s"
     },
@@ -104,7 +130,9 @@ window.galleryImages = [
         "id": "tattoo-session",
         "src": "assets/images/tattoo-session.jpg",
         "alt": "Portrait during a tattoo session",
-        "createdAt": 1780975155,
+        "createdAt": 1781022660,
+        "width": 1638,
+        "height": 2048,
         "cameraSettings": "Canon EOS 400D EF-S 55-250mm",
         "imageResolution": "ISO 800 - f4.0 - 2592 x 3888 - 1/125 s"
     },
@@ -112,7 +140,9 @@ window.galleryImages = [
         "id": "teal-dark-portrait",
         "src": "assets/images/teal-dark-portrait.jpeg",
         "alt": "Portrait with teal and dark tones",
-        "createdAt": 1780975155,
+        "createdAt": 1781022660,
+        "width": 2592,
+        "height": 3240,
         "cameraSettings": "Canon EOS 400D EF-S 28-80mm",
         "imageResolution": "ISO 1600 - f5.0 - 2592 x 3240 - 1/60 s"
     },
@@ -120,7 +150,9 @@ window.galleryImages = [
         "id": "teal-shadow-portrait",
         "src": "assets/images/teal-shadow-portrait.jpg",
         "alt": "Portrait with teal shadows",
-        "createdAt": 1780975155,
+        "createdAt": 1781022660,
+        "width": 1537,
+        "height": 2305,
         "cameraSettings": "Canon EOS 400D EF-S 28-80mm",
         "imageResolution": "ISO 1600 - f4.0 - 1537 x 2305 - 1/25 s"
     },
@@ -128,7 +160,9 @@ window.galleryImages = [
         "id": "warm-indoor-portrait",
         "src": "assets/images/warm-indoor-portrait.jpg",
         "alt": "Warm indoor portrait",
-        "createdAt": 1780975155,
+        "createdAt": 1781022660,
+        "width": 1536,
+        "height": 2301,
         "cameraSettings": "Canon EOS 400D EF-S 28-80mm",
         "imageResolution": "ISO 400 - f4.0 - 1536 x 2301 - 1/60 s"
     },
@@ -136,7 +170,9 @@ window.galleryImages = [
         "id": "warm-toned-portrait",
         "src": "assets/images/warm-toned-portrait.jpg",
         "alt": "Warm-toned portrait",
-        "createdAt": 1780975155,
+        "createdAt": 1781022660,
+        "width": 1537,
+        "height": 2305,
         "cameraSettings": "Canon EOS 400D EF-S 55-250mm",
         "imageResolution": "ISO 800 - f5.6 - 1537 x 2305 - 1/30 s"
     }

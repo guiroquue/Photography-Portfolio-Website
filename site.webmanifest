@@ -1,0 +1,16 @@
+{
+    "name": "Gui's Photos",
+    "short_name": "Gui Photos",
+    "description": "Portrait photography portfolio by Gui Roque.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#f4f4f1",
+    "theme_color": "#f4f4f1",
+    "icons": [
+        {
+            "src": "/assets/icons/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ]
+}

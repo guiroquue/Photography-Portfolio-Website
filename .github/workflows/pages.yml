@@ -28,13 +28,13 @@ jobs:
         with:
           node-version: 22
 
-      - name: Generate gallery data
+      - name: Generate gallery data and sitemap
         run: npm run generate:gallery
 
       - name: Prepare site artifact
         run: |
           mkdir site
-          cp -R assets styles views components data index.html CNAME site/
+          cp -R assets styles views components data index.html 404.html robots.txt sitemap.xml site.webmanifest CNAME COPYRIGHT.md README.md site/
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

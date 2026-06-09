@@ -17,6 +17,11 @@ function createWorkCard(image, index) {
     photo.loading = "lazy";
     photo.decoding = "async";
 
+    if (image.width && image.height) {
+        photo.width = image.width;
+        photo.height = image.height;
+    }
+
     link.appendChild(photo);
     card.appendChild(link);
     return card;

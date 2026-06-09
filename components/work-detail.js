@@ -51,6 +51,11 @@ function renderWork(work) {
     image.src = window.sitePath ? window.sitePath(work.src) : work.src;
     image.alt = work.alt;
 
+    if (work.width && work.height) {
+        image.width = work.width;
+        image.height = work.height;
+    }
+
     const media = document.createElement("div");
     media.className = "media-block";
     media.appendChild(image);
